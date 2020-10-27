@@ -15,7 +15,7 @@ library(data.table)
 
 
 load(file = "models_functions/depth_seedling_mod.rda")
-
+summary(depth_seedling_mod)
 hydraul <- read.csv("input_data/level3_hydraulic_outputs_aliso_example_J01-020.csv")
 
 head(hydraul)
@@ -79,19 +79,21 @@ hyd_dep4 <- filter(hyd_dep, variable == "MAX_depth_cm_Slice4")
 
 new_data1 <- hyd_dep1 %>%
   mutate(prob_fit = predict(depth_seedling_mod, newdata = hyd_dep1, type="response")) %>%
-  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) ## predicts negative percentages - cut off at 0 for quick fix
-
+  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) %>%## predicts negative percentages - cut off at 0 for quick fix
+  mutate(prob_fit = ifelse(prob_fit>=100, 100, prob_fit)) 
+  
 new_data2 <- hyd_dep2 %>%
   mutate(prob_fit = predict(depth_seedling_mod, newdata = hyd_dep2, type="response")) %>%
-  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) ## predicts negative percentages - cut off at 0 for quick fix
-
+  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) %>%## predicts negative percentages - cut off at 0 for quick fix
+  mutate(prob_fit = ifelse(prob_fit>=100, 100, prob_fit)) 
 new_data3 <- hyd_dep3 %>%
   mutate(prob_fit = predict(depth_seedling_mod, newdata = hyd_dep3, type="response")) %>%
-  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) ## predicts negative percentages - cut off at 0 for quick fix
-
+  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) %>%## predicts negative percentages - cut off at 0 for quick fix
+  mutate(prob_fit = ifelse(prob_fit>=100, 100, prob_fit)) 
 new_data4 <- hyd_dep4 %>%
   mutate(prob_fit = predict(depth_seedling_mod, newdata = hyd_dep4, type="response")) %>%
-  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) ## predicts negative percentages - cut off at 0 for quick fix
+  mutate(prob_fit = ifelse(prob_fit<=0, 0, prob_fit)) %>%## predicts negative percentages - cut off at 0 for quick fix
+  mutate(prob_fit = ifelse(prob_fit>=100, 100, prob_fit)) 
 
 ## bind back together
 new_data <- rbind(new_data1, new_data2, new_data3, new_data4)
@@ -184,8 +186,8 @@ ggplot(new_data, aes(x = Q, y=prob_fit)) +
   
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
   labs(title = "Willow Seedling: Depth ~ Q",
-       y = "Probability",
-       x = "Q (cfs)") #+ theme_bw(base_size = 15)
+       y = "Mortality (%)",
+       x = "Q (cms)") #+ theme_bw(base_size = 15)
 
 dev.off()
 ### plot discharge over time
@@ -218,10 +220,10 @@ head(new_datax)
 time_stats1 <- new_datax %>%
   dplyr::filter(variable == "MAX_depth_cm_Slice1") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx1)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx1)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice1")
 
@@ -230,30 +232,30 @@ time_stats1
 time_stats2 <- new_datax %>%
   dplyr::filter(variable == "MAX_depth_cm_Slice2") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx2)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx2)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx2)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx2)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice2")
 
 time_stats3 <- new_datax %>%
   dplyr::filter(variable == "MAX_depth_cm_Slice3") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx3)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx3)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx3)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx3)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice3")
 
 time_stats4 <- new_datax %>%
   dplyr::filter(variable == "MAX_depth_cm_Slice4") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx4)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx4)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx4)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx4)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice4")
 
@@ -262,11 +264,11 @@ time_stats <- rbind(time_stats1, time_stats2, time_stats3, time_stats4)
 ## melt
 head(time_stats)
 
-time_stats <- time_stats %>%
-  ungroup() %>%
-  select(-season)
+# time_stats <- time_stats %>%
+#   ungroup() %>%
+#   select(-season)
 
-melt_time<-reshape2::melt(time_stats, id=c("water_year", "position"))
+melt_time<-reshape2::melt(time_stats, id=c("water_year", "position", "season"))
 melt_time <- rename(melt_time, Time_Period = variable) %>%
   distinct()
 head(melt_time)
@@ -304,26 +306,26 @@ dev.off()
 ## change year to water year and count hours within Q range
 new_data1  <- new_datax %>% 
   dplyr::filter(variable == "MAX_depth_cm_Slice1") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1)) %>%
-  mutate(threshold = if_else(Q >= newx1,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx1)) %>%
+  mutate(threshold = if_else(Q <= newx1,  row_number(), 0L))%>%
   mutate(position="Slice1")
 
 new_data2  <- new_datax %>% 
   dplyr::filter(variable == "MAX_depth_cm_Slice2") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx2)) %>%
-  mutate(threshold = if_else(Q >= newx2,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2)) %>%
+  mutate(threshold = if_else(Q <= newx2,  row_number(), 0L))%>%
   mutate(position="Slice2")
 
 new_data3  <- new_datax %>% 
   dplyr::filter(variable == "MAX_depth_cm_Slice1") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx3)) %>%
-  mutate(threshold = if_else(Q >= newx3,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx3)) %>%
+  mutate(threshold = if_else(Q <= newx3,  row_number(), 0L))%>%
   mutate(position="Slice3")
 
 new_data4  <- new_datax %>% 
   dplyr::filter(variable == "MAX_depth_cm_Slice4") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx4)) %>%
-  mutate(threshold = if_else(Q >= newx4,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx4)) %>%
+  mutate(threshold = if_else(Q <= newx4,  row_number(), 0L))%>%
   mutate(position="Slice4")
 
 ## melt data frame so that each probability column are all in one row 
@@ -339,20 +341,14 @@ new_datax <- rbind(new_data1x, new_data2x, new_data3x, new_data4x)
 new_datax
 ## melt
 melt_data<-reshape2::melt(new_datax, id=c("ID", "day", "month", "Q", "water_year", "position", "season"))
-melt_data <- melt_data %>% rename(consec_hours = value) %>%
+melt_data <- melt_data %>% rename(n_days = value) %>%
   select(-variable)
 head(melt_data)
 
-## count how many full days i.e. 24 hours
-total_days01 <- melt_data %>% 
-  group_by(ID, day, month, water_year, position) %>%
-  summarise(n_hours = max(consec_hours))  %>%
-  mutate(n_days_low = ifelse(n_hours >= 24, 1, 0)) # %>%
-
 ## count the number of days in each month
-total_days_per_month01 <- total_days01 %>%
+total_days_per_month01 <- melt_data %>%
   group_by(month, water_year, position) %>%
-  summarise(days_per_month = sum(n_days_low))
+  summarise(days_per_month = sum(n_days))
 
 total_days <- total_days_per_month01
 
@@ -390,13 +386,13 @@ melt_days <- rename(melt_days, Probability_Threshold = variable,
 head(melt_days)
 
 ## save df
-write.csv(melt_days, "output_data/01_willow_seedling_total_days_long.csv")
+write.csv(melt_days, "output_data/02_willow_seedling_depth_total_days_long.csv")
 
 library(scales)
 
 ## plot all ts
 
-png("figures/Application_curves/Depth/03_seedling_depth_no_days_within_Q.png", width = 500, height = 600)
+png("figures/02_seedling_depth_no_days_within_Q.png", width = 500, height = 600)
 
 ggplot(melt_days, aes(x =month_year, y=n_days)) +
   geom_line(aes( group = season, color = season)) +
@@ -454,17 +450,18 @@ head(new_data)
 peak <- new_data %>%
   group_by(variable) %>%
   filter(prob_fit == max(prob_fit)) #%>%
-
-peakQ1 <- filter(peak, variable=="MAX_depth_cm_Slice1")
+peak
+max(peakQ1$Q)
+peakQ1 <- filter(peak, variable=="total.shear.Pa_slice1")
 peakQ1  <- max(peakQ1$Q)
 
-peakQ2 <- filter(peak, variable=="MAX_depth_cm_Slice2")
+peakQ2 <- filter(peak, variable=="total.shear.Pa_slice2")
 peakQ2  <- max(peakQ2$Q) ## 
 
-peakQ3 <- filter(peak, variable=="MAX_depth_cm_Slice3")
+peakQ3 <- filter(peak, variable=="total.shear.Pa_slice3")
 peakQ3  <- max(peakQ3$Q) ## 
 
-peakQ4 <- filter(peak, variable=="MAX_depth_cm_Slice4")
+peakQ4 <- filter(peak, variable=="total.shear.Pa_slice4")
 peakQ4  <- max(peakQ4$Q) ## 
 
 ## filter data by cross section position
@@ -517,7 +514,7 @@ limits
 write.csv(limits, "output_data/01_willow_seedling_shear_Q_limits.csv")
 
 #### plot
-png("figures/Application_curves/Shear/01_willow_seedling_shear_prob_Q_thresholds.png", width = 500, height = 600)
+png("figures/02_willow_seedling_shear_prob_Q_thresholds.png", width = 500, height = 600)
 labels <- c(total.shear.Pa_slice1 = "Slice 1", total.shear.Pa_slice2 = "Slice 2",
             total.shear.Pa_slice3 = "Slice 3", total.shear.Pa_slice4 = "Slice 4")
 
@@ -544,9 +541,9 @@ ggplot(new_data, aes(x = Q, y=prob_fit)) +
   geom_point(data = subset(new_data, variable =="total.shear.Pa_slice3"), aes(y=50, x=newx3[3]), color="green") +
   # geom_point(data = subset(new_data, variable =="shear_pa_ROB"), aes(y=50, x=newx2aR[4]), color="green") +
   
-  # geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[1]), color="green") +
-  # geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[2]), color="green") +
-  # geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[3]), color="green") +
+  geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[1]), color="green") +
+  geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[2]), color="green") +
+  geom_point(data = subset(new_data, variable =="total.shear.Pa_slice4"), aes(y=50, x=newx4[3]), color="green") +
  
   
   
@@ -584,10 +581,10 @@ new_datax <- new_datax %>%
 time_stats1 <- new_datax %>%
   dplyr::filter(variable == "total.shear.Pa_slice1") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx1[1])/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx1[1])/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice1")
 
@@ -596,30 +593,30 @@ time_stats1
 time_stats2 <- new_datax %>%
   dplyr::filter(variable == "total.shear.Pa_slice2") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx2[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx2[1])/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx2[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx2[1])/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice2")
 
 time_stats3 <- new_datax %>%
   dplyr::filter(variable == "total.shear.Pa_slice3") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx3[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx3[1])/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx3[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx3[1])/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice3")
 
 time_stats4 <- new_datax %>%
   dplyr::filter(variable == "total.shear.Pa_slice4") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx4[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx4[1])/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx4[1])/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx4[1])/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice4")
 
@@ -628,15 +625,15 @@ time_stats <- rbind(time_stats1, time_stats2, time_stats3, time_stats4)
 time_stats
 write.csv(time_stats, "output_data/02_time_stats_willow_seedling_shear.csv")
 
-time_stats <- time_stats %>%
-  ungroup() %>%
-  select(-season)
+# time_stats <- time_stats %>%
+#   ungroup() %>%
+#   select(-season)
 ## melt  
-melt_time<-reshape2::melt(time_stats, id=c("water_year", "position"))
+melt_time<-reshape2::melt(time_stats, id=c("water_year", "position", "season"))
 melt_time <- rename(melt_time, Time_Period = variable) %>%
   distinct()
 head(melt_time)
-write.csv(melt_time, "output_data/02_willow_seedling_shear_time_stats.csv")
+write.csv(melt_time, "output_data/02_willow_seedling_shear_time_stats_long.csv")
 
 
 ## plot for annual stats - need probs in order
@@ -661,26 +658,26 @@ dev.off()
 ## change year to water year and count hours within Q range
 new_data1  <- new_datax %>% 
   dplyr::filter(variable == "total.shear.Pa_slice1") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1[1])) %>%
-  mutate(threshold = if_else(Q >= newx1[1],  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx1[1])) %>%
+  mutate(threshold = if_else(Q <= newx1[1],  row_number(), 0L))%>%
   mutate(position="Slice1")
 
 new_data2  <- new_datax %>% 
   dplyr::filter(variable == "total.shear.Pa_slice2") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx2[1])) %>%
-  mutate(threshold = if_else(Q >= newx2[1],  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2[1])) %>%
+  mutate(threshold = if_else(Q <= newx2[1],  row_number(), 0L))%>%
   mutate(position="Slice2")
 
 new_data3  <- new_datax %>% 
   dplyr::filter(variable == "total.shear.Pa_slice3") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx3[1])) %>%
-  mutate(threshold = if_else(Q >= newx3[1],  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx3[1])) %>%
+  mutate(threshold = if_else(Q <= newx3[1],  row_number(), 0L))%>%
   mutate(position="Slice3")
 
 new_data4  <- new_datax %>% 
   dplyr::filter(variable == "total.shear.Pa_slice4") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx4[1])) %>%
-  mutate(threshold = if_else(Q >= newx4[1],  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx4[1])) %>%
+  mutate(threshold = if_else(Q <= newx4[1],  row_number(), 0L))%>%
   mutate(position="Slice4")
 
 ## melt data frame so that each probability column are all in one row 
@@ -696,20 +693,14 @@ new_datax <- rbind(new_data1x, new_data2x, new_data3x, new_data4x)
 new_datax
 ## melt
 melt_data<-reshape2::melt(new_datax, id=c("ID", "day", "month", "Q", "water_year", "position", "season"))
-melt_data <- melt_data %>% rename(consec_hours = value) %>%
+melt_data <- melt_data %>% rename(n_days = value) %>%
   select(-variable)
 head(melt_data)
 
-## count how many full days i.e. 24 hours
-total_days01 <- melt_data %>% 
-  group_by(ID, day, month, water_year, position) %>%
-  summarise(n_hours = max(consec_hours))  %>%
-  mutate(n_days_low = ifelse(n_hours >= 24, 1, 0)) # %>%
-
 ## count the number of days in each month
-total_days_per_month01 <- total_days01 %>%
+total_days_per_month01 <- melt_data %>%
   group_by(month, water_year, position) %>%
-  summarise(days_per_month = sum(n_days_low))
+  summarise(days_per_month = sum(n_days))
 
 total_days <- total_days_per_month01
 
@@ -771,3 +762,4 @@ ggplot(melt_days, aes(x =month_year, y=n_days)) +
        x = "Year") #+ theme_bw(base_size = 15)
 
 dev.off()
+

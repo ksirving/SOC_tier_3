@@ -185,10 +185,10 @@ head(new_datax)
 time_stats1 <- new_datax %>%
   dplyr::filter(variable == "total.power.watt.ms_slice1") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1a1 & Q <= newx2a1)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum( Q <= newx2a1)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1a1 & Q <= newx2a1)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum( Q <= newx2a1)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice1")
 
@@ -197,30 +197,30 @@ time_stats1
 time_stats2 <- new_datax %>%
   dplyr::filter(variable == "total.power.watt.ms_slice2") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1a2 & Q <= newx2a2)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx2a2)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1a2 & Q <= newx2a2)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx2a2)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice2")
 
 time_stats3 <- new_datax %>%
   dplyr::filter(variable == "total.power.watt.ms_slice3") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1a3 & Q <= newx2a3)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx2a3)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1a3 & Q <= newx2a3)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx2a3)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice3")
 
 time_stats4 <- new_datax %>%
   dplyr::filter(variable == "total.power.watt.ms_slice4") %>%
   dplyr::group_by(water_year) %>%
-  dplyr::mutate(Annual = sum(Q >= newx1a4 & Q <= newx2a4)/length(DateTime)*100) %>%
+  dplyr::mutate(Annual = sum(Q <= newx2a4)/length(DateTime)*100) %>%
   ungroup() %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(Q >= newx1a4 & Q <= newx2a4)/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx2a4)/length(DateTime)*100) %>%
   distinct(water_year, Annual, Seasonal) %>%
   mutate(position="Slice4")
 
@@ -237,26 +237,26 @@ write.csv(time_stats, "output_data/01_time_stats_willow_adult_stream_power.csv")
 ## change year to water year and count hours within Q range
 new_data1  <- new_datax %>% 
   dplyr::filter(variable == "total.power.watt.ms_slice1") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1a1 & Q <= newx2a1)) %>%
-  mutate(threshold = if_else(Q >= newx1a1 & Q <= newx2a1,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2a1)) %>%
+  mutate(threshold = if_else(Q <= newx2a1,  row_number(), 0L))%>%
   mutate(position="Slice1")
 
 new_data2  <- new_datax %>% 
   dplyr::filter(variable == "total.power.watt.ms_slice2") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1a2 & Q <= newx2a2)) %>%
-  mutate(threshold = if_else(Q >= newx1a2 & Q <= newx2a2,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2a2)) %>%
+  mutate(threshold = if_else(Q <= newx2a2,  row_number(), 0L))%>%
   mutate(position="Slice2")
 
 new_data3  <- new_datax %>% 
   dplyr::filter(variable == "total.power.watt.ms_slice3") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1a3 & Q <= newx2a3)) %>%
-  mutate(threshold = if_else(Q >= newx1a3 & Q <= newx2a3,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2a3)) %>%
+  mutate(threshold = if_else(Q <= newx2a3,  row_number(), 0L))%>%
   mutate(position="Slice3")
 
 new_data4  <- new_datax %>% 
   dplyr::filter(variable == "total.power.watt.ms_slice4") %>%
-  group_by(month, day, water_year, ID = data.table::rleid(Q >= newx1a4 & Q <= newx2a4)) %>%
-  mutate(threshold = if_else(Q >= newx1a4 & Q <= newx2a4,  row_number(), 0L))%>%
+  group_by(month, day, water_year, ID = data.table::rleid(Q <= newx2a4)) %>%
+  mutate(threshold = if_else(Q <= newx2a4,  row_number(), 0L))%>%
   mutate(position="Slice4")
 
 
@@ -271,27 +271,18 @@ new_datax <- rbind(new_data1x, new_data2x, new_data3x, new_data4x)
 new_datax
 ## melt
 melt_data<-reshape2::melt(new_datax, id=c("ID", "day", "month", "Q", "water_year", "position", "season"))
-melt_data <- melt_data %>% rename(consec_hours = value) %>%
+melt_data <- melt_data %>% rename(n_days = value) %>%
   select(-variable)
 head(melt_data)
-## groups data by year, month and ID & threshold
-## counts the number of days in each month probability is within the depth of each threshold - days are not necessarily conseq
-## each threshold separately
 
-## count how many full days i.e. 24 hours
-total_days <- melt_data %>% 
-  group_by(ID, day, month, water_year, position, season) %>%
-  summarise(n_hours = max(consec_hours))  %>%
-  mutate(n_days = ifelse(n_hours >= 24, 1, 0)) # %>%
-total_days
 ## count the number of days in each month
-total_days_per_year <- total_days %>%
-  group_by(water_year, position, season) %>%
-  summarise(days_per_water_year = sum(n_days)) #%>%
+total_days_per_month01 <- melt_data %>%
+  group_by(month, water_year, position) %>%
+  summarise(days_per_month = sum(n_days))
 
 total_days_per_year
 
-write.csv(total_days_per_year, "output_data/01_number_of_days_willow_adult_stream_power.csv")
+write.csv(total_days_per_month01, "output_data/01_number_of_days_willow_adult_stream_power.csv")
 
 
 # Depth -------------------------------------------------------------------
@@ -469,11 +460,11 @@ dev.off()
 
 head(time_stats)
 ## melt
-melt_time<-reshape2::melt(time_stats, id=c("water_year", "position"))
+melt_time<-reshape2::melt(time_stats, id=c("water_year", "position", "season"))
 melt_time <- rename(melt_time, Time_Period = variable) %>%
   distinct()
 head(melt_time)
-write.csv(melt_time, "output_data/01_willow_germ_depth_time_stats.csv")
+write.csv(melt_time, "output_data/01_willow_germ_depth_time_stats_long.csv")
 
 # Number of days above discharge ------------------------------------------
 
@@ -518,26 +509,20 @@ new_datax <- rbind(new_data1x, new_data2x, new_data3x, new_data4x)
 new_datax
 ## melt
 melt_data<-reshape2::melt(new_datax, id=c("ID", "day", "month", "Q", "water_year", "position", "season"))
-melt_data <- melt_data %>% rename(consec_hours = value) %>%
+melt_data <- melt_data %>% rename(n_days = value) %>%
   select(-variable)
 head(melt_data)
 
-## count how many full days i.e. 24 hours
-total_days01 <- melt_data %>% 
-  group_by(ID, day, month, water_year, position) %>%
-  summarise(n_hours = max(consec_hours))  %>%
-  mutate(n_days_low = ifelse(n_hours >= 24, 1, 0)) # %>%
-
 ## count the number of days in each month
-total_days_per_month01 <- total_days01 %>%
+total_days_per_month01 <- melt_data %>%
   group_by(month, water_year, position) %>%
-  summarise(days_per_month = sum(n_days_low))
+  summarise(days_per_month = sum(n_days))
 
-## count days in each year for time thing
-total_days_per_year01 <- total_days01 %>%
-  group_by(water_year) %>%
-  summarise(days_per_water_year = sum(n_days_low)) %>%
-  mutate(suitablility = ifelse(days_per_water_year >= 85 & days_per_water_year <= 280, "Yes", "No"))
+# ## count days in each year for time thing
+# total_days_per_year01 <- total_days_per_month01 %>%
+#   group_by(water_year) %>%
+#   summarise(days_per_water_year = sum(n_days_low)) %>%
+#   mutate(suitablility = ifelse(days_per_water_year >= 85 & days_per_water_year <= 280, "Yes", "No"))
 
 total_days <- total_days_per_month01
 head(total_days)

@@ -1,0 +1,21 @@
+,position,season,Time_Period,Species,Life_Stage,Hydraulic,MaxPercentage
+1,Slice 1,critical,Annual,Arroyo Chub,Adult,Velocity,4.109589041
+2,Slice 2,critical,Annual,Arroyo Chub,Adult,Velocity,8.189655172
+3,Slice 3,critical,Annual,Arroyo Chub,Adult,Velocity,72.60273973
+4,Slice 4,critical,Annual,Arroyo Chub,Adult,Velocity,41.91780822
+5,Slice 1,critical,Annual,Arroyo Chub,Adult,Depth,1.643835616
+6,Slice 2,critical,Annual,Arroyo Chub,Adult,Depth,3.287671233
+7,Slice 3,critical,Annual,Arroyo Chub,Adult,Depth,6.575342466
+8,Slice 4,critical,Annual,Arroyo Chub,Adult,Depth,5.205479452
+9,Slice1,critical,Seasonal,Willow,Germination,Depth,1.639344262
+10,Slice2,critical,Seasonal,Willow,Germination,Depth,2.732240437
+11,Slice3,critical,Seasonal,Willow,Germination,Depth,100
+12,Slice4,critical,Seasonal,Willow,Germination,Depth,16.93989071
+13,Slice1,critical,Seasonal,Willow,Seedling,Depth,100
+14,Slice2,critical,Seasonal,Willow,Seedling,Depth,100
+15,Slice3,critical,Seasonal,Willow,Seedling,Depth,100
+16,Slice4,critical,Seasonal,Willow,Seedling,Depth,100
+17,Slice1,critical,Seasonal,Willow,Seedling,Shear Stress,100
+18,Slice2,critical,Seasonal,Willow,Seedling,Shear Stress,100
+19,Slice3,critical,Seasonal,Willow,Seedling,Shear Stress,100
+20,Slice4,critical,Seasonal,Willow,Seedling,Shear Stress,100

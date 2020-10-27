@@ -1,0 +1,6 @@
+Species,Life_Stage,Hydraulic,Q (cms)
+Willow,Seedling,Shear Stress,<1
+Willow,Seedling,Depth,<0.6
+Arroyo Chub,Adult,Velocity,<0.5
+Arroyo Chub,Adult,Depth,2 to 10
+Willow,Germination,Depth,> 0.02
