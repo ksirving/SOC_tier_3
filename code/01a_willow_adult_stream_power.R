@@ -124,7 +124,7 @@ for(n in 1: length(h)) {
     ###### calculate amount of time
     
     time_stats <- new_datax %>%
-      dplyr::group_by(water_year, season) %>%
+      dplyr::group_by(water_year) %>%
       dplyr::mutate(Annual = sum( Q < newx1)/length(DateTime)*100) %>%
       distinct(water_year, Annual) %>%
       mutate(position= paste(PositionName), Node = NodeName)
@@ -160,7 +160,7 @@ for(n in 1: length(h)) {
   
   write.csv(limits, paste("output_data/01_",NodeName,"_Willow_Adult_StreamPower_Q_limits.csv", sep=""))
   ## percentage time
-  melt_time<-reshape2::melt(time_statsx, id=c("season", "position", "water_year", "Node"))
+  melt_time<-reshape2::melt(time_statsx, id=c("position", "water_year", "Node"))
   
   melt_time <- melt_time %>% 
     rename( Probability_Threshold = variable) %>%
@@ -212,7 +212,7 @@ for(n in 1: length(h)) {
   total_days <- total_days %>%
     mutate(season = ifelse(month %in% non_critical, "non_critical", "critical") )
   
-  melt_days<-reshape2::melt(total_days, id=c("month_year", "water_year", "month", "season", "position", "Node"))
+  melt_days<-reshape2::melt(total_days, id=c("month_year", "water_year", "month",  "position", "Node"))
   melt_days <- melt_days %>%
     rename(Probability_Threshold = variable, n_days = value) %>%
     mutate(Species ="Willow", Life_Stage = "Adult", Hydraulic = "StreamPower")
@@ -225,7 +225,7 @@ for(n in 1: length(h)) {
 } ## end 1st loop
 
 
-# Shear Stress ------------------------------------------------------------
+# Germination Depth ------------------------------------------------------------
 
 for(n in 1: length(h)) {
   
@@ -354,16 +354,16 @@ for(n in 1: length(h)) {
   
   ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
   limits <- limits %>%
-    mutate(Species ="Willow", Life_Stage = "Adult", Hydraulic = "Depth", Node = NodeName)
+    mutate(Species ="Willow", Life_Stage = "Germination", Hydraulic = "Depth", Node = NodeName)
   
-  write.csv(limits, paste("output_data/01_",NodeName,"_Willow_Adult_Depth_Q_limits.csv", sep=""))
+  write.csv(limits, paste("output_data/01_",NodeName,"_Willow_Germination_Depth_Q_limits.csv", sep=""))
   ## percentage time
   melt_time<-reshape2::melt(time_statsx, id=c("season", "position", "water_year", "Node"))
   melt_time <- melt_time %>% 
     rename( Probability_Threshold = variable) %>%
-    mutate(Species ="Willow", Life_Stage = "Adult", Hydraulic = "Depth", Node = NodeName)
+    mutate(Species ="Willow", Life_Stage = "Germination", Hydraulic = "Depth", Node = NodeName)
   head(melt_time)
-  write.csv(melt_time, paste("output_data/01_", NodeName, "_Willow_Adult_Depth_time_stats.csv", sep=""))
+  write.csv(melt_time, paste("output_data/01_", NodeName, "_Willow_Germination_Depth_time_stats.csv", sep=""))
   
   ### days per month
   days_data <- select(days_data, c(Q, month, water_year, day, ID01, Mid, position, DateTime, Node) )# all probs
@@ -409,10 +409,10 @@ for(n in 1: length(h)) {
   melt_days<-reshape2::melt(total_days, id=c("month_year", "water_year", "month", "season", "position", "Node"))
   melt_days <- melt_days %>%
     rename(Probability_Threshold = variable, n_days = value) %>%
-    mutate(Species ="Willow", Life_Stage = "Adult", Hydraulic = "Depth")
+    mutate(Species ="Willow", Life_Stage = "Germination", Hydraulic = "Depth")
   head(melt_days)
   ## save df
-  write.csv(melt_days, paste("output_data/01_", NodeName, "_Willow_Adult_Depth_total_days_long.csv", sep="") )
+  write.csv(melt_days, paste("output_data/01_", NodeName, "_Willow_Germination_Depth_total_days_long.csv", sep="") )
   
   cat(paste("Finished Node", NodeName))
   
