@@ -1,0 +1,8 @@
+"","V1","V2","V3","V4","Species","Life_Stage","Hydraulic","Node"
+"1","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",0.0805600169603696,"Willow","Adult","Depth","L02-023"
