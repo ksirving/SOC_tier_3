@@ -16,7 +16,7 @@ library(gridExtra) # tile several plots next to each other
 library(scales)
 library(data.table)
 library(gdata)
-install.packages("pryr")
+# install.packages("pryr")
 library(pryr)
 getwd()
 
@@ -40,6 +40,7 @@ setwd("input_data/Hydraulics")
 
 h <- list.files(pattern="hydraulic")
 length(h) ## 32
+n=1
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 
@@ -111,7 +112,7 @@ for(n in 1: length(h)) {
   time_statsx <- NULL
   days_data <- NULL
   
-  
+  p=1
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -127,8 +128,8 @@ for(n in 1: length(h)) {
       filter(prob_fit == max(prob_fit)) #%>%
 
     peakQ  <- max(peak$Q)
-    min_limit <- filter(new_data, depth_cm >= 0.1)
-    min_limit <- min(min_limit$Q) 
+    min_limit <- filter(new_data, Q > 0)
+    min_limit <- min(min_limit$Q)
     min_limit
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
@@ -166,9 +167,12 @@ for(n in 1: length(h)) {
     ###### calculate amount of time
     
     time_stats <- new_datax %>%
+      dplyr::group_by(water_year) %>%
+      dplyr::mutate(Annual = sum(eval(thresh))/length(DateTime)*100) %>%
+      ungroup() %>%
       dplyr::group_by(water_year, season) %>%
       dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
-      distinct(water_year, Seasonal) %>%
+      distinct(water_year, Annual, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     
     
@@ -381,8 +385,9 @@ for(n in 1: length(h)) {
     
     peakQ  <- max(peak$Q)
     #### fix min limit - add depth data in main df
-    min_limit <- filter(new_data, depth_cm >= 0.1)
-    min_limit <- min(min_limit$Q) ## min_limit not needed for Chub as don't need flow
+    min_limit <- filter(new_data, Q > 0)
+    min_limit <- min(min_limit$Q)
+    min_limit
 
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
@@ -420,9 +425,12 @@ for(n in 1: length(h)) {
     ###### calculate amount of time
     
     time_stats <- new_data %>%
+      dplyr::group_by(water_year) %>%
+      dplyr::mutate(Annual = sum(eval(thresh))/length(DateTime)*100) %>%
+      ungroup() %>%
       dplyr::group_by(water_year, season) %>%
       dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
-      distinct(water_year, Seasonal) %>%
+      distinct(water_year, Annual, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     
     
