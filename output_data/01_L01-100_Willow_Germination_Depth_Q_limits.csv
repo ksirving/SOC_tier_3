@@ -1,4 +1,9 @@
-"","V1","V2","V3","V4","Species","Life_Stage","Hydraulic","Node"
+"","V1","V2","V3","V4","Type","Species","Life_Stage","Hydraulic","Node"
 "1","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
   need at least two non-NA values to interpolate
-",NA,0.247258001149721,5.4585908367868,"Willow","Germination","Depth","L01-100"
+",NA,0.247258001149721,5.4585908367868,"Q_limit1","Willow","Germination","Depth","L01-100"
+"2","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",NA,0.247258001149721,5.4585908367868,"Q_limit2","Willow","Germination","Depth","L01-100"
+"3","5",5,5,5,"Hydraulic_limit1","Willow","Germination","Depth","L01-100"
+"4","5",5,5,5,"Hydraulic_limit2","Willow","Germination","Depth","L01-100"

@@ -1,21 +1,637 @@
-,position,season,Time_Period,Species,Life_Stage,Hydraulic,MaxPercentage
-1,Slice 1,critical,Annual,Arroyo Chub,Adult,Velocity,4.109589041
-2,Slice 2,critical,Annual,Arroyo Chub,Adult,Velocity,8.189655172
-3,Slice 3,critical,Annual,Arroyo Chub,Adult,Velocity,72.60273973
-4,Slice 4,critical,Annual,Arroyo Chub,Adult,Velocity,41.91780822
-5,Slice 1,critical,Annual,Arroyo Chub,Adult,Depth,1.643835616
-6,Slice 2,critical,Annual,Arroyo Chub,Adult,Depth,3.287671233
-7,Slice 3,critical,Annual,Arroyo Chub,Adult,Depth,6.575342466
-8,Slice 4,critical,Annual,Arroyo Chub,Adult,Depth,5.205479452
-9,Slice1,critical,Seasonal,Willow,Germination,Depth,1.639344262
-10,Slice2,critical,Seasonal,Willow,Germination,Depth,2.732240437
-11,Slice3,critical,Seasonal,Willow,Germination,Depth,100
-12,Slice4,critical,Seasonal,Willow,Germination,Depth,16.93989071
-13,Slice1,critical,Seasonal,Willow,Seedling,Depth,100
-14,Slice2,critical,Seasonal,Willow,Seedling,Depth,100
-15,Slice3,critical,Seasonal,Willow,Seedling,Depth,100
-16,Slice4,critical,Seasonal,Willow,Seedling,Depth,100
-17,Slice1,critical,Seasonal,Willow,Seedling,Shear Stress,100
-18,Slice2,critical,Seasonal,Willow,Seedling,Shear Stress,100
-19,Slice3,critical,Seasonal,Willow,Seedling,Shear Stress,100
-20,Slice4,critical,Seasonal,Willow,Seedling,Shear Stress,100
+"","TimePeriod","position","Node","Species","Life_Stage","Hydraulic","MaxPercentage"
+"1","Annual","slice1","J01-010","Chub","Adult","Velocity",7.36301369863014
+"2","Annual","slice2","J01-010","Chub","Adult","Velocity",37.648401826484
+"3","Annual","slice3","J01-010","Chub","Adult","Velocity",12.283105022831
+"4","Annual","slice1","J01-020","Chub","Adult","Velocity",4.5662100456621
+"5","Annual","slice2","J01-020","Chub","Adult","Velocity",8.53881278538813
+"6","Annual","slice3","J01-020","Chub","Adult","Velocity",99.3607305936073
+"7","Annual","slice4","J01-020","Chub","Adult","Velocity",66.9406392694064
+"8","Annual","slice1","J01-030","Chub","Adult","Velocity",3.162100456621
+"9","Annual","slice2","J01-030","Chub","Adult","Velocity",5.59360730593607
+"10","Annual","slice3","J01-030","Chub","Adult","Velocity",99.5547945205479
+"11","Annual","slice4","J01-030","Chub","Adult","Velocity",6.39269406392694
+"12","Annual","slice5","J01-030","Chub","Adult","Velocity",0.353881278538813
+"13","Annual","slice1","J01-031","Chub","Adult","Velocity",4.39497716894977
+"14","Annual","slice2","J01-031","Chub","Adult","Velocity",36.4497716894977
+"15","Annual","slice3","J01-031","Chub","Adult","Velocity",1.05022831050228
+"16","Annual","slice1","J01-040","Chub","Adult","Velocity",2.59132420091324
+"17","Annual","slice2","J01-040","Chub","Adult","Velocity",54.2351598173516
+"18","Annual","slice3","J01-040","Chub","Adult","Velocity",21.3584474885845
+"19","Annual","slice4","J01-040","Chub","Adult","Velocity",100
+"20","Annual","slice5","J01-040","Chub","Adult","Velocity",2.81963470319635
+"21","Annual","slice1","J01-041","Chub","Adult","Velocity",3.51598173515982
+"22","Annual","slice2","J01-041","Chub","Adult","Velocity",99.7602739726027
+"23","Annual","slice3","J01-041","Chub","Adult","Velocity",4.25799086757991
+"24","Annual","slice1","J01-060","Chub","Adult","Velocity",8.96118721461187
+"25","Annual","slice2","J01-060","Chub","Adult","Velocity",99.486301369863
+"26","Annual","slice3","J01-060","Chub","Adult","Velocity",6.64383561643836
+"27","Annual","slice1","J01-061","Chub","Adult","Velocity",1.78082191780822
+"28","Annual","slice2","J01-061","Chub","Adult","Velocity",10.2054794520548
+"29","Annual","slice3","J01-061","Chub","Adult","Velocity",3.31050228310502
+"30","Annual","slice1","J01-062","Chub","Adult","Velocity",1.94063926940639
+"31","Annual","slice1","J01-070","Chub","Adult","Velocity",99.6803652968037
+"32","Annual","slice1","J01-080","Chub","Adult","Velocity",1.68949771689498
+"33","Annual","slice2","J01-080","Chub","Adult","Velocity",95.9927140255009
+"34","Annual","slice3","J01-080","Chub","Adult","Velocity",1.76940639269406
+"35","Annual","slice1","J01-090","Chub","Adult","Velocity",0
+"36","Annual","slice2","J01-090","Chub","Adult","Velocity",100
+"37","Annual","slice1","J01-091","Chub","Adult","Velocity",0.197557471264368
+"38","Annual","slice2","J01-091","Chub","Adult","Velocity",99.8173515981735
+"39","Annual","slice3","J01-091","Chub","Adult","Velocity",0.125718390804598
+"40","Annual","slice1","J01-100","Chub","Adult","Velocity",5.21689497716895
+"41","Annual","slice2","J01-100","Chub","Adult","Velocity",99.9885844748858
+"42","Annual","slice3","J01-100","Chub","Adult","Velocity",1.71232876712329
+"43","Annual","slice1","J03-010","Chub","Adult","Velocity",4.97716894977169
+"44","Annual","slice2","J03-010","Chub","Adult","Velocity",99.8744292237443
+"45","Annual","slice3","J03-010","Chub","Adult","Velocity",4.65753424657534
+"46","Annual","slice1","J04-010","Chub","Adult","Velocity",16.986301369863
+"47","Annual","slice2","J04-010","Chub","Adult","Velocity",7.32876712328767
+"48","Annual","slice3","J04-010","Chub","Adult","Velocity",100
+"49","Annual","slice4","J04-010","Chub","Adult","Velocity",5.87899543378995
+"50","Annual","slice1","J05-010","Chub","Adult","Velocity",100
+"51","Annual","slice2","J05-010","Chub","Adult","Velocity",4.20091324200913
+"52","Annual","slice3","J05-010","Chub","Adult","Velocity",0.251436781609195
+"53","Annual","slice4","J05-010","Chub","Adult","Velocity",0.23972602739726
+"54","Annual","slice1","J07-010","Chub","Adult","Velocity",58.7442922374429
+"55","Annual","slice2","J07-010","Chub","Adult","Velocity",1.66666666666667
+"56","Annual","slice3","J07-010","Chub","Adult","Velocity",5.36529680365297
+"57","Annual","slice1","L01-060","Chub","Adult","Velocity",0.273972602739726
+"58","Annual","slice2","L01-060","Chub","Adult","Velocity",50.4109589041096
+"59","Annual","slice3","L01-060","Chub","Adult","Velocity",0.547945205479452
+"60","Annual","slice1","L01-080","Chub","Adult","Velocity",3.01369863013699
+"61","Annual","slice2","L01-080","Chub","Adult","Velocity",15.3424657534247
+"62","Annual","slice3","L01-080","Chub","Adult","Velocity",98.9130434782609
+"63","Annual","slice1","L01-100","Chub","Adult","Velocity",0
+"64","Annual","slice2","L01-100","Chub","Adult","Velocity",0
+"65","Annual","slice3","L01-100","Chub","Adult","Velocity",30.958904109589
+"66","Annual","slice4","L01-100","Chub","Adult","Velocity",10.1369863013699
+"67","Annual","slice1","L02-010","Chub","Adult","Velocity",30.1369863013699
+"68","Annual","slice2","L02-010","Chub","Adult","Velocity",100
+"69","Annual","slice3","L02-010","Chub","Adult","Velocity",70.1369863013699
+"70","Annual","slice1","L02-020","Chub","Adult","Velocity",69.5890410958904
+"71","Annual","slice2","L02-020","Chub","Adult","Velocity",10.6849315068493
+"72","Annual","slice3","L02-020","Chub","Adult","Velocity",4.10958904109589
+"73","Annual","slice1","L02-021","Chub","Adult","Velocity",0
+"74","Annual","slice2","L02-021","Chub","Adult","Velocity",0
+"75","Annual","slice3","L02-021","Chub","Adult","Velocity",73.972602739726
+"76","Annual","slice4","L02-021","Chub","Adult","Velocity",0
+"77","Annual","slice1","L02-022","Chub","Adult","Velocity",0
+"78","Annual","slice2","L02-022","Chub","Adult","Velocity",33.972602739726
+"79","Annual","slice3","L02-022","Chub","Adult","Velocity",0
+"80","Annual","slice4","L02-022","Chub","Adult","Velocity",14.5205479452055
+"81","Annual","slice5","L02-022","Chub","Adult","Velocity",6.02739726027397
+"82","Annual","slice6","L02-022","Chub","Adult","Velocity",81.0958904109589
+"83","Annual","slice1","L02-023","Chub","Adult","Velocity",0
+"84","Annual","slice2","L02-023","Chub","Adult","Velocity",0
+"85","Annual","slice3","L02-023","Chub","Adult","Velocity",0
+"86","Annual","slice4","L02-023","Chub","Adult","Velocity",78.6301369863014
+"87","Annual","slice1","L02-030","Chub","Adult","Velocity",0
+"88","Annual","slice2","L02-030","Chub","Adult","Velocity",79.7260273972603
+"89","Annual","slice3","L02-030","Chub","Adult","Velocity",0
+"90","Annual","slice1","L02-031","Chub","Adult","Velocity",23.8356164383562
+"91","Annual","slice2","L02-031","Chub","Adult","Velocity",86.5753424657534
+"92","Annual","slice3","L02-031","Chub","Adult","Velocity",0
+"93","Annual","slice4","L02-031","Chub","Adult","Velocity",76.986301369863
+"94","Annual","slice1","L02-040","Chub","Adult","Velocity",2.46575342465753
+"95","Annual","slice2","L02-040","Chub","Adult","Velocity",21.3698630136986
+"96","Annual","slice3","L02-040","Chub","Adult","Velocity",2.73972602739726
+"97","Annual","slice4","L02-040","Chub","Adult","Velocity",77.8082191780822
+"98","Annual","slice1","L02-041","Chub","Adult","Velocity",0
+"99","Annual","slice2","L02-041","Chub","Adult","Velocity",25.4794520547945
+"100","Annual","slice3","L02-041","Chub","Adult","Velocity",0
+"101","Annual","slice1","L02-050","Chub","Adult","Velocity",3.28767123287671
+"102","Annual","slice2","L02-050","Chub","Adult","Velocity",46.8493150684932
+"103","Annual","slice3","L02-050","Chub","Adult","Velocity",53.4246575342466
+"104","Annual","slice1","L02-051","Chub","Adult","Velocity",0
+"105","Annual","slice2","L02-051","Chub","Adult","Velocity",38.6301369863014
+"106","Annual","slice3","L02-051","Chub","Adult","Velocity",0
+"107","Annual","slice1","J01-010","Willow","Adult","StreamPower",100
+"108","Annual","slice2","J01-010","Willow","Adult","StreamPower",100
+"109","Annual","slice3","J01-010","Willow","Adult","StreamPower",100
+"110","Annual","slice1","J01-020","Willow","Adult","StreamPower",100
+"111","Annual","slice2","J01-020","Willow","Adult","StreamPower",100
+"112","Annual","slice3","J01-020","Willow","Adult","StreamPower",100
+"113","Annual","slice4","J01-020","Willow","Adult","StreamPower",100
+"114","Annual","slice1","J01-030","Willow","Adult","StreamPower",100
+"115","Annual","slice2","J01-030","Willow","Adult","StreamPower",100
+"116","Annual","slice3","J01-030","Willow","Adult","StreamPower",100
+"117","Annual","slice4","J01-030","Willow","Adult","StreamPower",100
+"118","Annual","slice5","J01-030","Willow","Adult","StreamPower",100
+"119","Annual","slice1","J01-031","Willow","Adult","StreamPower",100
+"120","Annual","slice2","J01-031","Willow","Adult","StreamPower",100
+"121","Annual","slice3","J01-031","Willow","Adult","StreamPower",100
+"122","Annual","slice1","J01-040","Willow","Adult","StreamPower",100
+"123","Annual","slice2","J01-040","Willow","Adult","StreamPower",100
+"124","Annual","slice3","J01-040","Willow","Adult","StreamPower",100
+"125","Annual","slice4","J01-040","Willow","Adult","StreamPower",100
+"126","Annual","slice5","J01-040","Willow","Adult","StreamPower",100
+"127","Annual","slice1","J01-041","Willow","Adult","StreamPower",100
+"128","Annual","slice2","J01-041","Willow","Adult","StreamPower",100
+"129","Annual","slice3","J01-041","Willow","Adult","StreamPower",100
+"130","Annual","slice1","J01-060","Willow","Adult","StreamPower",100
+"131","Annual","slice2","J01-060","Willow","Adult","StreamPower",100
+"132","Annual","slice3","J01-060","Willow","Adult","StreamPower",100
+"133","Annual","slice1","J01-061","Willow","Adult","StreamPower",100
+"134","Annual","slice2","J01-061","Willow","Adult","StreamPower",100
+"135","Annual","slice3","J01-061","Willow","Adult","StreamPower",100
+"136","Annual","slice1","J01-062","Willow","Adult","StreamPower",100
+"137","Annual","slice1","J01-070","Willow","Adult","StreamPower",100
+"138","Annual","slice1","J01-080","Willow","Adult","StreamPower",100
+"139","Annual","slice2","J01-080","Willow","Adult","StreamPower",100
+"140","Annual","slice3","J01-080","Willow","Adult","StreamPower",100
+"141","Annual","slice1","J01-090","Willow","Adult","StreamPower",100
+"142","Annual","slice2","J01-090","Willow","Adult","StreamPower",100
+"143","Annual","slice1","J01-091","Willow","Adult","StreamPower",100
+"144","Annual","slice2","J01-091","Willow","Adult","StreamPower",100
+"145","Annual","slice3","J01-091","Willow","Adult","StreamPower",100
+"146","Annual","slice1","J01-100","Willow","Adult","StreamPower",100
+"147","Annual","slice2","J01-100","Willow","Adult","StreamPower",100
+"148","Annual","slice3","J01-100","Willow","Adult","StreamPower",100
+"149","Annual","slice1","J03-010","Willow","Adult","StreamPower",100
+"150","Annual","slice2","J03-010","Willow","Adult","StreamPower",100
+"151","Annual","slice3","J03-010","Willow","Adult","StreamPower",100
+"152","Annual","slice1","J04-010","Willow","Adult","StreamPower",100
+"153","Annual","slice2","J04-010","Willow","Adult","StreamPower",100
+"154","Annual","slice3","J04-010","Willow","Adult","StreamPower",100
+"155","Annual","slice4","J04-010","Willow","Adult","StreamPower",100
+"156","Annual","slice1","J05-010","Willow","Adult","StreamPower",100
+"157","Annual","slice2","J05-010","Willow","Adult","StreamPower",100
+"158","Annual","slice3","J05-010","Willow","Adult","StreamPower",100
+"159","Annual","slice4","J05-010","Willow","Adult","StreamPower",100
+"160","Annual","slice1","J07-010","Willow","Adult","StreamPower",100
+"161","Annual","slice2","J07-010","Willow","Adult","StreamPower",100
+"162","Annual","slice3","J07-010","Willow","Adult","StreamPower",100
+"163","Annual","slice1","L01-060","Willow","Adult","StreamPower",100
+"164","Annual","slice2","L01-060","Willow","Adult","StreamPower",100
+"165","Annual","slice3","L01-060","Willow","Adult","StreamPower",100
+"166","Annual","slice1","L01-080","Willow","Adult","StreamPower",100
+"167","Annual","slice2","L01-080","Willow","Adult","StreamPower",100
+"168","Annual","slice3","L01-080","Willow","Adult","StreamPower",100
+"169","Annual","slice1","L01-100","Willow","Adult","StreamPower",100
+"170","Annual","slice2","L01-100","Willow","Adult","StreamPower",100
+"171","Annual","slice3","L01-100","Willow","Adult","StreamPower",100
+"172","Annual","slice4","L01-100","Willow","Adult","StreamPower",100
+"173","Annual","slice1","L02-010","Willow","Adult","StreamPower",100
+"174","Annual","slice2","L02-010","Willow","Adult","StreamPower",100
+"175","Annual","slice3","L02-010","Willow","Adult","StreamPower",100
+"176","Annual","slice1","L02-020","Willow","Adult","StreamPower",100
+"177","Annual","slice2","L02-020","Willow","Adult","StreamPower",100
+"178","Annual","slice3","L02-020","Willow","Adult","StreamPower",100
+"179","Annual","slice1","L02-021","Willow","Adult","StreamPower",100
+"180","Annual","slice2","L02-021","Willow","Adult","StreamPower",100
+"181","Annual","slice3","L02-021","Willow","Adult","StreamPower",100
+"182","Annual","slice4","L02-021","Willow","Adult","StreamPower",100
+"183","Annual","slice1","L02-022","Willow","Adult","StreamPower",100
+"184","Annual","slice2","L02-022","Willow","Adult","StreamPower",100
+"185","Annual","slice3","L02-022","Willow","Adult","StreamPower",100
+"186","Annual","slice4","L02-022","Willow","Adult","StreamPower",100
+"187","Annual","slice5","L02-022","Willow","Adult","StreamPower",100
+"188","Annual","slice6","L02-022","Willow","Adult","StreamPower",100
+"189","Annual","slice1","L02-023","Willow","Adult","StreamPower",100
+"190","Annual","slice2","L02-023","Willow","Adult","StreamPower",100
+"191","Annual","slice3","L02-023","Willow","Adult","StreamPower",100
+"192","Annual","slice4","L02-023","Willow","Adult","StreamPower",100
+"193","Annual","slice1","L02-030","Willow","Adult","StreamPower",100
+"194","Annual","slice2","L02-030","Willow","Adult","StreamPower",100
+"195","Annual","slice3","L02-030","Willow","Adult","StreamPower",100
+"196","Annual","slice1","L02-031","Willow","Adult","StreamPower",100
+"197","Annual","slice2","L02-031","Willow","Adult","StreamPower",100
+"198","Annual","slice3","L02-031","Willow","Adult","StreamPower",100
+"199","Annual","slice4","L02-031","Willow","Adult","StreamPower",100
+"200","Annual","slice1","L02-040","Willow","Adult","StreamPower",100
+"201","Annual","slice2","L02-040","Willow","Adult","StreamPower",100
+"202","Annual","slice3","L02-040","Willow","Adult","StreamPower",100
+"203","Annual","slice4","L02-040","Willow","Adult","StreamPower",100
+"204","Annual","slice1","L02-041","Willow","Adult","StreamPower",100
+"205","Annual","slice2","L02-041","Willow","Adult","StreamPower",100
+"206","Annual","slice3","L02-041","Willow","Adult","StreamPower",100
+"207","Annual","slice1","L02-050","Willow","Adult","StreamPower",100
+"208","Annual","slice2","L02-050","Willow","Adult","StreamPower",100
+"209","Annual","slice3","L02-050","Willow","Adult","StreamPower",100
+"210","Annual","slice1","L02-051","Willow","Adult","StreamPower",100
+"211","Annual","slice2","L02-051","Willow","Adult","StreamPower",100
+"212","Annual","slice3","L02-051","Willow","Adult","StreamPower",100
+"213","Annual","slice1","J01-010","Chub","Adult","Depth",5.662100456621
+"214","Annual","slice2","J01-010","Chub","Adult","Depth",6.78082191780822
+"215","Annual","slice3","J01-010","Chub","Adult","Depth",5.54794520547945
+"216","Annual","slice1","J01-020","Chub","Adult","Depth",2.46575342465753
+"217","Annual","slice2","J01-020","Chub","Adult","Depth",4.54337899543379
+"218","Annual","slice3","J01-020","Chub","Adult","Depth",12.648401826484
+"219","Annual","slice4","J01-020","Chub","Adult","Depth",6.99771689497717
+"220","Annual","slice1","J01-030","Chub","Adult","Depth",0.308219178082192
+"221","Annual","slice2","J01-030","Chub","Adult","Depth",0.502283105022831
+"222","Annual","slice3","J01-030","Chub","Adult","Depth",1.64383561643836
+"223","Annual","slice4","J01-030","Chub","Adult","Depth",0.547945205479452
+"224","Annual","slice5","J01-030","Chub","Adult","Depth",0.102739726027397
+"225","Annual","slice1","J01-031","Chub","Adult","Depth",0.182648401826484
+"226","Annual","slice2","J01-031","Chub","Adult","Depth",0.376712328767123
+"227","Annual","slice3","J01-031","Chub","Adult","Depth",0.0684931506849315
+"228","Annual","slice1","J01-040","Chub","Adult","Depth",1.60958904109589
+"229","Annual","slice2","J01-040","Chub","Adult","Depth",7.61415525114155
+"230","Annual","slice3","J01-040","Chub","Adult","Depth",6.05022831050228
+"231","Annual","slice4","J01-040","Chub","Adult","Depth",8.92694063926941
+"232","Annual","slice5","J01-040","Chub","Adult","Depth",1.71232876712329
+"233","Annual","slice1","J01-041","Chub","Adult","Depth",1.81506849315068
+"234","Annual","slice2","J01-041","Chub","Adult","Depth",6.08447488584475
+"235","Annual","slice3","J01-041","Chub","Adult","Depth",2.05479452054794
+"236","Annual","slice1","J01-060","Chub","Adult","Depth",3.11643835616438
+"237","Annual","slice2","J01-060","Chub","Adult","Depth",6.23287671232877
+"238","Annual","slice3","J01-060","Chub","Adult","Depth",2.65981735159817
+"239","Annual","slice1","J01-061","Chub","Adult","Depth",0.69634703196347
+"240","Annual","slice2","J01-061","Chub","Adult","Depth",2.46575342465753
+"241","Annual","slice3","J01-061","Chub","Adult","Depth",1.51826484018265
+"242","Annual","slice1","J01-062","Chub","Adult","Depth",0.388127853881279
+"243","Annual","slice1","J01-070","Chub","Adult","Depth",2.57990867579909
+"244","Annual","slice1","J01-080","Chub","Adult","Depth",0.251436781609195
+"245","Annual","slice2","J01-080","Chub","Adult","Depth",2.59132420091324
+"246","Annual","slice3","J01-080","Chub","Adult","Depth",0.269396551724138
+"247","Annual","slice1","J01-090","Chub","Adult","Depth",0
+"248","Annual","slice2","J01-090","Chub","Adult","Depth",3.34474885844749
+"249","Annual","slice1","J01-091","Chub","Adult","Depth",0.0538793103448276
+"250","Annual","slice2","J01-091","Chub","Adult","Depth",0.901826484018265
+"251","Annual","slice3","J01-091","Chub","Adult","Depth",0.0359195402298851
+"252","Annual","slice1","J01-100","Chub","Adult","Depth",0.205479452054795
+"253","Annual","slice2","J01-100","Chub","Adult","Depth",0.28735632183908
+"254","Annual","slice3","J01-100","Chub","Adult","Depth",0.161637931034483
+"255","Annual","slice1","J03-010","Chub","Adult","Depth",1.66666666666667
+"256","Annual","slice2","J03-010","Chub","Adult","Depth",4.08675799086758
+"257","Annual","slice3","J03-010","Chub","Adult","Depth",1.58675799086758
+"258","Annual","slice1","J04-010","Chub","Adult","Depth",4.41780821917808
+"259","Annual","slice2","J04-010","Chub","Adult","Depth",3.78995433789954
+"260","Annual","slice3","J04-010","Chub","Adult","Depth",7.08904109589041
+"261","Annual","slice4","J04-010","Chub","Adult","Depth",3.41324200913242
+"262","Annual","slice1","J05-010","Chub","Adult","Depth",2.34018264840183
+"263","Annual","slice2","J05-010","Chub","Adult","Depth",1.00456621004566
+"264","Annual","slice3","J05-010","Chub","Adult","Depth",0
+"265","Annual","slice4","J05-010","Chub","Adult","Depth",0
+"266","Annual","slice1","J07-010","Chub","Adult","Depth",0.376712328767123
+"267","Annual","slice2","J07-010","Chub","Adult","Depth",0.148401826484018
+"268","Annual","slice3","J07-010","Chub","Adult","Depth",0.23972602739726
+"269","Annual","slice1","L01-060","Chub","Adult","Depth",0
+"270","Annual","slice2","L01-060","Chub","Adult","Depth",9.31506849315068
+"271","Annual","slice3","L01-060","Chub","Adult","Depth",0
+"272","Annual","slice1","L01-080","Chub","Adult","Depth",0
+"273","Annual","slice2","L01-080","Chub","Adult","Depth",0.821917808219178
+"274","Annual","slice3","L01-080","Chub","Adult","Depth",6.02739726027397
+"275","Annual","slice1","L01-100","Chub","Adult","Depth",0
+"276","Annual","slice2","L01-100","Chub","Adult","Depth",0
+"277","Annual","slice3","L01-100","Chub","Adult","Depth",1.91780821917808
+"278","Annual","slice4","L01-100","Chub","Adult","Depth",0
+"279","Annual","slice1","L02-010","Chub","Adult","Depth",4.93150684931507
+"280","Annual","slice2","L02-010","Chub","Adult","Depth",11.5068493150685
+"281","Annual","slice3","L02-010","Chub","Adult","Depth",9.31506849315068
+"282","Annual","slice1","L02-020","Chub","Adult","Depth",23.8356164383562
+"283","Annual","slice2","L02-020","Chub","Adult","Depth",4.10958904109589
+"284","Annual","slice3","L02-020","Chub","Adult","Depth",0.273972602739726
+"285","Annual","slice1","L02-021","Chub","Adult","Depth",0
+"286","Annual","slice2","L02-021","Chub","Adult","Depth",0
+"287","Annual","slice3","L02-021","Chub","Adult","Depth",24.9315068493151
+"288","Annual","slice4","L02-021","Chub","Adult","Depth",0
+"289","Annual","slice1","L02-022","Chub","Adult","Depth",0
+"290","Annual","slice2","L02-022","Chub","Adult","Depth",4.38356164383562
+"291","Annual","slice3","L02-022","Chub","Adult","Depth",0
+"292","Annual","slice4","L02-022","Chub","Adult","Depth",0.273972602739726
+"293","Annual","slice5","L02-022","Chub","Adult","Depth",0
+"294","Annual","slice6","L02-022","Chub","Adult","Depth",11.5068493150685
+"295","Annual","slice1","L02-023","Chub","Adult","Depth",0
+"296","Annual","slice2","L02-023","Chub","Adult","Depth",0
+"297","Annual","slice3","L02-023","Chub","Adult","Depth",0
+"298","Annual","slice4","L02-023","Chub","Adult","Depth",21.0958904109589
+"299","Annual","slice1","L02-030","Chub","Adult","Depth",0
+"300","Annual","slice2","L02-030","Chub","Adult","Depth",13.6986301369863
+"301","Annual","slice3","L02-030","Chub","Adult","Depth",0
+"302","Annual","slice1","L02-031","Chub","Adult","Depth",4.93150684931507
+"303","Annual","slice2","L02-031","Chub","Adult","Depth",23.013698630137
+"304","Annual","slice3","L02-031","Chub","Adult","Depth",0
+"305","Annual","slice4","L02-031","Chub","Adult","Depth",17.2602739726027
+"306","Annual","slice1","L02-040","Chub","Adult","Depth",0
+"307","Annual","slice2","L02-040","Chub","Adult","Depth",2.73972602739726
+"308","Annual","slice3","L02-040","Chub","Adult","Depth",0
+"309","Annual","slice4","L02-040","Chub","Adult","Depth",16.1643835616438
+"310","Annual","slice1","L02-041","Chub","Adult","Depth",0
+"311","Annual","slice2","L02-041","Chub","Adult","Depth",18.9041095890411
+"312","Annual","slice3","L02-041","Chub","Adult","Depth",0
+"313","Annual","slice1","L02-050","Chub","Adult","Depth",0
+"314","Annual","slice2","L02-050","Chub","Adult","Depth",2.73972602739726
+"315","Annual","slice3","L02-050","Chub","Adult","Depth",2.73972602739726
+"316","Annual","slice1","L02-051","Chub","Adult","Depth",0
+"317","Annual","slice2","L02-051","Chub","Adult","Depth",0
+"318","Annual","slice3","L02-051","Chub","Adult","Depth",0
+"319","critical","slice1","J01-010","Willow","Germination","Depth",5.91985428051002
+"320","critical","slice2","J01-010","Willow","Germination","Depth",100
+"321","critical","slice3","J01-010","Willow","Germination","Depth",6.98998178506375
+"322","critical","slice1","J01-020","Willow","Germination","Depth",0.63752276867031
+"323","critical","slice2","J01-020","Willow","Germination","Depth",1.07012750455373
+"324","critical","slice3","J01-020","Willow","Germination","Depth",100
+"325","critical","slice4","J01-020","Willow","Germination","Depth",8.37887067395264
+"326","critical","slice1","J01-030","Willow","Germination","Depth",0.0683060109289618
+"327","critical","slice2","J01-030","Willow","Germination","Depth",0.250455373406193
+"328","critical","slice3","J01-030","Willow","Germination","Depth",2.3224043715847
+"329","critical","slice4","J01-030","Willow","Germination","Depth",0.432604735883424
+"330","critical","slice5","J01-030","Willow","Germination","Depth",0
+"331","critical","slice1","J01-031","Willow","Germination","Depth",0.341530054644809
+"332","critical","slice2","J01-031","Willow","Germination","Depth",0.683060109289617
+"333","critical","slice3","J01-031","Willow","Germination","Depth",0.0455373406193078
+"334","critical","slice1","J01-040","Willow","Germination","Depth",0.318761384335155
+"335","critical","slice2","J01-040","Willow","Germination","Depth",38.615664845173
+"336","critical","slice3","J01-040","Willow","Germination","Depth",4.28051001821494
+"337","critical","slice4","J01-040","Willow","Germination","Depth",100
+"338","critical","slice5","J01-040","Willow","Germination","Depth",0.364298724954463
+"339","critical","slice1","J01-041","Willow","Germination","Depth",0.364298724954463
+"340","critical","slice2","J01-041","Willow","Germination","Depth",59.7905282331512
+"341","critical","slice3","J01-041","Willow","Germination","Depth",0.546448087431694
+"342","critical","slice1","J01-060","Willow","Germination","Depth",1.70765027322404
+"343","critical","slice2","J01-060","Willow","Germination","Depth",100
+"344","critical","slice3","J01-060","Willow","Germination","Depth",0.933515482695811
+"345","critical","slice1","J01-061","Willow","Germination","Depth",0.250455373406193
+"346","critical","slice2","J01-061","Willow","Germination","Depth",1.79872495446266
+"347","critical","slice3","J01-061","Willow","Germination","Depth",0.52367941712204
+"348","critical","slice1","J01-062","Willow","Germination","Depth",0.11384335154827
+"349","critical","slice1","J01-070","Willow","Germination","Depth",3.5063752276867
+"350","critical","slice1","J01-080","Willow","Germination","Depth",0.0910746812386157
+"351","critical","slice2","J01-080","Willow","Germination","Depth",3.32422586520947
+"352","critical","slice3","J01-080","Willow","Germination","Depth",0.0910746812386157
+"353","critical","slice1","J01-090","Willow","Germination","Depth",0
+"354","critical","slice2","J01-090","Willow","Germination","Depth",4.73588342440801
+"355","critical","slice1","J01-091","Willow","Germination","Depth",0
+"356","critical","slice2","J01-091","Willow","Germination","Depth",1.68488160291439
+"357","critical","slice3","J01-091","Willow","Germination","Depth",0
+"358","critical","slice1","J01-100","Willow","Germination","Depth",0.0910746812386157
+"359","critical","slice2","J01-100","Willow","Germination","Depth",0.865209471766849
+"360","critical","slice3","J01-100","Willow","Germination","Depth",0.0455373406193078
+"361","critical","slice1","J03-010","Willow","Germination","Depth",0.887978142076503
+"362","critical","slice2","J03-010","Willow","Germination","Depth",100
+"363","critical","slice3","J03-010","Willow","Germination","Depth",0.796903460837887
+"364","critical","slice1","J04-010","Willow","Germination","Depth",5.96539162112933
+"365","critical","slice2","J04-010","Willow","Germination","Depth",1.4344262295082
+"366","critical","slice3","J04-010","Willow","Germination","Depth",100
+"367","critical","slice4","J04-010","Willow","Germination","Depth",1.11566484517304
+"368","critical","slice1","J05-010","Willow","Germination","Depth",2.04918032786885
+"369","critical","slice2","J05-010","Willow","Germination","Depth",0.478142076502732
+"370","critical","slice3","J05-010","Willow","Germination","Depth",0.0227686703096539
+"371","critical","slice4","J05-010","Willow","Germination","Depth",0.0227686703096539
+"372","critical","slice1","J07-010","Willow","Germination","Depth",0.546448087431694
+"373","critical","slice2","J07-010","Willow","Germination","Depth",0.11384335154827
+"374","critical","slice3","J07-010","Willow","Germination","Depth",0.318761384335155
+"375","critical","slice1","L01-060","Willow","Germination","Depth",0
+"376","critical","slice2","L01-060","Willow","Germination","Depth",4.37158469945355
+"377","critical","slice3","L01-060","Willow","Germination","Depth",0
+"378","critical","slice1","L01-080","Willow","Germination","Depth",0.546448087431694
+"379","critical","slice2","L01-080","Willow","Germination","Depth",1.09289617486339
+"380","critical","slice3","L01-080","Willow","Germination","Depth",3.27868852459016
+"381","critical","slice1","L01-100","Willow","Germination","Depth",0
+"382","critical","slice2","L01-100","Willow","Germination","Depth",0
+"383","critical","slice3","L01-100","Willow","Germination","Depth",1.09289617486339
+"384","critical","slice4","L01-100","Willow","Germination","Depth",0
+"385","critical","slice1","L02-010","Willow","Germination","Depth",2.18579234972678
+"386","critical","slice2","L02-010","Willow","Germination","Depth",18.5792349726776
+"387","critical","slice3","L02-010","Willow","Germination","Depth",14.7540983606557
+"388","critical","slice1","L02-020","Willow","Germination","Depth",74.3169398907104
+"389","critical","slice2","L02-020","Willow","Germination","Depth",0.546448087431694
+"390","critical","slice3","L02-020","Willow","Germination","Depth",0
+"391","critical","slice1","L02-021","Willow","Germination","Depth",0
+"392","critical","slice2","L02-021","Willow","Germination","Depth",0
+"393","critical","slice3","L02-021","Willow","Germination","Depth",61.2021857923497
+"394","critical","slice4","L02-021","Willow","Germination","Depth",0
+"395","critical","slice1","L02-022","Willow","Germination","Depth",0
+"396","critical","slice2","L02-022","Willow","Germination","Depth",2.73224043715847
+"397","critical","slice3","L02-022","Willow","Germination","Depth",0
+"398","critical","slice4","L02-022","Willow","Germination","Depth",0.546448087431694
+"399","critical","slice5","L02-022","Willow","Germination","Depth",0
+"400","critical","slice6","L02-022","Willow","Germination","Depth",14.207650273224
+"401","critical","slice1","L02-023","Willow","Germination","Depth",0
+"402","critical","slice2","L02-023","Willow","Germination","Depth",0
+"403","critical","slice3","L02-023","Willow","Germination","Depth",0
+"404","critical","slice4","L02-023","Willow","Germination","Depth",51.9125683060109
+"405","critical","slice1","L02-030","Willow","Germination","Depth",0
+"406","critical","slice2","L02-030","Willow","Germination","Depth",18.0327868852459
+"407","critical","slice3","L02-030","Willow","Germination","Depth",0
+"408","critical","slice1","L02-031","Willow","Germination","Depth",2.18579234972678
+"409","critical","slice2","L02-031","Willow","Germination","Depth",71.5846994535519
+"410","critical","slice3","L02-031","Willow","Germination","Depth",0
+"411","critical","slice4","L02-031","Willow","Germination","Depth",34.9726775956284
+"412","critical","slice1","L02-040","Willow","Germination","Depth",0
+"413","critical","slice2","L02-040","Willow","Germination","Depth",0.546448087431694
+"414","critical","slice3","L02-040","Willow","Germination","Depth",0
+"415","critical","slice4","L02-040","Willow","Germination","Depth",27.3224043715847
+"416","critical","slice1","L02-041","Willow","Germination","Depth",0
+"417","critical","slice2","L02-041","Willow","Germination","Depth",1.63934426229508
+"418","critical","slice3","L02-041","Willow","Germination","Depth",0
+"419","critical","slice1","L02-050","Willow","Germination","Depth",0.546448087431694
+"420","critical","slice2","L02-050","Willow","Germination","Depth",3.27868852459016
+"421","critical","slice3","L02-050","Willow","Germination","Depth",34.9726775956284
+"422","critical","slice1","L02-051","Willow","Germination","Depth",0
+"423","critical","slice2","L02-051","Willow","Germination","Depth",2.18579234972678
+"424","critical","slice3","L02-051","Willow","Germination","Depth",0
+"425","critical","slice1","J01-010","Willow","Seedling","Depth",0.455373406193078
+"426","critical","slice2","J01-010","Willow","Seedling","Depth",0.979052823315118
+"427","critical","slice3","J01-010","Willow","Seedling","Depth",0.751366120218579
+"428","critical","slice1","J01-020","Willow","Seedling","Depth",0.11384335154827
+"429","critical","slice2","J01-020","Willow","Seedling","Depth",0.455373406193078
+"430","critical","slice3","J01-020","Willow","Seedling","Depth",1.36612021857923
+"431","critical","slice4","J01-020","Willow","Seedling","Depth",0.865209471766849
+"432","critical","slice1","J01-030","Willow","Seedling","Depth",0.0227686703096539
+"433","critical","slice2","J01-030","Willow","Seedling","Depth",0.0227686703096539
+"434","critical","slice3","J01-030","Willow","Seedling","Depth",0.0455373406193078
+"435","critical","slice4","J01-030","Willow","Seedling","Depth",0.0227686703096539
+"436","critical","slice5","J01-030","Willow","Seedling","Depth",0
+"437","critical","slice1","J01-031","Willow","Seedling","Depth",0
+"438","critical","slice2","J01-031","Willow","Seedling","Depth",0
+"439","critical","slice3","J01-031","Willow","Seedling","Depth",0
+"440","critical","slice1","J01-040","Willow","Seedling","Depth",0.11384335154827
+"441","critical","slice2","J01-040","Willow","Seedling","Depth",0.933515482695811
+"442","critical","slice3","J01-040","Willow","Seedling","Depth",0.933515482695811
+"443","critical","slice4","J01-040","Willow","Seedling","Depth",1.11566484517304
+"444","critical","slice5","J01-040","Willow","Seedling","Depth",0.11384335154827
+"445","critical","slice1","J01-041","Willow","Seedling","Depth",0.0683060109289618
+"446","critical","slice2","J01-041","Willow","Seedling","Depth",0.591985428051002
+"447","critical","slice3","J01-041","Willow","Seedling","Depth",0.159380692167577
+"448","critical","slice1","J01-060","Willow","Seedling","Depth",0.204918032786885
+"449","critical","slice2","J01-060","Willow","Seedling","Depth",0.546448087431694
+"450","critical","slice3","J01-060","Willow","Seedling","Depth",0.159380692167577
+"451","critical","slice1","J01-061","Willow","Seedling","Depth",0.0455373406193078
+"452","critical","slice2","J01-061","Willow","Seedling","Depth",0.318761384335155
+"453","critical","slice3","J01-061","Willow","Seedling","Depth",0.227686703096539
+"454","critical","slice1","J01-062","Willow","Seedling","Depth",0
+"455","critical","slice1","J01-070","Willow","Seedling","Depth",0.136612021857924
+"456","critical","slice1","J01-080","Willow","Seedling","Depth",0
+"457","critical","slice2","J01-080","Willow","Seedling","Depth",0.0910746812386157
+"458","critical","slice3","J01-080","Willow","Seedling","Depth",0
+"459","critical","slice1","J01-090","Willow","Seedling","Depth",0
+"460","critical","slice2","J01-090","Willow","Seedling","Depth",0.250455373406193
+"461","critical","slice1","J01-091","Willow","Seedling","Depth",0
+"462","critical","slice2","J01-091","Willow","Seedling","Depth",0.0455373406193078
+"463","critical","slice3","J01-091","Willow","Seedling","Depth",0
+"464","critical","slice1","J01-100","Willow","Seedling","Depth",0.0227686703096539
+"465","critical","slice2","J01-100","Willow","Seedling","Depth",0.0227686703096539
+"466","critical","slice3","J01-100","Willow","Seedling","Depth",0
+"467","critical","slice1","J03-010","Willow","Seedling","Depth",0.11384335154827
+"468","critical","slice2","J03-010","Willow","Seedling","Depth",0.52367941712204
+"469","critical","slice3","J03-010","Willow","Seedling","Depth",0.0455373406193078
+"470","critical","slice1","J04-010","Willow","Seedling","Depth",0.250455373406193
+"471","critical","slice2","J04-010","Willow","Seedling","Depth",0.432604735883424
+"472","critical","slice3","J04-010","Willow","Seedling","Depth",0.751366120218579
+"473","critical","slice4","J04-010","Willow","Seedling","Depth",0.159380692167577
+"474","critical","slice1","J05-010","Willow","Seedling","Depth",0.159380692167577
+"475","critical","slice2","J05-010","Willow","Seedling","Depth",0.0455373406193078
+"476","critical","slice3","J05-010","Willow","Seedling","Depth",0
+"477","critical","slice4","J05-010","Willow","Seedling","Depth",0
+"478","critical","slice1","J07-010","Willow","Seedling","Depth",0
+"479","critical","slice2","J07-010","Willow","Seedling","Depth",0
+"480","critical","slice3","J07-010","Willow","Seedling","Depth",0
+"481","critical","slice1","L01-060","Willow","Seedling","Depth",0
+"482","critical","slice2","L01-060","Willow","Seedling","Depth",0.546448087431694
+"483","critical","slice3","L01-060","Willow","Seedling","Depth",0
+"484","critical","slice1","L01-080","Willow","Seedling","Depth",0
+"485","critical","slice2","L01-080","Willow","Seedling","Depth",0
+"486","critical","slice3","L01-080","Willow","Seedling","Depth",0.546448087431694
+"487","critical","slice1","L01-100","Willow","Seedling","Depth",0
+"488","critical","slice2","L01-100","Willow","Seedling","Depth",0
+"489","critical","slice3","L01-100","Willow","Seedling","Depth",0
+"490","critical","slice4","L01-100","Willow","Seedling","Depth",0
+"491","critical","slice1","L02-010","Willow","Seedling","Depth",0
+"492","critical","slice2","L02-010","Willow","Seedling","Depth",0.546448087431694
+"493","critical","slice3","L02-010","Willow","Seedling","Depth",0.546448087431694
+"494","critical","slice1","L02-020","Willow","Seedling","Depth",1.09289617486339
+"495","critical","slice2","L02-020","Willow","Seedling","Depth",0
+"496","critical","slice3","L02-020","Willow","Seedling","Depth",0
+"497","critical","slice1","L02-021","Willow","Seedling","Depth",0
+"498","critical","slice2","L02-021","Willow","Seedling","Depth",0
+"499","critical","slice3","L02-021","Willow","Seedling","Depth",2.18579234972678
+"500","critical","slice4","L02-021","Willow","Seedling","Depth",0
+"501","critical","slice1","L02-022","Willow","Seedling","Depth",0
+"502","critical","slice2","L02-022","Willow","Seedling","Depth",0
+"503","critical","slice3","L02-022","Willow","Seedling","Depth",0
+"504","critical","slice4","L02-022","Willow","Seedling","Depth",0
+"505","critical","slice5","L02-022","Willow","Seedling","Depth",0
+"506","critical","slice6","L02-022","Willow","Seedling","Depth",0
+"507","critical","slice1","L02-023","Willow","Seedling","Depth",0
+"508","critical","slice2","L02-023","Willow","Seedling","Depth",0
+"509","critical","slice3","L02-023","Willow","Seedling","Depth",0
+"510","critical","slice4","L02-023","Willow","Seedling","Depth",1.09289617486339
+"511","critical","slice1","L02-030","Willow","Seedling","Depth",0
+"512","critical","slice2","L02-030","Willow","Seedling","Depth",0
+"513","critical","slice3","L02-030","Willow","Seedling","Depth",0
+"514","critical","slice1","L02-031","Willow","Seedling","Depth",0
+"515","critical","slice2","L02-031","Willow","Seedling","Depth",0
+"516","critical","slice3","L02-031","Willow","Seedling","Depth",0
+"517","critical","slice4","L02-031","Willow","Seedling","Depth",0
+"518","critical","slice1","L02-040","Willow","Seedling","Depth",0
+"519","critical","slice2","L02-040","Willow","Seedling","Depth",0
+"520","critical","slice3","L02-040","Willow","Seedling","Depth",0
+"521","critical","slice4","L02-040","Willow","Seedling","Depth",0
+"522","critical","slice1","L02-041","Willow","Seedling","Depth",0
+"523","critical","slice2","L02-041","Willow","Seedling","Depth",0
+"524","critical","slice3","L02-041","Willow","Seedling","Depth",0
+"525","critical","slice1","L02-050","Willow","Seedling","Depth",0
+"526","critical","slice2","L02-050","Willow","Seedling","Depth",0
+"527","critical","slice3","L02-050","Willow","Seedling","Depth",0
+"528","critical","slice1","L02-051","Willow","Seedling","Depth",0
+"529","critical","slice2","L02-051","Willow","Seedling","Depth",0
+"530","critical","slice3","L02-051","Willow","Seedling","Depth",0
+"531","critical","slice1","J01-010","Willow","Seedling","Shear Stress",0
+"532","critical","slice2","J01-010","Willow","Seedling","Shear Stress",0
+"533","critical","slice3","J01-010","Willow","Seedling","Shear Stress",0
+"534","critical","slice1","J01-020","Willow","Seedling","Shear Stress",0.11384335154827
+"535","critical","slice2","J01-020","Willow","Seedling","Shear Stress",0.546448087431694
+"536","critical","slice3","J01-020","Willow","Seedling","Shear Stress",1.91256830601093
+"537","critical","slice4","J01-020","Willow","Seedling","Shear Stress",1.20673952641166
+"538","critical","slice1","J01-030","Willow","Seedling","Shear Stress",0.0455373406193078
+"539","critical","slice2","J01-030","Willow","Seedling","Shear Stress",0.182149362477231
+"540","critical","slice3","J01-030","Willow","Seedling","Shear Stress",1.82149362477231
+"541","critical","slice4","J01-030","Willow","Seedling","Shear Stress",0.591985428051002
+"542","critical","slice5","J01-030","Willow","Seedling","Shear Stress",0.0227686703096539
+"543","critical","slice1","J01-031","Willow","Seedling","Shear Stress",0
+"544","critical","slice2","J01-031","Willow","Seedling","Shear Stress",0.0455373406193078
+"545","critical","slice3","J01-031","Willow","Seedling","Shear Stress",0
+"546","critical","slice1","J01-040","Willow","Seedling","Shear Stress",0
+"547","critical","slice2","J01-040","Willow","Seedling","Shear Stress",0.136612021857924
+"548","critical","slice3","J01-040","Willow","Seedling","Shear Stress",0.182149362477231
+"549","critical","slice4","J01-040","Willow","Seedling","Shear Stress",0.136612021857924
+"550","critical","slice5","J01-040","Willow","Seedling","Shear Stress",0
+"551","critical","slice1","J01-041","Willow","Seedling","Shear Stress",0.0455373406193078
+"552","critical","slice2","J01-041","Willow","Seedling","Shear Stress",0.591985428051002
+"553","critical","slice3","J01-041","Willow","Seedling","Shear Stress",0.11384335154827
+"554","critical","slice1","J01-060","Willow","Seedling","Shear Stress",0.387067395264117
+"555","critical","slice2","J01-060","Willow","Seedling","Shear Stress",1.77595628415301
+"556","critical","slice3","J01-060","Willow","Seedling","Shear Stress",0.455373406193078
+"557","critical","slice1","J01-061","Willow","Seedling","Shear Stress",0
+"558","critical","slice2","J01-061","Willow","Seedling","Shear Stress",0.0455373406193078
+"559","critical","slice3","J01-061","Willow","Seedling","Shear Stress",0
+"560","critical","slice1","J01-062","Willow","Seedling","Shear Stress",0.0455373406193078
+"561","critical","slice1","J01-070","Willow","Seedling","Shear Stress",0
+"562","critical","slice1","J01-080","Willow","Seedling","Shear Stress",0
+"563","critical","slice2","J01-080","Willow","Seedling","Shear Stress",0.387067395264117
+"564","critical","slice3","J01-080","Willow","Seedling","Shear Stress",0
+"565","critical","slice1","J01-090","Willow","Seedling","Shear Stress",0
+"566","critical","slice2","J01-090","Willow","Seedling","Shear Stress",0.865209471766849
+"567","critical","slice1","J01-091","Willow","Seedling","Shear Stress",0
+"568","critical","slice2","J01-091","Willow","Seedling","Shear Stress",1.63934426229508
+"569","critical","slice3","J01-091","Willow","Seedling","Shear Stress",0
+"570","critical","slice1","J01-100","Willow","Seedling","Shear Stress",0.0227686703096539
+"571","critical","slice2","J01-100","Willow","Seedling","Shear Stress",0.136612021857924
+"572","critical","slice3","J01-100","Willow","Seedling","Shear Stress",0.0227686703096539
+"573","critical","slice1","J03-010","Willow","Seedling","Shear Stress",0.0455373406193078
+"574","critical","slice2","J03-010","Willow","Seedling","Shear Stress",0.52367941712204
+"575","critical","slice3","J03-010","Willow","Seedling","Shear Stress",0.0455373406193078
+"576","critical","slice1","J04-010","Willow","Seedling","Shear Stress",0
+"577","critical","slice2","J04-010","Willow","Seedling","Shear Stress",0.0227686703096539
+"578","critical","slice3","J04-010","Willow","Seedling","Shear Stress",0.0227686703096539
+"579","critical","slice4","J04-010","Willow","Seedling","Shear Stress",0
+"580","critical","slice1","J05-010","Willow","Seedling","Shear Stress",0.11384335154827
+"581","critical","slice2","J05-010","Willow","Seedling","Shear Stress",0.0227686703096539
+"582","critical","slice3","J05-010","Willow","Seedling","Shear Stress",0
+"583","critical","slice4","J05-010","Willow","Seedling","Shear Stress",0
+"584","critical","slice1","J07-010","Willow","Seedling","Shear Stress",0.182149362477231
+"585","critical","slice2","J07-010","Willow","Seedling","Shear Stress",0.0227686703096539
+"586","critical","slice3","J07-010","Willow","Seedling","Shear Stress",0.11384335154827
+"587","critical","slice1","L01-060","Willow","Seedling","Shear Stress",0
+"588","critical","slice2","L01-060","Willow","Seedling","Shear Stress",2.18579234972678
+"589","critical","slice3","L01-060","Willow","Seedling","Shear Stress",0
+"590","critical","slice1","L01-080","Willow","Seedling","Shear Stress",0.546448087431694
+"591","critical","slice2","L01-080","Willow","Seedling","Shear Stress",1.63934426229508
+"592","critical","slice3","L01-080","Willow","Seedling","Shear Stress",3.27868852459016
+"593","critical","slice1","L01-100","Willow","Seedling","Shear Stress",0
+"594","critical","slice2","L01-100","Willow","Seedling","Shear Stress",0
+"595","critical","slice3","L01-100","Willow","Seedling","Shear Stress",2.73224043715847
+"596","critical","slice4","L01-100","Willow","Seedling","Shear Stress",0
+"597","critical","slice1","L02-010","Willow","Seedling","Shear Stress",0
+"598","critical","slice2","L02-010","Willow","Seedling","Shear Stress",1.63934426229508
+"599","critical","slice3","L02-010","Willow","Seedling","Shear Stress",1.09289617486339
+"600","critical","slice1","L02-020","Willow","Seedling","Shear Stress",2.18579234972678
+"601","critical","slice2","L02-020","Willow","Seedling","Shear Stress",0
+"602","critical","slice3","L02-020","Willow","Seedling","Shear Stress",0
+"603","critical","slice1","L02-021","Willow","Seedling","Shear Stress",0
+"604","critical","slice2","L02-021","Willow","Seedling","Shear Stress",0
+"605","critical","slice3","L02-021","Willow","Seedling","Shear Stress",2.18579234972678
+"606","critical","slice4","L02-021","Willow","Seedling","Shear Stress",0
+"607","critical","slice1","L02-022","Willow","Seedling","Shear Stress",0
+"608","critical","slice2","L02-022","Willow","Seedling","Shear Stress",0
+"609","critical","slice3","L02-022","Willow","Seedling","Shear Stress",0
+"610","critical","slice4","L02-022","Willow","Seedling","Shear Stress",0
+"611","critical","slice5","L02-022","Willow","Seedling","Shear Stress",0
+"612","critical","slice6","L02-022","Willow","Seedling","Shear Stress",0
+"613","critical","slice1","L02-023","Willow","Seedling","Shear Stress",0
+"614","critical","slice2","L02-023","Willow","Seedling","Shear Stress",0
+"615","critical","slice3","L02-023","Willow","Seedling","Shear Stress",0
+"616","critical","slice4","L02-023","Willow","Seedling","Shear Stress",2.73224043715847
+"617","critical","slice1","L02-030","Willow","Seedling","Shear Stress",0
+"618","critical","slice2","L02-030","Willow","Seedling","Shear Stress",3.82513661202186
+"619","critical","slice3","L02-030","Willow","Seedling","Shear Stress",0
+"620","critical","slice1","L02-031","Willow","Seedling","Shear Stress",0.546448087431694
+"621","critical","slice2","L02-031","Willow","Seedling","Shear Stress",2.18579234972678
+"622","critical","slice3","L02-031","Willow","Seedling","Shear Stress",0
+"623","critical","slice4","L02-031","Willow","Seedling","Shear Stress",2.18579234972678
+"624","critical","slice1","L02-040","Willow","Seedling","Shear Stress",0
+"625","critical","slice2","L02-040","Willow","Seedling","Shear Stress",0
+"626","critical","slice3","L02-040","Willow","Seedling","Shear Stress",0
+"627","critical","slice4","L02-040","Willow","Seedling","Shear Stress",2.18579234972678
+"628","critical","slice1","L02-041","Willow","Seedling","Shear Stress",0
+"629","critical","slice2","L02-041","Willow","Seedling","Shear Stress",0
+"630","critical","slice3","L02-041","Willow","Seedling","Shear Stress",0
+"631","critical","slice1","L02-050","Willow","Seedling","Shear Stress",0
+"632","critical","slice2","L02-050","Willow","Seedling","Shear Stress",2.18579234972678
+"633","critical","slice3","L02-050","Willow","Seedling","Shear Stress",1.09289617486339
+"634","critical","slice1","L02-051","Willow","Seedling","Shear Stress",0
+"635","critical","slice2","L02-051","Willow","Seedling","Shear Stress",0.546448087431694
+"636","critical","slice3","L02-051","Willow","Seedling","Shear Stress",0

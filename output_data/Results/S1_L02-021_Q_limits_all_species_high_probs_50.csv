@@ -1,0 +1,53 @@
+"","X","V1","V2","V3","V4","Type","Species","Life_Stage","Hydraulic","Node"
+"1",1,"25.1508421264799","25.1508421264799",25.1508421264799,"25.1508421264799","Q_limit1","Willow","Adult","StreamPower","L02-021"
+"2",2,"25.1508421264799","25.1508421264799",25.1508421264799,"25.1508421264799","Q_limit2","Willow","Adult","StreamPower","L02-021"
+"3",3,"4000","4000",4000,"4000","Hydraulic_limit1","Willow","Adult","StreamPower","L02-021"
+"4",4,"4000","4000",4000,"4000","Hydraulic_limit2","Willow","Adult","StreamPower","L02-021"
+"5",1,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",0.0565381610319263,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Q_limit1","Willow","Germination","Depth","L02-021"
+"6",2,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",0.0565381610319263,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Q_limit2","Willow","Germination","Depth","L02-021"
+"7",3,"5","5",5,"5","Hydraulic_limit1","Willow","Germination","Depth","L02-021"
+"8",4,"5","5",5,"5","Hydraulic_limit2","Willow","Germination","Depth","L02-021"
+"9",1,NA,NA,0.630501647424055,NA,"Q_limit1","Willow","Seedling","Depth","L02-021"
+"10",2,NA,NA,0.630501647424055,NA,"Q_limit2","Willow","Seedling","Depth","L02-021"
+"11",3,NA,NA,18.4014682855821,NA,"Hydraulic_limit1","Willow","Seedling","Depth","L02-021"
+"12",4,NA,NA,18.4014682855821,NA,"Hydraulic_limit2","Willow","Seedling","Depth","L02-021"
+"13",1,NA,NA,1.52009792153148,NA,"Q_limit1","Willow","Seedling","Depth","L02-021"
+"14",2,NA,NA,1.52009792153148,NA,"Q_limit2","Willow","Seedling","Depth","L02-021"
+"15",3,NA,NA,27.5199576759081,NA,"Hydraulic_limit1","Willow","Seedling","Depth","L02-021"
+"16",4,NA,NA,27.5199576759081,NA,"Hydraulic_limit2","Willow","Seedling","Depth","L02-021"
+"17",1,NA,NA,0.00191510007613257,NA,"Q_limit1","Willow","Seedling","Shear Stress","L02-021"
+"18",2,NA,NA,0.00191510007613257,NA,"Q_limit2","Willow","Seedling","Shear Stress","L02-021"
+"19",3,NA,NA,0.533455392809608,NA,"Hydraulic_limit1","Willow","Seedling","Shear Stress","L02-021"
+"20",4,NA,NA,0.533455392809608,NA,"Hydraulic_limit2","Willow","Seedling","Shear Stress","L02-021"
+"21",1,NA,NA,0.880540220924052,NA,"Q_limit1","Willow","Seedling","Shear Stress","L02-021"
+"22",2,NA,NA,0.880540220924052,NA,"Q_limit2","Willow","Seedling","Shear Stress","L02-021"
+"23",3,NA,NA,21.6303262316911,NA,"Hydraulic_limit1","Willow","Seedling","Shear Stress","L02-021"
+"24",4,NA,NA,21.6303262316911,NA,"Hydraulic_limit2","Willow","Seedling","Shear Stress","L02-021"
+"25",1,NA,NA,1.07023210631432,NA,"Q_limit1","Chub","Adult","Depth","L02-021"
+"26",2,NA,NA,3.11022227231873,NA,"Q_limit2","Chub","Adult","Depth","L02-021"
+"27",3,NA,NA,34.3765922649037,NA,"Hydraulic_limit1","Chub","Adult","Depth","L02-021"
+"28",4,NA,NA,57.4409216111933,NA,"Hydraulic_limit2","Chub","Adult","Depth","L02-021"
+"29",1,NA,NA,0.696916653979,NA,"Q_limit1","Chub","Adult","Depth","L02-021"
+"30",2,NA,NA,3.87606684790028,NA,"Q_limit2","Chub","Adult","Depth","L02-021"
+"31",3,NA,NA,27.95873678981,NA,"Hydraulic_limit1","Chub","Adult","Depth","L02-021"
+"32",4,NA,NA,63.8617386412293,NA,"Hydraulic_limit2","Chub","Adult","Depth","L02-021"
+"33",1,NA,NA,0.0324081176246039,NA,"Q_limit1","Chub","Adult","Velocity","L02-021"
+"34",2,NA,NA,0.22586654703147,NA,"Q_limit2","Chub","Adult","Velocity","L02-021"
+"35",3,NA,NA,0.293928095134641,NA,"Hydraulic_limit1","Chub","Adult","Velocity","L02-021"
+"36",4,NA,NA,0.685693391860441,NA,"Hydraulic_limit2","Chub","Adult","Velocity","L02-021"
+"37",1,NA,NA,0.00738283886459024,NA,"Q_limit1","Chub","Adult","Velocity","L02-021"
+"38",2,NA,NA,0.50785848390394,NA,"Q_limit2","Chub","Adult","Velocity","L02-021"
+"39",3,NA,NA,0.184929183659698,NA,"Hydraulic_limit1","Chub","Adult","Velocity","L02-021"
+"40",4,NA,NA,0.794692499138555,NA,"Hydraulic_limit2","Chub","Adult","Velocity","L02-021"

@@ -1,4 +1,0 @@
-"","V1","V2","V3","Species","Life_Stage","Hydraulic","Node"
-"1",NA,0.100808188733539,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
-  need at least two non-NA values to interpolate
-","Willow","Adult","Depth","L02-051"

@@ -77,6 +77,20 @@ for(p in 1: length(probs)) {
   }
   
 }
+
+# for(p in 1: length(probs)) {
+#   
+#   time_stats_seas$Suitability_Class50[p] = if(time_stats_seas$TimePercentage[p] >= 50) {
+#     paste("Low")
+#   } else  if(time_stats_seas$TimePercentage[p] >= 25 & time_stats_seas$TimePercentage[p] <= 75 ){
+#     paste("Partial")
+#   } else  if(time_stats_seas$TimePercentage[p] < 25){
+#     paste("High")
+#   } else {
+#     paste("Partial")
+#   }
+#   
+# }
 time_stats_seas
 
 

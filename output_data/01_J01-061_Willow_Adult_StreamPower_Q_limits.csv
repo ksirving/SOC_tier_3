@@ -1,2 +1,5 @@
-"","V1","V2","V3","Species","Life_Stage","Hydraulic","Node"
-"1",43.4506290360388,43.4506290360388,43.4506290360388,"Willow","Adult","StreamPower","J01-061"
+"","V1","V2","V3","Type","Species","Life_Stage","Hydraulic","Node"
+"1",43.4506290360388,43.4506290360388,43.4506290360388,"Q_limit1","Willow","Adult","StreamPower","J01-061"
+"2",43.4506290360388,43.4506290360388,43.4506290360388,"Q_limit2","Willow","Adult","StreamPower","J01-061"
+"3",4000,4000,4000,"Hydraulic_limit1","Willow","Adult","StreamPower","J01-061"
+"4",4000,4000,4000,"Hydraulic_limit2","Willow","Adult","StreamPower","J01-061"

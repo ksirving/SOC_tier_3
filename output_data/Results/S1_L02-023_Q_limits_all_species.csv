@@ -1,0 +1,37 @@
+"","X","V1","V2","V3","V4","Type","Species","Life_Stage","Hydraulic","Node"
+"1",1,"23.5213140179019","23.5213140179019","23.5213140179019",23.5213140179019,"Q_limit1","Willow","Adult","StreamPower","L02-023"
+"2",2,"23.5213140179019","23.5213140179019","23.5213140179019",23.5213140179019,"Q_limit2","Willow","Adult","StreamPower","L02-023"
+"3",3,"4000","4000","4000",4000,"Hydraulic_limit1","Willow","Adult","StreamPower","L02-023"
+"4",4,"4000","4000","4000",4000,"Hydraulic_limit2","Willow","Adult","StreamPower","L02-023"
+"5",1,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",0.0805600169603696,"Q_limit1","Willow","Germination","Depth","L02-023"
+"6",2,"Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+","Error in approx(x = curve$y, y = curve$x, xout = 5) : 
+  need at least two non-NA values to interpolate
+",0.0805600169603696,"Q_limit2","Willow","Germination","Depth","L02-023"
+"7",3,"5","5","5",5,"Hydraulic_limit1","Willow","Germination","Depth","L02-023"
+"8",4,"5","5","5",5,"Hydraulic_limit2","Willow","Germination","Depth","L02-023"
+"9",1,NA,NA,NA,2.29005257413089,"Q_limit1","Willow","Seedling","Depth","L02-023"
+"10",2,NA,NA,NA,2.29005257413089,"Q_limit2","Willow","Seedling","Depth","L02-023"
+"11",3,NA,NA,NA,27.519951465444,"Hydraulic_limit1","Willow","Seedling","Depth","L02-023"
+"12",4,NA,NA,NA,27.519951465444,"Hydraulic_limit2","Willow","Seedling","Depth","L02-023"
+"13",1,NA,NA,NA,0.651427145673264,"Q_limit1","Willow","Seedling","Shear Stress","L02-023"
+"14",2,NA,NA,NA,0.651427145673264,"Q_limit2","Willow","Seedling","Shear Stress","L02-023"
+"15",3,NA,NA,NA,21.6303262316911,"Hydraulic_limit1","Willow","Seedling","Shear Stress","L02-023"
+"16",4,NA,NA,NA,21.6303262316911,"Hydraulic_limit2","Willow","Seedling","Shear Stress","L02-023"
+"17",1,NA,NA,NA,1.28267563278386,"Q_limit1","Chub","Adult","Depth","L02-023"
+"18",2,NA,NA,NA,7.13737376767129,"Q_limit2","Chub","Adult","Depth","L02-023"
+"19",3,NA,NA,NA,27.9587533688499,"Hydraulic_limit1","Chub","Adult","Depth","L02-023"
+"20",4,NA,NA,NA,63.8621631482383,"Hydraulic_limit2","Chub","Adult","Depth","L02-023"
+"21",1,NA,NA,NA,0.00726415825171653,"Q_limit1","Chub","Adult","Velocity","L02-023"
+"22",2,NA,NA,NA,0.451304257028699,"Q_limit2","Chub","Adult","Velocity","L02-023"
+"23",3,NA,NA,NA,0.184930279849682,"Hydraulic_limit1","Chub","Adult","Velocity","L02-023"
+"24",4,NA,NA,NA,0.794693043795214,"Hydraulic_limit2","Chub","Adult","Velocity","L02-023"

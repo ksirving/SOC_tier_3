@@ -1,0 +1,5 @@
+"","V1","V2","V3","V4","Type","Species","Life_Stage","Hydraulic","Node"
+"1",NA,NA,9.87135931890534,NA,"Q_limit1","Chub","Adult","Depth","L01-100"
+"2",NA,NA,9.87135931890534,NA,"Q_limit2","Chub","Adult","Depth","L01-100"
+"3",NA,NA,34.4948408576561,NA,"Hydraulic_limit1","Chub","Adult","Depth","L01-100"
+"4",NA,NA,34.4948408576561,NA,"Hydraulic_limit2","Chub","Adult","Depth","L01-100"

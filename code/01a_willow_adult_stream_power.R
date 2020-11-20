@@ -70,8 +70,11 @@ for(n in 1: length(h)) {
   positions <- unique(all_data$variable)
   
   ## Q Limits
-  limits <- as.data.frame(matrix(ncol=length(positions), nrow=1)) 
-  rownames(limits)<-c("50%_prob_limit")
+  limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  limits$Type<-c("Q_limit1", "Q_limit2")
+  
+  H_limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  H_limits$Type<-c("Hydraulic_limit1", "Hydraulic_limit2")
   
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
@@ -86,24 +89,25 @@ for(n in 1: length(h)) {
     
     new_data <- all_data %>% 
       filter(variable  == positions[p])
-    
+
     ## define position
     PositionName <- str_split(positions[p], "_", 3)[[1]]
     PositionName <- PositionName[2]
     
     
-    curve <- spline(new_data$Q, new_data$value,
+    curve <- spline(new_data$Q, new_data$power,
                      xmin = min(new_data$Q), xmax = max(new_data$Q), ties = mean)
   
-    
+    curve
     if(max(curve$y)<4000) {
       newx1<- max(curve$x)
     } else {
       newx1 <- approx(x = curve$y, y = curve$x, xout = 4000)$y
     }
 
-    
+    limits
     limits[,p] <- c(newx1)
+    H_limits[, p] <- 4000
     
     # create year_month column       
     new_datax <- new_data %>% unite(month_year, water_year:month, sep="-", remove=F) 
@@ -154,10 +158,11 @@ for(n in 1: length(h)) {
     
   } ## end 2nd loop
   
-  ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
+  limits <- rbind(limits, H_limits)
+
   limits <- limits %>%
     mutate(Species ="Willow", Life_Stage = "Adult", Hydraulic = "StreamPower", Node = NodeName)
-  
+
   write.csv(limits, paste("output_data/01_",NodeName,"_Willow_Adult_StreamPower_Q_limits.csv", sep=""))
   ## percentage time
   melt_time<-reshape2::melt(time_statsx, id=c("position", "water_year", "Node"))
@@ -264,8 +269,11 @@ for(n in 1: length(h)) {
   positions <- unique(all_data$variable)
   
   ## Q Limits
-  limits <- as.data.frame(matrix(ncol=length(positions), nrow=1)) 
-  rownames(limits)<-c("50%_prob_limit")
+  limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  limits$Type<-c("Q_limit1", "Q_limit2")
+  
+  H_limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  H_limits$Type<-c("Hydraulic_limit1", "Hydraulic_limit2")
   
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
@@ -288,9 +296,7 @@ for(n in 1: length(h)) {
     
     curve <- spline(new_data$Q, new_data$depth_cm,
                      xmin = min(new_data$Q), xmax = max(new_data$Q), ties = mean)
-    curve
-    range(curve$x)
-    range(curve$y)
+  
 
     ## main channel values
     if(min(curve$y)>5) {
@@ -302,6 +308,7 @@ for(n in 1: length(h)) {
     ## MAKE DF OF Q LIMITS
     
     limits[,p] <- c(newx1)
+    H_limits[, p] <- 5
     
     # create year_month column       
     new_datax <- new_data %>% unite(month_year, water_year:month, sep="-", remove=F) 
@@ -352,7 +359,8 @@ for(n in 1: length(h)) {
     
   } ## end 2nd loop
   
-  ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
+  limits <- rbind(limits, H_limits)
+
   limits <- limits %>%
     mutate(Species ="Willow", Life_Stage = "Germination", Hydraulic = "Depth", Node = NodeName)
   
@@ -417,3 +425,4 @@ for(n in 1: length(h)) {
   cat(paste("Finished Node", NodeName))
   
 } ## end 1st loop
+warnings()

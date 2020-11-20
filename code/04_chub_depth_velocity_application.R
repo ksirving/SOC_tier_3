@@ -4,8 +4,6 @@
 
 ## packages
 
-# packages
-
 library(tidyverse)
 library(tidyr)
 library(sm)
@@ -103,8 +101,11 @@ for(n in 1: length(h)) {
   positions <- unique(all_data$variable)
   
   ## Q Limits
-  limits <- as.data.frame(matrix(ncol=length(positions), nrow=1)) 
-  rownames(limits)<-c("50%_prob_limit")
+  limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  limits$Type<-c("Q_limit1", "Q_limit2")
+
+  H_limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  H_limits$Type<-c("Hydraulic_limit1", "Hydraulic_limit2")
   
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
@@ -112,7 +113,6 @@ for(n in 1: length(h)) {
   time_statsx <- NULL
   days_data <- NULL
   
-  p=1
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -130,19 +130,21 @@ for(n in 1: length(h)) {
     peakQ  <- max(peak$Q)
     min_limit <- filter(new_data, Q > 0)
     min_limit <- min(min_limit$Q)
-    min_limit
+
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
+    hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 0.2)
+
     
-    
-    if(length(newx1)>1) {
-      newx1 <- sort(newx1)[1]
+    if(length(newx1)>2) {
+      newx1 <- sort(newx1)[c(1,length(newx1))]
+      hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
     }
-    
 
     ## MAKE DF OF Q LIMITS
     
     limits[,p] <- c(newx1)
+    H_limits[,p] <- c(hy_lim)
     
     # create year_month column       
     new_datax <- new_data %>% unite(month_year, water_year:month, sep="-", remove=F) 
@@ -201,7 +203,8 @@ for(n in 1: length(h)) {
     
   } ## end 2nd loop
   
-  ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
+  limits <- rbind(limits, H_limits)
+
   limits <- limits %>%
     mutate(Species ="Chub", Life_Stage = "Adult", Hydraulic = "Depth", Node = NodeName)
   
@@ -359,8 +362,11 @@ for(n in 1: length(h)) {
   positions <- unique(all_data$variable)
 
   ## Q Limits
-  limits <- as.data.frame(matrix(ncol=length(positions), nrow=1)) 
-  rownames(limits)<-c("50%_prob_limit")
+  limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  limits$Type<-c("Q_limit1", "Q_limit2")
+  
+  H_limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
+  H_limits$Type<-c("Hydraulic_limit1", "Hydraulic_limit2")
   
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
@@ -391,16 +397,19 @@ for(n in 1: length(h)) {
 
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
-    
-    
-    if(length(newx1)>1) {
-      newx1 <- sort(newx1)[1]
+    hy_lim <- RootLinearInterpolant(new_data$vel_m, new_data$prob_fit, 0.2)
+
+
+    if(length(newx1)>2) {
+      newx1 <- sort(newx1)[c(1,length(newx1))]
+      hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
     }
     
     
     ## MAKE DF OF Q LIMITS
     
     limits[,p] <- c(newx1)
+    H_limits[,p] <- c(hy_lim)
     
     # create year_month column       
     new_data <- new_data %>% unite(month_year, water_year:month, sep="-", remove=F) 
@@ -455,11 +464,12 @@ for(n in 1: length(h)) {
     
     
     days_data <- rbind(days_data, new_data)
-    rm(new_datax)
+
     
   } ## end 2nd loop
   rm(all_data)
-  ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
+
+  limits <- rbind(limits, H_limits)
   limits <- limits %>%
     mutate(Species ="Chub", Life_Stage = "Adult", Hydraulic = "Velocity", Node = NodeName)
   
