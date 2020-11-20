@@ -67,11 +67,11 @@ probs <- seq(1, dim(time_stats_seas)[1], 1)
 for(p in 1: length(probs)) {
   
   time_stats_seas$Suitability_Class[p] = if(time_stats_seas$TimePercentage[p] >= 50) {
-    paste("Low")
+    paste("High")
   } else  if(time_stats_seas$TimePercentage[p] >= 25 & time_stats_seas$TimePercentage[p] <= 50 ){
     paste("Partial")
   } else  if(time_stats_seas$TimePercentage[p] < 25){
-    paste("High")
+    paste("Low")
   } else {
     paste("Partial")
   }
@@ -151,11 +151,11 @@ probs <- seq(1, dim(total_days_seas)[1], 1)
 for(p in 1: length(probs)) {
   
   total_days_seas$Suitability_Class[p] = if(total_days_seas$DaysPerMonth[p] >= 14) {
-    paste("Low")
+    paste("High")
   } else  if(total_days_seas$DaysPerMonth[p] >= 7 & total_days_seas$DaysPerMonth[p] <= 14 ){
     paste("Partial")
   } else  if(total_days_seas$DaysPerMonth[p] < 7){
-    paste("High")
+    paste("Low")
   } else {
     paste("Partial")
   }

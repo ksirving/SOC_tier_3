@@ -131,10 +131,17 @@ peakQ  <- max(peak$Q)
 newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
 hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 50)
 
+if(max(new_data$prob_fit < 50 )) {
+  newx1 <- max(new_data$Q)
+  hy_lim <- max(new_data$shear)
+} else {
+  newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
+  hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 50)
+}
 
-if(length(newx1)>2) {
-  newx1 <- sort(newx1)[c(1,length(newx1))]
-  hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
+if(length(newx1)>1) {
+  newx1 <- sort(newx1)[1]
+  hy_lim <- sort(hy_lim)[1]
 }
 
 
@@ -162,12 +169,12 @@ new_datax <- new_datax %>%
 
 thresh <- expression_Q(newx1, peakQ) 
 thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
-
+thresh
 ###### calculate amount of time
 
 time_stats <- new_datax %>%
   dplyr::group_by(water_year, season) %>%
-  dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
+  dplyr::mutate(Seasonal = sum(Q <= newx1)/length(DateTime)*100) %>%
   distinct(water_year, Seasonal) %>%
   mutate(position= paste(PositionName), Node = NodeName)
 time_stats
@@ -179,15 +186,15 @@ if(startsWith(NodeName, "J", trim=T)) {
 
   new_datax <- new_datax %>%
   ungroup() %>%
-  group_by(month, day, water_year, ID01 = data.table::rleid(eval(thresh))) %>%
-  mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+  group_by(month, day, water_year, ID01 = data.table::rleid(Q <= newx1)) %>%
+  mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
   mutate(position= paste(PositionName), Node = NodeName)
 } else { ## count days per month
   
   new_datax <- new_datax %>%
     ungroup() %>%
-    group_by(month, water_year, ID01 =  data.table::rleid(eval(thresh))) %>%
-    mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+    group_by(month, water_year, ID01 =  data.table::rleid(Q <= newx1)) %>%
+    mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
     mutate(position= paste(PositionName), Node = NodeName)
 }
 
@@ -350,12 +357,19 @@ for(n in 1: length(h)) {
     # min_limit <- min(min_limit$Q) ## min_limit not needed for willow as don't need flow
     
     ## find roots for each probability
-    newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
-    hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 50)
+
     
-    if(length(newx1)>2) {
-      newx1 <- sort(newx1)[c(1,length(newx1))]
-      hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
+    if(max(new_data$prob_fit < 50 )) {
+      newx1 <- max(new_data$Q)
+      hy_lim <- max(new_data$shear)
+    } else {
+      newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
+      hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 50)
+    }
+    
+    if(length(newx1)>1) {
+      newx1 <- sort(newx1)[1]
+      hy_lim <- sort(hy_lim)[1]
     }
     
     
@@ -388,7 +402,7 @@ for(n in 1: length(h)) {
     
     time_stats <- new_datax %>%
       dplyr::group_by(water_year, season) %>%
-      dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
+      dplyr::mutate(Seasonal = sum(Q <= newx1)/length(DateTime)*100) %>%
       distinct(water_year, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     time_stats
@@ -399,15 +413,15 @@ for(n in 1: length(h)) {
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, day, water_year, ID01 = data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, day, water_year, ID01 = data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     } else { ## count days per month
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, water_year, ID01 =  data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, water_year, ID01 =  data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     }
     

@@ -28,7 +28,7 @@ load(file="models_functions/root_interpolation_function.Rdata")
 
 ## define root equation
 load(file="models_functions/expression_Q_limit_function.RData")
-
+expression_Q
 
 ## upload hydraulic data
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")

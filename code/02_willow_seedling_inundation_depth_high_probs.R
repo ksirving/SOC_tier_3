@@ -41,7 +41,7 @@ length(h) ## 28
 h
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
-n=1
+n=2
 p=2
 
 for(n in 1: length(h)) {
@@ -106,7 +106,7 @@ for(n in 1: length(h)) {
   
   time_statsx <- NULL
   days_data <- NULL
-  
+  p=1
   
   for(p in 1:length(positions)) {
     
@@ -118,7 +118,7 @@ for(n in 1: length(h)) {
     ## define position
     PositionName <- str_split(positions[p], "_", 3)[[1]]
     PositionName <- PositionName[2]
-    
+    PositionName
     
     peak <- new_data %>%
       filter(prob_fit == max(prob_fit)) #%>%
@@ -132,11 +132,20 @@ for(n in 1: length(h)) {
     hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 25)
     
     
-    if(length(newx1)>2) {
-      newx1 <- sort(newx1)[c(1,length(newx1))]
-      hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
+    if(max(new_data$prob_fit < 25 )) {
+      newx1 <- max(new_data$Q)
+      hy_lim <- max(new_data$shear)
+    } else {
+      newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 25)
+      hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 25)
     }
     
+    if(length(newx1)>1) {
+      newx1 <- sort(newx1)[1]
+      hy_lim <- sort(hy_lim)[1]
+    }
+    
+
     ## MAKE DF OF Q LIMITS
     
     limits[,p] <- c(newx1)
@@ -158,19 +167,19 @@ for(n in 1: length(h)) {
     # time stats - mid channel ------------------------------------------------
     
     ## Main channel curves
-    
-    thresh <- expression_Q(newx1, peakQ) 
-    thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
-    
+    # 
+    # thresh <- expression_Q(newx1, peakQ) 
+    # thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
+    # thresh
     ###### calculate amount of time
     
     time_stats <- new_datax %>%
       dplyr::group_by(water_year, season) %>%
-      dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
+      dplyr::mutate(Seasonal = sum(Q <= newx1)/length(DateTime)*100) %>%
       distinct(water_year, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     time_stats
-    
+
     time_statsx <- rbind(time_statsx, time_stats)
     # startsWith(NodeName, "J", trim=T)
     ### count hours per day
@@ -178,15 +187,15 @@ for(n in 1: length(h)) {
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, day, water_year, ID01 = data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, day, water_year, ID01 = data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     } else { ## count days per month
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, water_year, ID01 =  data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, water_year, ID01 =  data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     }
     
@@ -269,7 +278,7 @@ for(n in 1: length(h)) {
 
 
 # Shear Stress ------------------------------------------------------------
-
+n
 for(n in 1: length(h)) {
   
   hydraul <- read.csv(file=paste("input_data/Hydraulics/", h[n], sep=""))
@@ -320,6 +329,7 @@ for(n in 1: length(h)) {
   H_limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
   H_limits$Type<-c("Hydraulic_limit1", "Hydraulic_limit2")
   
+  
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
   
@@ -330,14 +340,14 @@ for(n in 1: length(h)) {
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
-    range(new_data$prob_fit)
+
     new_data <- all_data %>% 
       filter(variable  == positions[p])
     
     ## define position
     PositionName <- str_split(positions[p], "_", 3)[[1]]
     PositionName <- PositionName[2]
-    
+    PositionName
     
     peak <- new_data %>%
       filter(prob_fit == max(prob_fit)) #%>%
@@ -348,13 +358,28 @@ for(n in 1: length(h)) {
     # min_limit <- min(min_limit$Q) ## min_limit not needed for willow as don't need flow
     
     ## find roots for each probability
-    newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 25)
-    hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 25)
     
-    if(length(newx1)>2) {
-      newx1 <- sort(newx1)[c(1,length(newx1))]
-      hy_lim <- sort(hy_lim)[c(1,length(hy_lim))]
+    
+    if(min(new_data$prob_fit > 25 )) {
+      newx1 <- min(new_data$Q)
+      hy_lim <- min(new_data$shear)
+    } else if( max(new_data$prob_fit < 25)){
+      newx1 <- max(new_data$Q)
+      hy_lim <- max(new_data$shear)
+    } else {
+      newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 25)
+      hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 25)
     }
+  
+    
+
+    
+  if(length(newx1)>1) {
+      newx1 <- sort(newx1)[1]
+      hy_lim <- sort(hy_lim)[1]
+    }
+    
+
     
     
     ## MAKE DF OF Q LIMITS
@@ -379,14 +404,14 @@ for(n in 1: length(h)) {
     
     ## Main channel curves
     
-    thresh <- expression_Q(newx1, peakQ) 
-    thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
+    # thresh <- expression_Q(newx1, peakQ) 
+    # thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
     
     ###### calculate amount of time
     
     time_stats <- new_datax %>%
       dplyr::group_by(water_year, season) %>%
-      dplyr::mutate(Seasonal = sum(eval(thresh))/length(DateTime)*100) %>%
+      dplyr::mutate(Seasonal = sum(Q <= newx1)/length(DateTime)*100) %>%
       distinct(water_year, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     time_stats
@@ -397,15 +422,15 @@ for(n in 1: length(h)) {
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, day, water_year, ID01 = data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, day, water_year, ID01 = data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     } else { ## count days per month
       
       new_datax <- new_datax %>%
         ungroup() %>%
-        group_by(month, water_year, ID01 =  data.table::rleid(eval(thresh))) %>%
-        mutate(Mid = if_else(eval(thresh), row_number(), 0L)) %>%
+        group_by(month, water_year, ID01 =  data.table::rleid(Q <= newx1)) %>%
+        mutate(Mid = if_else(Q <= newx1, row_number(), 0L)) %>%
         mutate(position= paste(PositionName), Node = NodeName)
     }
     

@@ -1,12 +1,15 @@
 ### combine for overall suitbaility
-
+library(tidyr)
+library(tidyverse)
 ## upload all species suitability data
+getwd()
+setwd("/Users/katieirving/Documents/git/SOC_tier_3/")
 
 ts <- list.files("output_data/results", pattern="time_stats_50")
 ts
-ts <- ts[1:3]
+ts <- ts[-c(8,9)]
 all_data <- NULL
-
+s
 ## first 3 dfs have different format than 2nd 3, combine in sections 
 for(s in 1: length(ts)) {
   
@@ -22,7 +25,7 @@ head(all_data)
 
 ts <- list.files("output_data/results", pattern="time_stats_50")
 
-ts <- ts[4:5]
+ts <- ts[8:9]
 all_data <- NULL
 
 for(s in 1: length(ts)) {
@@ -32,6 +35,7 @@ for(s in 1: length(ts)) {
   all_data <- rbind(all_data, time_stats)
   
 }
+
 
 ## reformat and combine the 2 dfs together 
 

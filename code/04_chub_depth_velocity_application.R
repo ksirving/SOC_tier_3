@@ -20,7 +20,7 @@ getwd()
 
 
 ## upload chub data
-fitdata <- read.csv("output_data/03_chub_adult_depth_prob_curve_data.csv")
+fitdata <- read.csv("/Users/katieirving/Documents/git/SOC_tier_3/output_data/old_data/03_chub_adult_depth_prob_curve_data.csv")
 fitdata <- rename(fitdata, depth_fit = depth_cm)
 
 ## root function
@@ -71,7 +71,7 @@ for(n in 1: length(h)) {
   #   select(DateTime, Q, date_num, month, day, water_year, contains("av.depth"))
   
   hyd_dep <- hyd_dep %>%
-    select(DateTime, Q, date_num, month, day, water_year, contains("max.depth"))
+    select(DateTime, Q, date_num, month, day, water_year, contains("av.depth"))
   
   # transform m to cm
   hyd_dep<-reshape2::melt(hyd_dep, id=c("DateTime","Q",  "date_num", "month", "day", "water_year"))
@@ -112,7 +112,7 @@ for(n in 1: length(h)) {
 
   time_statsx <- NULL
   days_data <- NULL
-  
+  p=1
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -126,7 +126,7 @@ for(n in 1: length(h)) {
 
     peak <- new_data %>%
       filter(prob_fit == max(prob_fit)) #%>%
-
+  peak
     peakQ  <- max(peak$Q)
     min_limit <- filter(new_data, Q > 0)
     min_limit <- min(min_limit$Q)

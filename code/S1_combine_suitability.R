@@ -6,10 +6,10 @@ getwd()
 
 ts <- list.files("output_data/results", pattern="time_stats")
 ts
-ts <- ts[c(2,4,6)]
+ts <- ts[-c(15, 16, 17, 18, 19)]
 all_data <- NULL
-
-## fiorst 3 dfs have different format than 2nd 3, combine in sections 
+s
+## first 3 dfs have different format than 2nd 3, combine in sections 
 for(s in 1: length(ts)) {
   
   time_stats <- read.csv(file=paste("output_data/results/", ts[s], sep=""))
@@ -18,13 +18,14 @@ for(s in 1: length(ts)) {
   
 }
 
+## 15, 
 all_data_first <- all_data
 
 head(all_data)
 head(time_stats)
 ts <- list.files("output_data/results", pattern="time_stats")
 ts
-ts <- ts[c(7,9,11)]
+ts <- ts[c(15, 16, 17, 18, 19)]
 all_data <- NULL
 
 for(s in 1: length(ts)) {

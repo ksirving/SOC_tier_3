@@ -4,7 +4,7 @@
 # 
 # png("figures/02_willow_seedling_Depth_Q.png", width = 500, height = 600)
 # 
-ggplot(all_data, aes(x = Q, y=prob_fit)) +
+ggplot(all_data, aes(x = Q, y=vel_m)) +
   geom_line(aes( group = variable, lty = variable)) +
   # scale_linetype_manual(values= c("dotted", "solid", "dashed"),
   #                       breaks=c("MAX_depth_cm_Slice1", "MAX_depth_cm_Slice2", "MAX_depth_cm_Slice3", "MAX_depth_cm_Slice4"))+

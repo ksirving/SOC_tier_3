@@ -45,7 +45,7 @@
 "44","critical","slice1",2014,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
 "45","non_critical","slice1",2015,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
 "46","critical","slice1",2015,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
-"47","non_critical","slice1",2016,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
+"47","non_critical","slice1",2016,"J01-070","Seasonal",0.0228937728937729,"Willow","Seedling","Shear Stress"
 "48","critical","slice1",2016,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
 "49","non_critical","slice1",2017,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"
 "50","critical","slice1",2017,"J01-070","Seasonal",0,"Willow","Seedling","Shear Stress"

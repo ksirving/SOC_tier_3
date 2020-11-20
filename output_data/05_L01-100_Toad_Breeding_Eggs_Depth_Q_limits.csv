@@ -1,0 +1,5 @@
+"","V1","V2","V3","V4","Type","Species","Life_Stage","Hydraulic","Node"
+"1",12.2312930435201,12.2312930435201,3.78047552966064,12.2312930435201,"Q_limit1","Toad","Breeding/Eegs","Depth","L01-100"
+"2",12.2312930435201,12.2312930435201,3.78047552966064,12.2312930435201,"Q_limit2","Toad","Breeding/Eegs","Depth","L01-100"
+"3",15,15,15,15,"Hydraulic_limit1","Toad","Breeding/Eegs","Depth","L01-100"
+"4",15,15,15,15,"Hydraulic_limit2","Toad","Breeding/Eegs","Depth","L01-100"
