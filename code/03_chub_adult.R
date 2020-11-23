@@ -27,6 +27,10 @@ hist(depth_freq_chub$Velocity_0.6_ms)
 ## probability curve - histogram scaled and centered depth, then transformed back to raw depth
 
 ## chub
+
+## plot curve with raw depth axis
+
+
 depth_freq_chub$Scaled_Depth <-scale(depth_freq_chub$Depth, scale=T, center=T)
 scaled_x <- depth_freq_chub$Scaled_Depth
 h <- hist(scaled_x, plot=F)
@@ -35,6 +39,21 @@ yfit_c<-dnorm(xfit_c,mean=mean(scaled_x),sd=sd(scaled_x))
 ## x axis with raw depth values
 xfit_r_c <- seq(min(depth_freq_chub$Depth), max(depth_freq_chub$Depth), length=200)
 
+png("figures/03_chub_Adult_depth_Prob_curve.png", width = 700, height = 700)
+par(mar=c(5,6,4,2))
+plot(xfit_r_c, yfit_c, axes=FALSE, xlab='', ylab='', type='l', col='', main = "" )
+axis(1, at=pretty(xfit_r_c), cex.axis=2)
+par(new=TRUE)
+#plot the line with no axes or labels
+plot(xfit_c, yfit_c, axes=FALSE, xlab='Depth (cm)', ylab = "", type='l', col='red', main = "Arroyo Chub: Depth",
+     cex.main = 2, cex.axis=2, cex.lab=2)
+title(ylab='Probability Distribution', line = 3.5, cex.lab = 2)
+## add 1sd shift
+par(new=TRUE)
+#add these now with axis
+axis(2, at=pretty(range(yfit_c)), cex.axis=2)
+
+dev.off()
 
 ## data frame with probabilities and depth - to combine with hydraulic data
 
@@ -77,12 +96,14 @@ xfit_r <- seq(min(vel_freq$Velocity), max(vel_freq$Velocity), length=1000)
 ## plot curve with raw depth axis
 png("figures/03_chub_Adult_velocity_Prob_curve.png", width = 700, height = 700)
 
+par(mar=c(5,6,4,2))
 plot(xfit_r, yfit, axes=FALSE, xlab='', ylab='', type='l', col='', main = "" )
 axis(1, at=pretty(xfit_r), cex.axis=2)
 par(new=TRUE)
 #plot the line with no axes or labels
-plot(xfit, yfit, axes=FALSE, xlab='Velocity (m/s)', ylab='Probability', type='l', col='red', main = "Adult/Velocity",
+plot(xfit, yfit, axes=FALSE, xlab='Velocity (m/s)', ylab='', type='l', col='red', main = "Arroyo Chub: Velocity",
      cex.main = 2, cex.axis=2, cex.lab=2)
+title(ylab='Probability Distribution', line = 3.5, cex.lab = 2)
 ## add 1sd shift
 par(new=TRUE)
 
