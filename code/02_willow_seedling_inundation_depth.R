@@ -41,8 +41,8 @@ length(h) ## 28
 h
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
-n=1
-p=2
+n=2
+p=1
 
 for(n in 1: length(h)) {
   
@@ -107,7 +107,7 @@ NodeName <- NodeName[1]
 time_statsx <- NULL
 days_data <- NULL
 
-
+p=2
   for(p in 1:length(positions)) {
 
 # probability as a function of discharge -----------------------------------
@@ -118,10 +118,12 @@ new_data <- all_data %>%
 ## define position
 PositionName <- str_split(positions[p], "_", 3)[[1]]
 PositionName <- PositionName[2]
-
+head(new_data)
 
 peak <- new_data %>%
   filter(prob_fit == max(prob_fit)) #%>%
+
+# write.csv(new_data, "output_data/02_example_node_for_figures.csv")
 
 peakQ  <- max(peak$Q)
 # min_limit <- filter(new_data, depth_cm >= 0.1)
@@ -131,12 +133,13 @@ peakQ  <- max(peak$Q)
 newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
 hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 50)
 
-if(max(new_data$prob_fit < 50 )) {
+
+if(max(new_data$prob_fit) < 50) {
   newx1 <- max(new_data$Q)
-  hy_lim <- max(new_data$shear)
+  hy_lim <- max(new_data$depth_cm)
 } else {
   newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 50)
-  hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 50)
+  hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 50)
 }
 
 if(length(newx1)>1) {
@@ -144,7 +147,7 @@ if(length(newx1)>1) {
   hy_lim <- sort(hy_lim)[1]
 }
 
-
+newx1
 ## MAKE DF OF Q LIMITS
 
 limits[,p] <- c(newx1)
@@ -169,7 +172,7 @@ new_datax <- new_datax %>%
 
 thresh <- expression_Q(newx1, peakQ) 
 thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
-thresh
+
 ###### calculate amount of time
 
 time_stats <- new_datax %>%
@@ -203,8 +206,9 @@ days_data <- rbind(days_data, new_datax)
 
 } ## end 2nd loop
 
-limits <- rbind(limits, H_limits)
 
+limits <- rbind(limits, H_limits)
+limits
 ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
 limits <- limits %>%
   mutate(Species ="Willow", Life_Stage = "Seedling", Hydraulic = "Depth", Node = NodeName)
@@ -339,7 +343,7 @@ for(n in 1: length(h)) {
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
-    range(new_data$prob_fit)
+    
     new_data <- all_data %>% 
       filter(variable  == positions[p])
     
@@ -359,7 +363,7 @@ for(n in 1: length(h)) {
     ## find roots for each probability
 
     
-    if(max(new_data$prob_fit < 50 )) {
+    if(max(new_data$prob_fit) <50) {
       newx1 <- max(new_data$Q)
       hy_lim <- max(new_data$shear)
     } else {
@@ -371,8 +375,8 @@ for(n in 1: length(h)) {
       newx1 <- sort(newx1)[1]
       hy_lim <- sort(hy_lim)[1]
     }
-    
-    
+    newx1
+    hy_lim
     ## MAKE DF OF Q LIMITS
     
     limits[,p] <- c(newx1)
@@ -432,6 +436,7 @@ for(n in 1: length(h)) {
   } ## end 2nd loop
   
   limits <- rbind(limits, H_limits)
+  limits
   limits <- limits %>%
     mutate(Species ="Willow", Life_Stage = "Seedling", Hydraulic = "Shear Stress", Node = NodeName)
   

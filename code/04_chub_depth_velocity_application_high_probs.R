@@ -20,7 +20,7 @@ getwd()
 
 
 ## upload chub data
-fitdata <- read.csv("output_data/03_chub_adult_depth_prob_curve_data.csv")
+fitdata <- read.csv("output_data/old_data/03_chub_adult_depth_prob_curve_data.csv")
 fitdata <- rename(fitdata, depth_fit = depth_cm)
 
 ## root function
@@ -38,7 +38,7 @@ setwd("input_data/Hydraulics")
 
 h <- list.files(pattern="hydraulic")
 length(h) ## 32
-n=1
+n=2
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 
@@ -136,6 +136,7 @@ for(n in 1: length(h)) {
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.3)
     hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 0.3)
     newx1
+    hy_lim
     
     if(length(newx1)>2) {
       newx1 <- sort(newx1)[c(1,length(newx1))]
@@ -284,7 +285,7 @@ setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 
 for(n in 1: length(h)) {
   ## upload chub data
-  fitdata <- read.csv("output_data/03_chub_adult_velocity_prob_curve_data.csv")
+  fitdata <- read.csv("output_data/old_data/03_chub_adult_velocity_prob_curve_data.csv")
   
   ## root function
   load(file="models_functions/root_interpolation_function.Rdata")
@@ -466,11 +467,11 @@ for(n in 1: length(h)) {
     
     
     days_data <- rbind(days_data, new_data)
-    rm(new_datax)
+
     
   } ## end 2nd loop
   rm(all_data)
-  
+  limits
   limits <- rbind(limits, H_limits)
   limits <- limits %>%
     mutate(Species ="Chub", Life_Stage = "Adult", Hydraulic = "Velocity", Node = NodeName)

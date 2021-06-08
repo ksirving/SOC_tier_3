@@ -26,7 +26,7 @@ length(h) ## 28
 h
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
-n=1
+n=2
 p=2
 
 for(n in 1: length(h)) {
@@ -277,11 +277,11 @@ for(n in 1: length(h)) {
   
   NodeName <- str_split(h[n], "_", 3)[[1]]
   NodeName <- NodeName[1]
-  
+
   time_statsx <- NULL
   days_data <- NULL
   
-  
+  p=3
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -306,7 +306,7 @@ for(n in 1: length(h)) {
     }
 
     ## MAKE DF OF Q LIMITS
-    
+    newx1
     limits[,p] <- c(newx1)
     H_limits[, p] <- 5
     

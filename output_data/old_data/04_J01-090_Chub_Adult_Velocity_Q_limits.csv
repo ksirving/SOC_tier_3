@@ -1,0 +1,5 @@
+"","V1","V2","Type","Species","Life_Stage","Hydraulic","Node"
+"1",NA,0.0111602287977884,"Q_limit1","Chub","Adult","Velocity","J01-090"
+"2",NA,0.36702477094879,"Q_limit2","Chub","Adult","Velocity","J01-090"
+"3",NA,0.18493031381651,"Hydraulic_limit1","Chub","Adult","Velocity","J01-090"
+"4",NA,0.794692328982658,"Hydraulic_limit2","Chub","Adult","Velocity","J01-090"

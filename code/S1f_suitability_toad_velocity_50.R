@@ -94,7 +94,7 @@ write.csv(time_stats_all, "/Users/katieirving/Documents/git/SOC_tier_3/output_da
 td <- list.files("output_data/", pattern="total_days")
 length(td) ## 153
 
-td <- Filter(function(x) grepl("Depth", x), td)
+td <- Filter(function(x) grepl("Velocity", x), td)
 td <- Filter(function(x) grepl("Breeding", x), td)
 td <- Filter(function(x) grepl("Toad", x), td)
 

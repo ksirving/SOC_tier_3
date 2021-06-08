@@ -27,7 +27,7 @@ length(h) ## 28
 h
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
-n=1
+n=30
 p=2
 
 ### breeding/eggs depth
@@ -35,7 +35,7 @@ p=2
 for(n in 1: length(h)) {
   
   hydraul <- read.csv(file=paste("input_data/Hydraulics/", h[n], sep=""))
-  
+  head(hydraul)
   ## change names and add datenum
   
   hyd_dep <- hydraul %>%
@@ -85,7 +85,7 @@ for(n in 1: length(h)) {
   time_statsx <- NULL
   days_data <- NULL
   
-  
+
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -99,7 +99,7 @@ for(n in 1: length(h)) {
     
     min_limit <- filter(new_data, Q > 0)
     min_limit <- min(min_limit$Q)
-    
+
     curve <- spline(new_data$Q, new_data$depth_cm,
                     xmin = min(new_data$Q), xmax = max(new_data$Q), ties = mean)
     
@@ -112,10 +112,10 @@ for(n in 1: length(h)) {
       
     
     
-    limits
+
     limits[,p] <- c(newx1)
     H_limits[, p] <- 15
-    
+
     # create year_month column       
     new_datax <- new_data %>% unite(month_year, water_year:month, sep="-", remove=F) 
     
@@ -127,10 +127,11 @@ for(n in 1: length(h)) {
     
     new_datax <- new_datax %>%
       mutate(season = ifelse(month %in% non_critical, "non_critical", "critical") )
-    
+
     
     # time stats - mid channel ------------------------------------------------
-  
+    # sum(new_data$Q >= min_limit & new_data$Q < newx1)/length(new_data$DateTime)*100
+    # sum(new_data$Q >= min_limit & new_data$Q < 15)/length(new_data$DateTime)*100
     ###### calculate amount of time
     
     time_stats <- new_datax %>%

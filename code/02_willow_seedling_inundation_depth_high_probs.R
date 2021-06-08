@@ -42,7 +42,7 @@ h
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 n=2
-p=2
+p=1
 
 for(n in 1: length(h)) {
   
@@ -132,19 +132,19 @@ for(n in 1: length(h)) {
     hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 25)
     
     
-    if(max(new_data$prob_fit < 25 )) {
+    if(max(new_data$prob_fit)< 25) {
       newx1 <- max(new_data$Q)
       hy_lim <- max(new_data$shear)
     } else {
       newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 25)
-      hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 25)
+      hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 25)
     }
     
     if(length(newx1)>1) {
       newx1 <- sort(newx1)[1]
       hy_lim <- sort(hy_lim)[1]
     }
-    
+    newx1
 
     ## MAKE DF OF Q LIMITS
     
@@ -205,7 +205,7 @@ for(n in 1: length(h)) {
   } ## end 2nd loop
   
   limits <- rbind(limits, H_limits)
-  
+  limits
   ## note that 0.1 upper/lower limit is max/min Q to adhere to 0.1 bound
   limits <- limits %>%
     mutate(Species ="Willow", Life_Stage = "Seedling", Hydraulic = "Depth", Node = NodeName)
@@ -336,7 +336,7 @@ for(n in 1: length(h)) {
   time_statsx <- NULL
   days_data <- NULL
   
-  
+  p=3
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -358,12 +358,12 @@ for(n in 1: length(h)) {
     # min_limit <- min(min_limit$Q) ## min_limit not needed for willow as don't need flow
     
     ## find roots for each probability
-    
-    
-    if(min(new_data$prob_fit > 25 )) {
+    min(new_data$prob_fit)
+ 
+    if(min(new_data$prob_fit ) > 25 ) {
       newx1 <- min(new_data$Q)
       hy_lim <- min(new_data$shear)
-    } else if( max(new_data$prob_fit < 25)){
+    } else if( max(new_data$prob_fit) < 25){
       newx1 <- max(new_data$Q)
       hy_lim <- max(new_data$shear)
     } else {
@@ -371,7 +371,6 @@ for(n in 1: length(h)) {
       hy_lim <- RootLinearInterpolant(new_data$shear, new_data$prob_fit, 25)
     }
   
-    
 
     
   if(length(newx1)>1) {
@@ -380,7 +379,6 @@ for(n in 1: length(h)) {
     }
     
 
-    
     
     ## MAKE DF OF Q LIMITS
     
@@ -441,6 +439,7 @@ for(n in 1: length(h)) {
   } ## end 2nd loop
   
   limits <- rbind(limits, H_limits)
+  limits
   limits <- limits %>%
     mutate(Species ="Willow", Life_Stage = "Seedling", Hydraulic = "Shear Stress", Node = NodeName)
   

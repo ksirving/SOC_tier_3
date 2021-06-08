@@ -7,7 +7,7 @@
 "6","critical","slice1",1995,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
 "7","non_critical","slice1",1996,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
 "8","critical","slice1",1996,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
-"9","non_critical","slice1",1997,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
+"9","non_critical","slice1",1997,"J01-090","Seasonal",99.9771062271062,"Willow","Seedling","Shear Stress"
 "10","critical","slice1",1997,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
 "11","non_critical","slice1",1998,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"
 "12","critical","slice1",1998,"J01-090","Seasonal",100,"Willow","Seedling","Shear Stress"

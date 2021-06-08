@@ -1,0 +1,5 @@
+"","V1","V2","V3","Type","Species","Life_Stage","Hydraulic","Node"
+"1",2.37231827266546,0.221242960413218,1.87473184193301,"Q_limit1","Toad","Tadpole","Velocity","J01-061"
+"2",2.37231827266546,0.221242960413218,1.87473184193301,"Q_limit2","Toad","Tadpole","Velocity","J01-061"
+"3",0.4,0.4,0.4,"Hydraulic_limit1","Toad","Tadpole","Velocity","J01-061"
+"4",0.4,0.4,0.4,"Hydraulic_limit2","Toad","Tadpole","Velocity","J01-061"

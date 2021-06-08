@@ -1,0 +1,5 @@
+"","V1","V2","V3","V4","V5","Type","Species","Life_Stage","Hydraulic","Node"
+"1",59.478716840834,59.478716840834,59.478716840834,59.478716840834,59.478716840834,"Q_limit1","Willow","Seedling","Depth","J01-030"
+"2",59.478716840834,59.478716840834,59.478716840834,59.478716840834,59.478716840834,"Q_limit2","Willow","Seedling","Depth","J01-030"
+"3",-Inf,-Inf,-Inf,-Inf,-Inf,"Hydraulic_limit1","Willow","Seedling","Depth","J01-030"
+"4",-Inf,-Inf,-Inf,-Inf,-Inf,"Hydraulic_limit2","Willow","Seedling","Depth","J01-030"

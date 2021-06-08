@@ -38,7 +38,8 @@ setwd("input_data/Hydraulics")
 
 h <- list.files(pattern="hydraulic")
 length(h) ## 32
-n=1
+h
+n=2
 
 setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 
@@ -99,7 +100,7 @@ for(n in 1: length(h)) {
   
   ## define positions
   positions <- unique(all_data$variable)
-  
+  positions
   ## Q Limits
   limits <- as.data.frame(matrix(ncol=length(positions), nrow=2)) 
   limits$Type<-c("Q_limit1", "Q_limit2")
@@ -112,7 +113,7 @@ for(n in 1: length(h)) {
 
   time_statsx <- NULL
   days_data <- NULL
-  p=1
+  p=3
   for(p in 1:length(positions)) {
     
     # probability as a function of discharge -----------------------------------
@@ -126,7 +127,7 @@ for(n in 1: length(h)) {
 
     peak <- new_data %>%
       filter(prob_fit == max(prob_fit)) #%>%
-  peak
+
     peakQ  <- max(peak$Q)
     min_limit <- filter(new_data, Q > 0)
     min_limit <- min(min_limit$Q)
@@ -134,6 +135,7 @@ for(n in 1: length(h)) {
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
     hy_lim <- RootLinearInterpolant(new_data$depth_cm, new_data$prob_fit, 0.2)
+
 
     
     if(length(newx1)>2) {
@@ -165,9 +167,14 @@ for(n in 1: length(h)) {
     
     thresh <- expression_Q(newx1, peakQ) 
     thresh <-as.expression(do.call("substitute", list(thresh[[1]], list(limit = as.name("newx1")))))
-    
+
     ###### calculate amount of time
-    
+    # sum(new_data$Q < 1)/length(new_data$DateTime)*100
+    # sum(new_data$depth_cm < 3)/length(new_data$DateTime)*100
+    # range(new_data$depth_cm)
+    # test <- filter(new_data, depth_cm > 3)
+    # unique(test$month)
+
     time_stats <- new_datax %>%
       dplyr::group_by(water_year) %>%
       dplyr::mutate(Annual = sum(eval(thresh))/length(DateTime)*100) %>%
@@ -177,6 +184,7 @@ for(n in 1: length(h)) {
       distinct(water_year, Annual, Seasonal) %>%
       mutate(position= paste(PositionName), Node = NodeName)
     
+    time_stats
     
     time_statsx <- rbind(time_statsx, time_stats)
     
@@ -282,7 +290,7 @@ setwd("/Users/katieirving/Documents/git/SOC_tier_3")
 
 for(n in 1: length(h)) {
   ## upload chub data
-  fitdata <- read.csv("output_data/03_chub_adult_velocity_prob_curve_data.csv")
+  fitdata <- read.csv("output_data/old_data/03_chub_adult_velocity_prob_curve_data.csv")
   
   ## root function
   load(file="models_functions/root_interpolation_function.Rdata")
@@ -343,7 +351,7 @@ for(n in 1: length(h)) {
   
   ## join depth data to vel df
   hyd_vel <- left_join(hyd_vel, hyd_dep, by="date_num")
-  rm(hyd_dep)
+
 
   ## change NAs to 0 in concrete overbanks
   hyd_vel[is.na(hyd_vel)] <- 0
@@ -398,7 +406,7 @@ for(n in 1: length(h)) {
     ## find roots for each probability
     newx1 <- RootLinearInterpolant(new_data$Q, new_data$prob_fit, 0.2)
     hy_lim <- RootLinearInterpolant(new_data$vel_m, new_data$prob_fit, 0.2)
-
+ 
 
     if(length(newx1)>2) {
       newx1 <- sort(newx1)[c(1,length(newx1))]
@@ -470,6 +478,7 @@ for(n in 1: length(h)) {
   rm(all_data)
 
   limits <- rbind(limits, H_limits)
+  limits
   limits <- limits %>%
     mutate(Species ="Chub", Life_Stage = "Adult", Hydraulic = "Velocity", Node = NodeName)
   

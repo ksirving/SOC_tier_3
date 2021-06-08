@@ -1,0 +1,5 @@
+"","V1","V2","V3","Type","Species","Life_Stage","Hydraulic","Node"
+"1",6.79964192857365,6.79964192857365,0.000132233649632306,"Q_limit1","Willow","Seedling","Shear Stress","L01-080"
+"2",6.79964192857365,6.79964192857365,0.000132233649632306,"Q_limit2","Willow","Seedling","Shear Stress","L01-080"
+"3",80.9455569786563,151.12529194878,3.19122306703815,"Hydraulic_limit1","Willow","Seedling","Shear Stress","L01-080"
+"4",80.9455569786563,151.12529194878,3.19122306703815,"Hydraulic_limit2","Willow","Seedling","Shear Stress","L01-080"

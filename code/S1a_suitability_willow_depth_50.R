@@ -18,7 +18,7 @@ getwd()
 ## upload all time stats csvs
 
 ## time stats
-ts <- list.files("output_data/", pattern="time_stats")
+ts <- list.files("output_data/", pattern="time_stats_High_Probs")
 length(ts) ## 219
 ts
 ts <- Filter(function(x) grepl("depth", x), ts)
@@ -105,9 +105,9 @@ write.csv(time_stats_all, "/Users/katieirving/Documents/git/SOC_tier_3/output_da
 
 
 ### days per month
-td <- list.files("output_data/", pattern="total_days")
+td <- list.files("output_data/", pattern="total_days_long_High_Probs")
 length(td) ## 153
-
+td
 td <- Filter(function(x) grepl("Seedling", x), td)
 td <- Filter(function(x) grepl("depth", x), td)
 td <- Filter(function(x) grepl("Willow", x), td)

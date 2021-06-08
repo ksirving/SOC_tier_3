@@ -1,758 +1,762 @@
-,X,TimePeriod,position,Node,Species,Life_Stage,Hydraulic,MaxPercentage,pos_code,BestSlice
-1,2,Annual,slice2,J01-010,Chub,Adult,Depth,5.172413793,J01-010_slice2,Yes
-2,6,Annual,slice3,J01-020,Chub,Adult,Depth,8.961187215,J01-020_slice3,Yes
-3,10,Annual,slice3,J01-030,Chub,Adult,Depth,1.54109589,J01-030_slice3,Yes
-4,14,Annual,slice2,J01-031,Chub,Adult,Depth,0.365296804,J01-031_slice2,Yes
-5,19,Annual,slice4,J01-040,Chub,Adult,Depth,5.947488584,J01-040_slice4,Yes
-6,22,Annual,slice2,J01-041,Chub,Adult,Depth,4.525862069,J01-041_slice2,Yes
-7,25,Annual,slice2,J01-060,Chub,Adult,Depth,4.938936782,J01-060_slice2,Yes
-8,28,Annual,slice2,J01-061,Chub,Adult,Depth,1.929223744,J01-061_slice2,Yes
-9,30,Annual,slice1,J01-062,Chub,Adult,Depth,0.285388128,J01-062_slice1,Yes
-10,31,Annual,slice1,J01-070,Chub,Adult,Depth,2.237442922,J01-070_slice1,Yes
-11,33,Annual,slice2,J01-080,Chub,Adult,Depth,2.4543379,J01-080_slice2,Yes
-12,36,Annual,slice2,J01-090,Chub,Adult,Depth,2.625570776,J01-090_slice2,Yes
-13,38,Annual,slice2,J01-091,Chub,Adult,Depth,0.821917808,J01-091_slice2,Yes
-14,41,Annual,slice2,J01-100,Chub,Adult,Depth,0.262557078,J01-100_slice2,Yes
-15,44,Annual,slice2,J03-010,Chub,Adult,Depth,3.162100457,J03-010_slice2,Yes
-16,48,Annual,slice3,J04-010,Chub,Adult,Depth,5.51369863,J04-010_slice3,Yes
-17,50,Annual,slice1,J05-010,Chub,Adult,Depth,2.134703196,J05-010_slice1,Yes
-18,54,Annual,slice1,J07-010,Chub,Adult,Depth,0.308219178,J07-010_slice1,Yes
-19,58,Annual,slice2,L01-060,Chub,Adult,Depth,8.767123288,L01-060_slice2,Yes
-20,62,Annual,slice3,L01-080,Chub,Adult,Depth,6.02739726,L01-080_slice3,Yes
-21,65,Annual,slice3,L01-100,Chub,Adult,Depth,1.917808219,L01-100_slice3,Yes
-22,68,Annual,slice2,L02-010,Chub,Adult,Depth,11.23287671,L02-010_slice2,Yes
-23,70,Annual,slice1,L02-020,Chub,Adult,Depth,17.80821918,L02-020_slice1,Yes
-24,75,Annual,slice3,L02-021,Chub,Adult,Depth,15.34246575,L02-021_slice3,Yes
-25,82,Annual,slice6,L02-022,Chub,Adult,Depth,11.50684932,L02-022_slice6,Yes
-26,86,Annual,slice4,L02-023,Chub,Adult,Depth,16.43835616,L02-023_slice4,Yes
-27,88,Annual,slice2,L02-030,Chub,Adult,Depth,13.42465753,L02-030_slice2,Yes
-28,91,Annual,slice2,L02-031,Chub,Adult,Depth,21.09589041,L02-031_slice2,Yes
-29,97,Annual,slice4,L02-040,Chub,Adult,Depth,16.16438356,L02-040_slice4,Yes
-30,99,Annual,slice2,L02-041,Chub,Adult,Depth,18.90410959,L02-041_slice2,Yes
-31,102,Annual,slice2,L02-050,Chub,Adult,Depth,2.739726027,L02-050_slice2,Yes
-32,103,Annual,slice3,L02-050,Chub,Adult,Depth,2.739726027,L02-050_slice3,Yes
-33,104,Annual,slice1,L02-051,Chub,Adult,Depth,0,L02-051_slice1,Yes
-34,105,Annual,slice2,L02-051,Chub,Adult,Depth,0,L02-051_slice2,Yes
-35,106,Annual,slice3,L02-051,Chub,Adult,Depth,0,L02-051_slice3,Yes
-36,108,Annual,slice2,J01-010,Chub,Adult,Velocity,36.62100457,J01-010_slice2,Yes
-37,112,Annual,slice3,J01-020,Chub,Adult,Velocity,99.36073059,J01-020_slice3,Yes
-38,116,Annual,slice3,J01-030,Chub,Adult,Velocity,99.55479452,J01-030_slice3,Yes
-39,120,Annual,slice2,J01-031,Chub,Adult,Velocity,35.49086758,J01-031_slice2,Yes
-40,125,Annual,slice4,J01-040,Chub,Adult,Velocity,99.94292237,J01-040_slice4,Yes
-41,128,Annual,slice2,J01-041,Chub,Adult,Velocity,99.76027397,J01-041_slice2,Yes
-42,131,Annual,slice2,J01-060,Chub,Adult,Velocity,99.33789954,J01-060_slice2,Yes
-43,134,Annual,slice2,J01-061,Chub,Adult,Velocity,8.755707763,J01-061_slice2,Yes
-44,136,Annual,slice1,J01-062,Chub,Adult,Velocity,0.684931507,J01-062_slice1,Yes
-45,137,Annual,slice1,J01-070,Chub,Adult,Velocity,99.6803653,J01-070_slice1,Yes
-46,139,Annual,slice2,J01-080,Chub,Adult,Velocity,95.99271403,J01-080_slice2,Yes
-47,142,Annual,slice2,J01-090,Chub,Adult,Velocity,99.85159817,J01-090_slice2,Yes
-48,144,Annual,slice2,J01-091,Chub,Adult,Velocity,99.8173516,J01-091_slice2,Yes
-49,147,Annual,slice2,J01-100,Chub,Adult,Velocity,99.98858447,J01-100_slice2,Yes
-50,150,Annual,slice2,J03-010,Chub,Adult,Velocity,99.87442922,J03-010_slice2,Yes
-51,154,Annual,slice3,J04-010,Chub,Adult,Velocity,99.32648402,J04-010_slice3,Yes
-52,156,Annual,slice1,J05-010,Chub,Adult,Velocity,99.73744292,J05-010_slice1,Yes
-53,160,Annual,slice1,J07-010,Chub,Adult,Velocity,57.02054795,J07-010_slice1,Yes
-54,164,Annual,slice2,L01-060,Chub,Adult,Velocity,39.45205479,L01-060_slice2,Yes
-55,168,Annual,slice3,L01-080,Chub,Adult,Velocity,98.91304348,L01-080_slice3,Yes
-56,171,Annual,slice3,L01-100,Chub,Adult,Velocity,6.301369863,L01-100_slice3,Yes
-57,174,Annual,slice2,L02-010,Chub,Adult,Velocity,100,L02-010_slice2,Yes
-58,176,Annual,slice1,L02-020,Chub,Adult,Velocity,64.93150685,L02-020_slice1,Yes
-59,181,Annual,slice3,L02-021,Chub,Adult,Velocity,67.12328767,L02-021_slice3,Yes
-60,188,Annual,slice6,L02-022,Chub,Adult,Velocity,80.82191781,L02-022_slice6,Yes
-61,192,Annual,slice4,L02-023,Chub,Adult,Velocity,71.78082192,L02-023_slice4,Yes
-62,194,Annual,slice2,L02-030,Chub,Adult,Velocity,72.05479452,L02-030_slice2,Yes
-63,197,Annual,slice2,L02-031,Chub,Adult,Velocity,80.82191781,L02-031_slice2,Yes
-64,203,Annual,slice4,L02-040,Chub,Adult,Velocity,74.79452055,L02-040_slice4,Yes
-65,205,Annual,slice2,L02-041,Chub,Adult,Velocity,21.91780822,L02-041_slice2,Yes
-66,209,Annual,slice3,L02-050,Chub,Adult,Velocity,53.42465753,L02-050_slice3,Yes
-67,211,Annual,slice2,L02-051,Chub,Adult,Velocity,35.34246575,L02-051_slice2,Yes
-68,213,Seasonal,slice1,J01-010,Toad,Breeding/Eggs,Depth,100,J01-010_slice1,Yes
-69,214,Seasonal,slice2,J01-010,Toad,Breeding/Eggs,Depth,100,J01-010_slice2,Yes
-70,215,Seasonal,slice3,J01-010,Toad,Breeding/Eggs,Depth,100,J01-010_slice3,Yes
-71,216,Seasonal,slice1,J01-020,Toad,Breeding/Eggs,Depth,100,J01-020_slice1,Yes
-72,217,Seasonal,slice2,J01-020,Toad,Breeding/Eggs,Depth,100,J01-020_slice2,Yes
-73,218,Seasonal,slice3,J01-020,Toad,Breeding/Eggs,Depth,100,J01-020_slice3,Yes
-74,219,Seasonal,slice4,J01-020,Toad,Breeding/Eggs,Depth,100,J01-020_slice4,Yes
-75,220,Seasonal,slice1,J01-030,Toad,Breeding/Eggs,Depth,100,J01-030_slice1,Yes
-76,221,Seasonal,slice2,J01-030,Toad,Breeding/Eggs,Depth,100,J01-030_slice2,Yes
-77,222,Seasonal,slice3,J01-030,Toad,Breeding/Eggs,Depth,100,J01-030_slice3,Yes
-78,223,Seasonal,slice4,J01-030,Toad,Breeding/Eggs,Depth,100,J01-030_slice4,Yes
-79,224,Seasonal,slice5,J01-030,Toad,Breeding/Eggs,Depth,100,J01-030_slice5,Yes
-80,225,Seasonal,slice1,J01-031,Toad,Breeding/Eggs,Depth,100,J01-031_slice1,Yes
-81,226,Seasonal,slice2,J01-031,Toad,Breeding/Eggs,Depth,100,J01-031_slice2,Yes
-82,227,Seasonal,slice3,J01-031,Toad,Breeding/Eggs,Depth,100,J01-031_slice3,Yes
-83,228,Seasonal,slice1,J01-040,Toad,Breeding/Eggs,Depth,100,J01-040_slice1,Yes
-84,229,Seasonal,slice2,J01-040,Toad,Breeding/Eggs,Depth,100,J01-040_slice2,Yes
-85,230,Seasonal,slice3,J01-040,Toad,Breeding/Eggs,Depth,100,J01-040_slice3,Yes
-86,231,Seasonal,slice4,J01-040,Toad,Breeding/Eggs,Depth,100,J01-040_slice4,Yes
-87,232,Seasonal,slice5,J01-040,Toad,Breeding/Eggs,Depth,100,J01-040_slice5,Yes
-88,233,Seasonal,slice1,J01-041,Toad,Breeding/Eggs,Depth,100,J01-041_slice1,Yes
-89,234,Seasonal,slice2,J01-041,Toad,Breeding/Eggs,Depth,100,J01-041_slice2,Yes
-90,235,Seasonal,slice3,J01-041,Toad,Breeding/Eggs,Depth,100,J01-041_slice3,Yes
-91,236,Seasonal,slice1,J01-060,Toad,Breeding/Eggs,Depth,100,J01-060_slice1,Yes
-92,237,Seasonal,slice2,J01-060,Toad,Breeding/Eggs,Depth,100,J01-060_slice2,Yes
-93,238,Seasonal,slice3,J01-060,Toad,Breeding/Eggs,Depth,100,J01-060_slice3,Yes
-94,239,Seasonal,slice1,J01-061,Toad,Breeding/Eggs,Depth,100,J01-061_slice1,Yes
-95,240,Seasonal,slice2,J01-061,Toad,Breeding/Eggs,Depth,100,J01-061_slice2,Yes
-96,241,Seasonal,slice3,J01-061,Toad,Breeding/Eggs,Depth,100,J01-061_slice3,Yes
-97,242,Seasonal,slice1,J01-062,Toad,Breeding/Eggs,Depth,100,J01-062_slice1,Yes
-98,243,Seasonal,slice1,J01-070,Toad,Breeding/Eggs,Depth,100,J01-070_slice1,Yes
-99,244,Seasonal,slice1,J01-080,Toad,Breeding/Eggs,Depth,100,J01-080_slice1,Yes
-100,245,Seasonal,slice2,J01-080,Toad,Breeding/Eggs,Depth,100,J01-080_slice2,Yes
-101,246,Seasonal,slice3,J01-080,Toad,Breeding/Eggs,Depth,100,J01-080_slice3,Yes
-102,247,Seasonal,slice1,J01-090,Toad,Breeding/Eggs,Depth,100,J01-090_slice1,Yes
-103,248,Seasonal,slice2,J01-090,Toad,Breeding/Eggs,Depth,100,J01-090_slice2,Yes
-104,249,Seasonal,slice1,J01-091,Toad,Breeding/Eggs,Depth,100,J01-091_slice1,Yes
-105,250,Seasonal,slice2,J01-091,Toad,Breeding/Eggs,Depth,100,J01-091_slice2,Yes
-106,251,Seasonal,slice3,J01-091,Toad,Breeding/Eggs,Depth,100,J01-091_slice3,Yes
-107,252,Seasonal,slice1,J01-100,Toad,Breeding/Eggs,Depth,100,J01-100_slice1,Yes
-108,253,Seasonal,slice2,J01-100,Toad,Breeding/Eggs,Depth,100,J01-100_slice2,Yes
-109,254,Seasonal,slice3,J01-100,Toad,Breeding/Eggs,Depth,100,J01-100_slice3,Yes
-110,255,Seasonal,slice1,J03-010,Toad,Breeding/Eggs,Depth,100,J03-010_slice1,Yes
-111,256,Seasonal,slice2,J03-010,Toad,Breeding/Eggs,Depth,100,J03-010_slice2,Yes
-112,257,Seasonal,slice3,J03-010,Toad,Breeding/Eggs,Depth,100,J03-010_slice3,Yes
-113,258,Seasonal,slice1,J04-010,Toad,Breeding/Eggs,Depth,100,J04-010_slice1,Yes
-114,259,Seasonal,slice2,J04-010,Toad,Breeding/Eggs,Depth,100,J04-010_slice2,Yes
-115,260,Seasonal,slice3,J04-010,Toad,Breeding/Eggs,Depth,100,J04-010_slice3,Yes
-116,261,Seasonal,slice4,J04-010,Toad,Breeding/Eggs,Depth,100,J04-010_slice4,Yes
-117,262,Seasonal,slice1,J05-010,Toad,Breeding/Eggs,Depth,100,J05-010_slice1,Yes
-118,263,Seasonal,slice2,J05-010,Toad,Breeding/Eggs,Depth,100,J05-010_slice2,Yes
-119,264,Seasonal,slice3,J05-010,Toad,Breeding/Eggs,Depth,100,J05-010_slice3,Yes
-120,265,Seasonal,slice4,J05-010,Toad,Breeding/Eggs,Depth,100,J05-010_slice4,Yes
-121,266,Seasonal,slice1,J07-010,Toad,Breeding/Eggs,Depth,100,J07-010_slice1,Yes
-122,267,Seasonal,slice2,J07-010,Toad,Breeding/Eggs,Depth,100,J07-010_slice2,Yes
-123,268,Seasonal,slice3,J07-010,Toad,Breeding/Eggs,Depth,100,J07-010_slice3,Yes
-124,269,Seasonal,slice1,L01-060,Toad,Breeding/Eggs,Depth,68.22429907,L01-060_slice1,Yes
-125,271,Seasonal,slice3,L01-060,Toad,Breeding/Eggs,Depth,68.22429907,L01-060_slice3,Yes
-126,272,Seasonal,slice1,L01-080,Toad,Breeding/Eggs,Depth,100,L01-080_slice1,Yes
-127,273,Seasonal,slice2,L01-080,Toad,Breeding/Eggs,Depth,100,L01-080_slice2,Yes
-128,274,Seasonal,slice3,L01-080,Toad,Breeding/Eggs,Depth,100,L01-080_slice3,Yes
-129,275,Seasonal,slice1,L01-100,Toad,Breeding/Eggs,Depth,50.93457944,L01-100_slice1,Yes
-130,276,Seasonal,slice2,L01-100,Toad,Breeding/Eggs,Depth,50.93457944,L01-100_slice2,Yes
-131,277,Seasonal,slice3,L01-100,Toad,Breeding/Eggs,Depth,50.93457944,L01-100_slice3,Yes
-132,278,Seasonal,slice4,L01-100,Toad,Breeding/Eggs,Depth,50.93457944,L01-100_slice4,Yes
-133,279,Seasonal,slice1,L02-010,Toad,Breeding/Eggs,Depth,100,L02-010_slice1,Yes
-134,280,Seasonal,slice2,L02-010,Toad,Breeding/Eggs,Depth,100,L02-010_slice2,Yes
-135,281,Seasonal,slice3,L02-010,Toad,Breeding/Eggs,Depth,100,L02-010_slice3,Yes
-136,283,Seasonal,slice2,L02-020,Toad,Breeding/Eggs,Depth,95.79439252,L02-020_slice2,Yes
-137,284,Seasonal,slice3,L02-020,Toad,Breeding/Eggs,Depth,95.79439252,L02-020_slice3,Yes
-138,285,Seasonal,slice1,L02-021,Toad,Breeding/Eggs,Depth,98.13084112,L02-021_slice1,Yes
-139,286,Seasonal,slice2,L02-021,Toad,Breeding/Eggs,Depth,98.13084112,L02-021_slice2,Yes
-140,288,Seasonal,slice4,L02-021,Toad,Breeding/Eggs,Depth,98.13084112,L02-021_slice4,Yes
-141,289,Seasonal,slice1,L02-022,Toad,Breeding/Eggs,Depth,95.3271028,L02-022_slice1,Yes
-142,290,Seasonal,slice2,L02-022,Toad,Breeding/Eggs,Depth,95.3271028,L02-022_slice2,Yes
-143,291,Seasonal,slice3,L02-022,Toad,Breeding/Eggs,Depth,95.3271028,L02-022_slice3,Yes
-144,292,Seasonal,slice4,L02-022,Toad,Breeding/Eggs,Depth,95.3271028,L02-022_slice4,Yes
-145,293,Seasonal,slice5,L02-022,Toad,Breeding/Eggs,Depth,95.3271028,L02-022_slice5,Yes
-146,295,Seasonal,slice1,L02-023,Toad,Breeding/Eggs,Depth,100,L02-023_slice1,Yes
-147,296,Seasonal,slice2,L02-023,Toad,Breeding/Eggs,Depth,100,L02-023_slice2,Yes
-148,297,Seasonal,slice3,L02-023,Toad,Breeding/Eggs,Depth,100,L02-023_slice3,Yes
-149,299,Seasonal,slice1,L02-030,Toad,Breeding/Eggs,Depth,95.3271028,L02-030_slice1,Yes
-150,301,Seasonal,slice3,L02-030,Toad,Breeding/Eggs,Depth,95.3271028,L02-030_slice3,Yes
-151,302,Seasonal,slice1,L02-031,Toad,Breeding/Eggs,Depth,100,L02-031_slice1,Yes
-152,303,Seasonal,slice2,L02-031,Toad,Breeding/Eggs,Depth,100,L02-031_slice2,Yes
-153,304,Seasonal,slice3,L02-031,Toad,Breeding/Eggs,Depth,100,L02-031_slice3,Yes
-154,305,Seasonal,slice4,L02-031,Toad,Breeding/Eggs,Depth,100,L02-031_slice4,Yes
-155,306,Seasonal,slice1,L02-040,Toad,Breeding/Eggs,Depth,98.13084112,L02-040_slice1,Yes
-156,307,Seasonal,slice2,L02-040,Toad,Breeding/Eggs,Depth,98.13084112,L02-040_slice2,Yes
-157,308,Seasonal,slice3,L02-040,Toad,Breeding/Eggs,Depth,98.13084112,L02-040_slice3,Yes
-158,310,Seasonal,slice1,L02-041,Toad,Breeding/Eggs,Depth,16.82242991,L02-041_slice1,Yes
-159,312,Seasonal,slice3,L02-041,Toad,Breeding/Eggs,Depth,16.82242991,L02-041_slice3,Yes
-160,313,Seasonal,slice1,L02-050,Toad,Breeding/Eggs,Depth,84.57943925,L02-050_slice1,Yes
-161,316,Seasonal,slice1,L02-051,Toad,Breeding/Eggs,Depth,69.62616822,L02-051_slice1,Yes
-162,317,Seasonal,slice2,L02-051,Toad,Breeding/Eggs,Depth,69.62616822,L02-051_slice2,Yes
-163,318,Seasonal,slice3,L02-051,Toad,Breeding/Eggs,Depth,69.62616822,L02-051_slice3,Yes
-164,321,Seasonal,slice3,J01-010,Toad,Breeding/Eggs,Velocity,74.16277259,J01-010_slice3,Yes
-165,322,Seasonal,slice1,J01-020,Toad,Breeding/Eggs,Velocity,100,J01-020_slice1,Yes
-166,323,Seasonal,slice2,J01-020,Toad,Breeding/Eggs,Velocity,100,J01-020_slice2,Yes
-167,326,Seasonal,slice1,J01-030,Toad,Breeding/Eggs,Velocity,100,J01-030_slice1,Yes
-168,327,Seasonal,slice2,J01-030,Toad,Breeding/Eggs,Velocity,100,J01-030_slice2,Yes
-169,329,Seasonal,slice4,J01-030,Toad,Breeding/Eggs,Velocity,100,J01-030_slice4,Yes
-170,330,Seasonal,slice5,J01-030,Toad,Breeding/Eggs,Velocity,100,J01-030_slice5,Yes
-171,331,Seasonal,slice1,J01-031,Toad,Breeding/Eggs,Velocity,100,J01-031_slice1,Yes
-172,333,Seasonal,slice3,J01-031,Toad,Breeding/Eggs,Velocity,100,J01-031_slice3,Yes
-173,334,Seasonal,slice1,J01-040,Toad,Breeding/Eggs,Velocity,100,J01-040_slice1,Yes
-174,338,Seasonal,slice5,J01-040,Toad,Breeding/Eggs,Velocity,100,J01-040_slice5,Yes
-175,339,Seasonal,slice1,J01-041,Toad,Breeding/Eggs,Velocity,100,J01-041_slice1,Yes
-176,341,Seasonal,slice3,J01-041,Toad,Breeding/Eggs,Velocity,100,J01-041_slice3,Yes
-177,342,Seasonal,slice1,J01-060,Toad,Breeding/Eggs,Velocity,100,J01-060_slice1,Yes
-178,344,Seasonal,slice3,J01-060,Toad,Breeding/Eggs,Velocity,100,J01-060_slice3,Yes
-179,345,Seasonal,slice1,J01-061,Toad,Breeding/Eggs,Velocity,100,J01-061_slice1,Yes
-180,347,Seasonal,slice3,J01-061,Toad,Breeding/Eggs,Velocity,100,J01-061_slice3,Yes
-181,348,Seasonal,slice1,J01-062,Toad,Breeding/Eggs,Velocity,100,J01-062_slice1,Yes
-182,349,Seasonal,slice1,J01-070,Toad,Breeding/Eggs,Velocity,0,J01-070_slice1,Yes
-183,350,Seasonal,slice1,J01-080,Toad,Breeding/Eggs,Velocity,100,J01-080_slice1,Yes
-184,352,Seasonal,slice3,J01-080,Toad,Breeding/Eggs,Velocity,100,J01-080_slice3,Yes
-185,353,Seasonal,slice1,J01-090,Toad,Breeding/Eggs,Velocity,100,J01-090_slice1,Yes
-186,355,Seasonal,slice1,J01-091,Toad,Breeding/Eggs,Velocity,100,J01-091_slice1,Yes
-187,357,Seasonal,slice3,J01-091,Toad,Breeding/Eggs,Velocity,100,J01-091_slice3,Yes
-188,358,Seasonal,slice1,J01-100,Toad,Breeding/Eggs,Velocity,100,J01-100_slice1,Yes
-189,360,Seasonal,slice3,J01-100,Toad,Breeding/Eggs,Velocity,100,J01-100_slice3,Yes
-190,361,Seasonal,slice1,J03-010,Toad,Breeding/Eggs,Velocity,100,J03-010_slice1,Yes
-191,363,Seasonal,slice3,J03-010,Toad,Breeding/Eggs,Velocity,100,J03-010_slice3,Yes
-192,365,Seasonal,slice2,J04-010,Toad,Breeding/Eggs,Velocity,100,J04-010_slice2,Yes
-193,367,Seasonal,slice4,J04-010,Toad,Breeding/Eggs,Velocity,100,J04-010_slice4,Yes
-194,369,Seasonal,slice2,J05-010,Toad,Breeding/Eggs,Velocity,100,J05-010_slice2,Yes
-195,370,Seasonal,slice3,J05-010,Toad,Breeding/Eggs,Velocity,100,J05-010_slice3,Yes
-196,371,Seasonal,slice4,J05-010,Toad,Breeding/Eggs,Velocity,100,J05-010_slice4,Yes
-197,373,Seasonal,slice2,J07-010,Toad,Breeding/Eggs,Velocity,100,J07-010_slice2,Yes
-198,374,Seasonal,slice3,J07-010,Toad,Breeding/Eggs,Velocity,100,J07-010_slice3,Yes
-199,375,Seasonal,slice1,L01-060,Toad,Breeding/Eggs,Velocity,68.22429907,L01-060_slice1,Yes
-200,377,Seasonal,slice3,L01-060,Toad,Breeding/Eggs,Velocity,68.22429907,L01-060_slice3,Yes
-201,378,Seasonal,slice1,L01-080,Toad,Breeding/Eggs,Velocity,100,L01-080_slice1,Yes
-202,379,Seasonal,slice2,L01-080,Toad,Breeding/Eggs,Velocity,100,L01-080_slice2,Yes
-203,381,Seasonal,slice1,L01-100,Toad,Breeding/Eggs,Velocity,50.93457944,L01-100_slice1,Yes
-204,382,Seasonal,slice2,L01-100,Toad,Breeding/Eggs,Velocity,50.93457944,L01-100_slice2,Yes
-205,385,Seasonal,slice1,L02-010,Toad,Breeding/Eggs,Velocity,100,L02-010_slice1,Yes
-206,390,Seasonal,slice3,L02-020,Toad,Breeding/Eggs,Velocity,95.3271028,L02-020_slice3,Yes
-207,391,Seasonal,slice1,L02-021,Toad,Breeding/Eggs,Velocity,98.13084112,L02-021_slice1,Yes
-208,392,Seasonal,slice2,L02-021,Toad,Breeding/Eggs,Velocity,98.13084112,L02-021_slice2,Yes
-209,394,Seasonal,slice4,L02-021,Toad,Breeding/Eggs,Velocity,98.13084112,L02-021_slice4,Yes
-210,395,Seasonal,slice1,L02-022,Toad,Breeding/Eggs,Velocity,95.3271028,L02-022_slice1,Yes
-211,397,Seasonal,slice3,L02-022,Toad,Breeding/Eggs,Velocity,95.3271028,L02-022_slice3,Yes
-212,401,Seasonal,slice1,L02-023,Toad,Breeding/Eggs,Velocity,100,L02-023_slice1,Yes
-213,402,Seasonal,slice2,L02-023,Toad,Breeding/Eggs,Velocity,100,L02-023_slice2,Yes
-214,403,Seasonal,slice3,L02-023,Toad,Breeding/Eggs,Velocity,100,L02-023_slice3,Yes
-215,405,Seasonal,slice1,L02-030,Toad,Breeding/Eggs,Velocity,95.3271028,L02-030_slice1,Yes
-216,407,Seasonal,slice3,L02-030,Toad,Breeding/Eggs,Velocity,95.3271028,L02-030_slice3,Yes
-217,410,Seasonal,slice3,L02-031,Toad,Breeding/Eggs,Velocity,100,L02-031_slice3,Yes
-218,412,Seasonal,slice1,L02-040,Toad,Breeding/Eggs,Velocity,98.13084112,L02-040_slice1,Yes
-219,414,Seasonal,slice3,L02-040,Toad,Breeding/Eggs,Velocity,98.13084112,L02-040_slice3,Yes
-220,416,Seasonal,slice1,L02-041,Toad,Breeding/Eggs,Velocity,16.82242991,L02-041_slice1,Yes
-221,418,Seasonal,slice3,L02-041,Toad,Breeding/Eggs,Velocity,16.82242991,L02-041_slice3,Yes
-222,419,Seasonal,slice1,L02-050,Toad,Breeding/Eggs,Velocity,84.11214953,L02-050_slice1,Yes
-223,422,Seasonal,slice1,L02-051,Toad,Breeding/Eggs,Velocity,69.62616822,L02-051_slice1,Yes
-224,424,Seasonal,slice3,L02-051,Toad,Breeding/Eggs,Velocity,69.62616822,L02-051_slice3,Yes
-225,425,Seasonal,slice1,J01-010,Toad,Tadpole,Depth,100,J01-010_slice1,Yes
-226,426,Seasonal,slice2,J01-010,Toad,Tadpole,Depth,100,J01-010_slice2,Yes
-227,427,Seasonal,slice3,J01-010,Toad,Tadpole,Depth,100,J01-010_slice3,Yes
-228,428,Seasonal,slice1,J01-020,Toad,Tadpole,Depth,100,J01-020_slice1,Yes
-229,429,Seasonal,slice2,J01-020,Toad,Tadpole,Depth,100,J01-020_slice2,Yes
-230,430,Seasonal,slice3,J01-020,Toad,Tadpole,Depth,100,J01-020_slice3,Yes
-231,431,Seasonal,slice4,J01-020,Toad,Tadpole,Depth,100,J01-020_slice4,Yes
-232,432,Seasonal,slice1,J01-030,Toad,Tadpole,Depth,100,J01-030_slice1,Yes
-233,433,Seasonal,slice2,J01-030,Toad,Tadpole,Depth,100,J01-030_slice2,Yes
-234,434,Seasonal,slice3,J01-030,Toad,Tadpole,Depth,100,J01-030_slice3,Yes
-235,435,Seasonal,slice4,J01-030,Toad,Tadpole,Depth,100,J01-030_slice4,Yes
-236,436,Seasonal,slice5,J01-030,Toad,Tadpole,Depth,100,J01-030_slice5,Yes
-237,437,Seasonal,slice1,J01-031,Toad,Tadpole,Depth,100,J01-031_slice1,Yes
-238,438,Seasonal,slice2,J01-031,Toad,Tadpole,Depth,100,J01-031_slice2,Yes
-239,439,Seasonal,slice3,J01-031,Toad,Tadpole,Depth,100,J01-031_slice3,Yes
-240,440,Seasonal,slice1,J01-040,Toad,Tadpole,Depth,100,J01-040_slice1,Yes
-241,441,Seasonal,slice2,J01-040,Toad,Tadpole,Depth,100,J01-040_slice2,Yes
-242,442,Seasonal,slice3,J01-040,Toad,Tadpole,Depth,100,J01-040_slice3,Yes
-243,443,Seasonal,slice4,J01-040,Toad,Tadpole,Depth,100,J01-040_slice4,Yes
-244,444,Seasonal,slice5,J01-040,Toad,Tadpole,Depth,100,J01-040_slice5,Yes
-245,445,Seasonal,slice1,J01-041,Toad,Tadpole,Depth,100,J01-041_slice1,Yes
-246,446,Seasonal,slice2,J01-041,Toad,Tadpole,Depth,100,J01-041_slice2,Yes
-247,447,Seasonal,slice3,J01-041,Toad,Tadpole,Depth,100,J01-041_slice3,Yes
-248,448,Seasonal,slice1,J01-060,Toad,Tadpole,Depth,100,J01-060_slice1,Yes
-249,449,Seasonal,slice2,J01-060,Toad,Tadpole,Depth,100,J01-060_slice2,Yes
-250,450,Seasonal,slice3,J01-060,Toad,Tadpole,Depth,100,J01-060_slice3,Yes
-251,451,Seasonal,slice1,J01-061,Toad,Tadpole,Depth,100,J01-061_slice1,Yes
-252,452,Seasonal,slice2,J01-061,Toad,Tadpole,Depth,100,J01-061_slice2,Yes
-253,453,Seasonal,slice3,J01-061,Toad,Tadpole,Depth,100,J01-061_slice3,Yes
-254,454,Seasonal,slice1,J01-062,Toad,Tadpole,Depth,100,J01-062_slice1,Yes
-255,455,Seasonal,slice1,J01-070,Toad,Tadpole,Depth,100,J01-070_slice1,Yes
-256,456,Seasonal,slice1,J01-080,Toad,Tadpole,Depth,100,J01-080_slice1,Yes
-257,457,Seasonal,slice2,J01-080,Toad,Tadpole,Depth,100,J01-080_slice2,Yes
-258,458,Seasonal,slice3,J01-080,Toad,Tadpole,Depth,100,J01-080_slice3,Yes
-259,459,Seasonal,slice1,J01-090,Toad,Tadpole,Depth,100,J01-090_slice1,Yes
-260,460,Seasonal,slice2,J01-090,Toad,Tadpole,Depth,100,J01-090_slice2,Yes
-261,461,Seasonal,slice1,J01-091,Toad,Tadpole,Depth,100,J01-091_slice1,Yes
-262,462,Seasonal,slice2,J01-091,Toad,Tadpole,Depth,100,J01-091_slice2,Yes
-263,463,Seasonal,slice3,J01-091,Toad,Tadpole,Depth,100,J01-091_slice3,Yes
-264,464,Seasonal,slice1,J01-100,Toad,Tadpole,Depth,100,J01-100_slice1,Yes
-265,465,Seasonal,slice2,J01-100,Toad,Tadpole,Depth,100,J01-100_slice2,Yes
-266,466,Seasonal,slice3,J01-100,Toad,Tadpole,Depth,100,J01-100_slice3,Yes
-267,467,Seasonal,slice1,J03-010,Toad,Tadpole,Depth,100,J03-010_slice1,Yes
-268,468,Seasonal,slice2,J03-010,Toad,Tadpole,Depth,100,J03-010_slice2,Yes
-269,469,Seasonal,slice3,J03-010,Toad,Tadpole,Depth,100,J03-010_slice3,Yes
-270,470,Seasonal,slice1,J04-010,Toad,Tadpole,Depth,100,J04-010_slice1,Yes
-271,471,Seasonal,slice2,J04-010,Toad,Tadpole,Depth,100,J04-010_slice2,Yes
-272,472,Seasonal,slice3,J04-010,Toad,Tadpole,Depth,100,J04-010_slice3,Yes
-273,473,Seasonal,slice4,J04-010,Toad,Tadpole,Depth,100,J04-010_slice4,Yes
-274,474,Seasonal,slice1,J05-010,Toad,Tadpole,Depth,100,J05-010_slice1,Yes
-275,475,Seasonal,slice2,J05-010,Toad,Tadpole,Depth,100,J05-010_slice2,Yes
-276,476,Seasonal,slice3,J05-010,Toad,Tadpole,Depth,100,J05-010_slice3,Yes
-277,477,Seasonal,slice4,J05-010,Toad,Tadpole,Depth,100,J05-010_slice4,Yes
-278,478,Seasonal,slice1,J07-010,Toad,Tadpole,Depth,100,J07-010_slice1,Yes
-279,479,Seasonal,slice2,J07-010,Toad,Tadpole,Depth,100,J07-010_slice2,Yes
-280,480,Seasonal,slice3,J07-010,Toad,Tadpole,Depth,100,J07-010_slice3,Yes
-281,481,Seasonal,slice1,L01-060,Toad,Tadpole,Depth,68.22429907,L01-060_slice1,Yes
-282,482,Seasonal,slice2,L01-060,Toad,Tadpole,Depth,68.22429907,L01-060_slice2,Yes
-283,483,Seasonal,slice3,L01-060,Toad,Tadpole,Depth,68.22429907,L01-060_slice3,Yes
-284,484,Seasonal,slice1,L01-080,Toad,Tadpole,Depth,100,L01-080_slice1,Yes
-285,485,Seasonal,slice2,L01-080,Toad,Tadpole,Depth,100,L01-080_slice2,Yes
-286,486,Seasonal,slice3,L01-080,Toad,Tadpole,Depth,100,L01-080_slice3,Yes
-287,487,Seasonal,slice1,L01-100,Toad,Tadpole,Depth,50.93457944,L01-100_slice1,Yes
-288,488,Seasonal,slice2,L01-100,Toad,Tadpole,Depth,50.93457944,L01-100_slice2,Yes
-289,489,Seasonal,slice3,L01-100,Toad,Tadpole,Depth,50.93457944,L01-100_slice3,Yes
-290,490,Seasonal,slice4,L01-100,Toad,Tadpole,Depth,50.93457944,L01-100_slice4,Yes
-291,491,Seasonal,slice1,L02-010,Toad,Tadpole,Depth,100,L02-010_slice1,Yes
-292,492,Seasonal,slice2,L02-010,Toad,Tadpole,Depth,100,L02-010_slice2,Yes
-293,493,Seasonal,slice3,L02-010,Toad,Tadpole,Depth,100,L02-010_slice3,Yes
-294,495,Seasonal,slice2,L02-020,Toad,Tadpole,Depth,95.79439252,L02-020_slice2,Yes
-295,496,Seasonal,slice3,L02-020,Toad,Tadpole,Depth,95.79439252,L02-020_slice3,Yes
-296,497,Seasonal,slice1,L02-021,Toad,Tadpole,Depth,98.13084112,L02-021_slice1,Yes
-297,498,Seasonal,slice2,L02-021,Toad,Tadpole,Depth,98.13084112,L02-021_slice2,Yes
-298,499,Seasonal,slice3,L02-021,Toad,Tadpole,Depth,98.13084112,L02-021_slice3,Yes
-299,500,Seasonal,slice4,L02-021,Toad,Tadpole,Depth,98.13084112,L02-021_slice4,Yes
-300,501,Seasonal,slice1,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice1,Yes
-301,502,Seasonal,slice2,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice2,Yes
-302,503,Seasonal,slice3,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice3,Yes
-303,504,Seasonal,slice4,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice4,Yes
-304,505,Seasonal,slice5,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice5,Yes
-305,506,Seasonal,slice6,L02-022,Toad,Tadpole,Depth,95.3271028,L02-022_slice6,Yes
-306,507,Seasonal,slice1,L02-023,Toad,Tadpole,Depth,100,L02-023_slice1,Yes
-307,508,Seasonal,slice2,L02-023,Toad,Tadpole,Depth,100,L02-023_slice2,Yes
-308,509,Seasonal,slice3,L02-023,Toad,Tadpole,Depth,100,L02-023_slice3,Yes
-309,511,Seasonal,slice1,L02-030,Toad,Tadpole,Depth,95.3271028,L02-030_slice1,Yes
-310,512,Seasonal,slice2,L02-030,Toad,Tadpole,Depth,95.3271028,L02-030_slice2,Yes
-311,513,Seasonal,slice3,L02-030,Toad,Tadpole,Depth,95.3271028,L02-030_slice3,Yes
-312,514,Seasonal,slice1,L02-031,Toad,Tadpole,Depth,100,L02-031_slice1,Yes
-313,515,Seasonal,slice2,L02-031,Toad,Tadpole,Depth,100,L02-031_slice2,Yes
-314,516,Seasonal,slice3,L02-031,Toad,Tadpole,Depth,100,L02-031_slice3,Yes
-315,517,Seasonal,slice4,L02-031,Toad,Tadpole,Depth,100,L02-031_slice4,Yes
-316,518,Seasonal,slice1,L02-040,Toad,Tadpole,Depth,98.13084112,L02-040_slice1,Yes
-317,519,Seasonal,slice2,L02-040,Toad,Tadpole,Depth,98.13084112,L02-040_slice2,Yes
-318,520,Seasonal,slice3,L02-040,Toad,Tadpole,Depth,98.13084112,L02-040_slice3,Yes
-319,521,Seasonal,slice4,L02-040,Toad,Tadpole,Depth,98.13084112,L02-040_slice4,Yes
-320,522,Seasonal,slice1,L02-041,Toad,Tadpole,Depth,16.82242991,L02-041_slice1,Yes
-321,523,Seasonal,slice2,L02-041,Toad,Tadpole,Depth,16.82242991,L02-041_slice2,Yes
-322,524,Seasonal,slice3,L02-041,Toad,Tadpole,Depth,16.82242991,L02-041_slice3,Yes
-323,525,Seasonal,slice1,L02-050,Toad,Tadpole,Depth,84.57943925,L02-050_slice1,Yes
-324,526,Seasonal,slice2,L02-050,Toad,Tadpole,Depth,84.57943925,L02-050_slice2,Yes
-325,527,Seasonal,slice3,L02-050,Toad,Tadpole,Depth,84.57943925,L02-050_slice3,Yes
-326,528,Seasonal,slice1,L02-051,Toad,Tadpole,Depth,69.62616822,L02-051_slice1,Yes
-327,529,Seasonal,slice2,L02-051,Toad,Tadpole,Depth,69.62616822,L02-051_slice2,Yes
-328,530,Seasonal,slice3,L02-051,Toad,Tadpole,Depth,69.62616822,L02-051_slice3,Yes
-329,531,Seasonal,slice1,J01-010,Toad,Tadpole,Velocity,100,J01-010_slice1,Yes
-330,532,Seasonal,slice2,J01-010,Toad,Tadpole,Velocity,100,J01-010_slice2,Yes
-331,533,Seasonal,slice3,J01-010,Toad,Tadpole,Velocity,100,J01-010_slice3,Yes
-332,534,Seasonal,slice1,J01-020,Toad,Tadpole,Velocity,100,J01-020_slice1,Yes
-333,535,Seasonal,slice2,J01-020,Toad,Tadpole,Velocity,100,J01-020_slice2,Yes
-334,537,Seasonal,slice4,J01-020,Toad,Tadpole,Velocity,100,J01-020_slice4,Yes
-335,538,Seasonal,slice1,J01-030,Toad,Tadpole,Velocity,100,J01-030_slice1,Yes
-336,539,Seasonal,slice2,J01-030,Toad,Tadpole,Velocity,100,J01-030_slice2,Yes
-337,541,Seasonal,slice4,J01-030,Toad,Tadpole,Velocity,100,J01-030_slice4,Yes
-338,542,Seasonal,slice5,J01-030,Toad,Tadpole,Velocity,100,J01-030_slice5,Yes
-339,543,Seasonal,slice1,J01-031,Toad,Tadpole,Velocity,100,J01-031_slice1,Yes
-340,544,Seasonal,slice2,J01-031,Toad,Tadpole,Velocity,100,J01-031_slice2,Yes
-341,545,Seasonal,slice3,J01-031,Toad,Tadpole,Velocity,100,J01-031_slice3,Yes
-342,546,Seasonal,slice1,J01-040,Toad,Tadpole,Velocity,100,J01-040_slice1,Yes
-343,547,Seasonal,slice2,J01-040,Toad,Tadpole,Velocity,100,J01-040_slice2,Yes
-344,548,Seasonal,slice3,J01-040,Toad,Tadpole,Velocity,100,J01-040_slice3,Yes
-345,549,Seasonal,slice4,J01-040,Toad,Tadpole,Velocity,100,J01-040_slice4,Yes
-346,550,Seasonal,slice5,J01-040,Toad,Tadpole,Velocity,100,J01-040_slice5,Yes
-347,551,Seasonal,slice1,J01-041,Toad,Tadpole,Velocity,100,J01-041_slice1,Yes
-348,552,Seasonal,slice2,J01-041,Toad,Tadpole,Velocity,100,J01-041_slice2,Yes
-349,553,Seasonal,slice3,J01-041,Toad,Tadpole,Velocity,100,J01-041_slice3,Yes
-350,554,Seasonal,slice1,J01-060,Toad,Tadpole,Velocity,100,J01-060_slice1,Yes
-351,556,Seasonal,slice3,J01-060,Toad,Tadpole,Velocity,100,J01-060_slice3,Yes
-352,557,Seasonal,slice1,J01-061,Toad,Tadpole,Velocity,100,J01-061_slice1,Yes
-353,558,Seasonal,slice2,J01-061,Toad,Tadpole,Velocity,100,J01-061_slice2,Yes
-354,559,Seasonal,slice3,J01-061,Toad,Tadpole,Velocity,100,J01-061_slice3,Yes
-355,560,Seasonal,slice1,J01-062,Toad,Tadpole,Velocity,100,J01-062_slice1,Yes
-356,561,Seasonal,slice1,J01-070,Toad,Tadpole,Velocity,80.93847352,J01-070_slice1,Yes
-357,562,Seasonal,slice1,J01-080,Toad,Tadpole,Velocity,100,J01-080_slice1,Yes
-358,564,Seasonal,slice3,J01-080,Toad,Tadpole,Velocity,100,J01-080_slice3,Yes
-359,565,Seasonal,slice1,J01-090,Toad,Tadpole,Velocity,100,J01-090_slice1,Yes
-360,567,Seasonal,slice1,J01-091,Toad,Tadpole,Velocity,100,J01-091_slice1,Yes
-361,569,Seasonal,slice3,J01-091,Toad,Tadpole,Velocity,100,J01-091_slice3,Yes
-362,570,Seasonal,slice1,J01-100,Toad,Tadpole,Velocity,100,J01-100_slice1,Yes
-363,571,Seasonal,slice2,J01-100,Toad,Tadpole,Velocity,100,J01-100_slice2,Yes
-364,572,Seasonal,slice3,J01-100,Toad,Tadpole,Velocity,100,J01-100_slice3,Yes
-365,573,Seasonal,slice1,J03-010,Toad,Tadpole,Velocity,100,J03-010_slice1,Yes
-366,574,Seasonal,slice2,J03-010,Toad,Tadpole,Velocity,100,J03-010_slice2,Yes
-367,575,Seasonal,slice3,J03-010,Toad,Tadpole,Velocity,100,J03-010_slice3,Yes
-368,576,Seasonal,slice1,J04-010,Toad,Tadpole,Velocity,100,J04-010_slice1,Yes
-369,577,Seasonal,slice2,J04-010,Toad,Tadpole,Velocity,100,J04-010_slice2,Yes
-370,578,Seasonal,slice3,J04-010,Toad,Tadpole,Velocity,100,J04-010_slice3,Yes
-371,579,Seasonal,slice4,J04-010,Toad,Tadpole,Velocity,100,J04-010_slice4,Yes
-372,580,Seasonal,slice1,J05-010,Toad,Tadpole,Velocity,100,J05-010_slice1,Yes
-373,581,Seasonal,slice2,J05-010,Toad,Tadpole,Velocity,100,J05-010_slice2,Yes
-374,582,Seasonal,slice3,J05-010,Toad,Tadpole,Velocity,100,J05-010_slice3,Yes
-375,583,Seasonal,slice4,J05-010,Toad,Tadpole,Velocity,100,J05-010_slice4,Yes
-376,584,Seasonal,slice1,J07-010,Toad,Tadpole,Velocity,100,J07-010_slice1,Yes
-377,585,Seasonal,slice2,J07-010,Toad,Tadpole,Velocity,100,J07-010_slice2,Yes
-378,586,Seasonal,slice3,J07-010,Toad,Tadpole,Velocity,100,J07-010_slice3,Yes
-379,587,Seasonal,slice1,L01-060,Toad,Tadpole,Velocity,68.22429907,L01-060_slice1,Yes
-380,589,Seasonal,slice3,L01-060,Toad,Tadpole,Velocity,68.22429907,L01-060_slice3,Yes
-381,590,Seasonal,slice1,L01-080,Toad,Tadpole,Velocity,100,L01-080_slice1,Yes
-382,591,Seasonal,slice2,L01-080,Toad,Tadpole,Velocity,100,L01-080_slice2,Yes
-383,593,Seasonal,slice1,L01-100,Toad,Tadpole,Velocity,50.93457944,L01-100_slice1,Yes
-384,594,Seasonal,slice2,L01-100,Toad,Tadpole,Velocity,50.93457944,L01-100_slice2,Yes
-385,596,Seasonal,slice4,L01-100,Toad,Tadpole,Velocity,50.93457944,L01-100_slice4,Yes
-386,597,Seasonal,slice1,L02-010,Toad,Tadpole,Velocity,100,L02-010_slice1,Yes
-387,602,Seasonal,slice3,L02-020,Toad,Tadpole,Velocity,95.79439252,L02-020_slice3,Yes
-388,603,Seasonal,slice1,L02-021,Toad,Tadpole,Velocity,98.13084112,L02-021_slice1,Yes
-389,604,Seasonal,slice2,L02-021,Toad,Tadpole,Velocity,98.13084112,L02-021_slice2,Yes
-390,606,Seasonal,slice4,L02-021,Toad,Tadpole,Velocity,98.13084112,L02-021_slice4,Yes
-391,607,Seasonal,slice1,L02-022,Toad,Tadpole,Velocity,95.3271028,L02-022_slice1,Yes
-392,609,Seasonal,slice3,L02-022,Toad,Tadpole,Velocity,95.3271028,L02-022_slice3,Yes
-393,611,Seasonal,slice5,L02-022,Toad,Tadpole,Velocity,95.3271028,L02-022_slice5,Yes
-394,613,Seasonal,slice1,L02-023,Toad,Tadpole,Velocity,100,L02-023_slice1,Yes
-395,614,Seasonal,slice2,L02-023,Toad,Tadpole,Velocity,100,L02-023_slice2,Yes
-396,615,Seasonal,slice3,L02-023,Toad,Tadpole,Velocity,100,L02-023_slice3,Yes
-397,617,Seasonal,slice1,L02-030,Toad,Tadpole,Velocity,95.3271028,L02-030_slice1,Yes
-398,619,Seasonal,slice3,L02-030,Toad,Tadpole,Velocity,95.3271028,L02-030_slice3,Yes
-399,620,Seasonal,slice1,L02-031,Toad,Tadpole,Velocity,100,L02-031_slice1,Yes
-400,622,Seasonal,slice3,L02-031,Toad,Tadpole,Velocity,100,L02-031_slice3,Yes
-401,624,Seasonal,slice1,L02-040,Toad,Tadpole,Velocity,98.13084112,L02-040_slice1,Yes
-402,626,Seasonal,slice3,L02-040,Toad,Tadpole,Velocity,98.13084112,L02-040_slice3,Yes
-403,628,Seasonal,slice1,L02-041,Toad,Tadpole,Velocity,16.82242991,L02-041_slice1,Yes
-404,630,Seasonal,slice3,L02-041,Toad,Tadpole,Velocity,16.82242991,L02-041_slice3,Yes
-405,631,Seasonal,slice1,L02-050,Toad,Tadpole,Velocity,84.57943925,L02-050_slice1,Yes
-406,634,Seasonal,slice1,L02-051,Toad,Tadpole,Velocity,69.62616822,L02-051_slice1,Yes
-407,636,Seasonal,slice3,L02-051,Toad,Tadpole,Velocity,69.62616822,L02-051_slice3,Yes
-408,637,Annual,slice1,J01-010,Willow,Adult,StreamPower,100,J01-010_slice1,Yes
-409,638,Annual,slice2,J01-010,Willow,Adult,StreamPower,100,J01-010_slice2,Yes
-410,639,Annual,slice3,J01-010,Willow,Adult,StreamPower,100,J01-010_slice3,Yes
-411,640,Annual,slice1,J01-020,Willow,Adult,StreamPower,100,J01-020_slice1,Yes
-412,641,Annual,slice2,J01-020,Willow,Adult,StreamPower,100,J01-020_slice2,Yes
-413,642,Annual,slice3,J01-020,Willow,Adult,StreamPower,100,J01-020_slice3,Yes
-414,643,Annual,slice4,J01-020,Willow,Adult,StreamPower,100,J01-020_slice4,Yes
-415,644,Annual,slice1,J01-030,Willow,Adult,StreamPower,100,J01-030_slice1,Yes
-416,645,Annual,slice2,J01-030,Willow,Adult,StreamPower,100,J01-030_slice2,Yes
-417,646,Annual,slice3,J01-030,Willow,Adult,StreamPower,100,J01-030_slice3,Yes
-418,647,Annual,slice4,J01-030,Willow,Adult,StreamPower,100,J01-030_slice4,Yes
-419,648,Annual,slice5,J01-030,Willow,Adult,StreamPower,100,J01-030_slice5,Yes
-420,649,Annual,slice1,J01-031,Willow,Adult,StreamPower,100,J01-031_slice1,Yes
-421,650,Annual,slice2,J01-031,Willow,Adult,StreamPower,100,J01-031_slice2,Yes
-422,651,Annual,slice3,J01-031,Willow,Adult,StreamPower,100,J01-031_slice3,Yes
-423,652,Annual,slice1,J01-040,Willow,Adult,StreamPower,100,J01-040_slice1,Yes
-424,653,Annual,slice2,J01-040,Willow,Adult,StreamPower,100,J01-040_slice2,Yes
-425,654,Annual,slice3,J01-040,Willow,Adult,StreamPower,100,J01-040_slice3,Yes
-426,655,Annual,slice4,J01-040,Willow,Adult,StreamPower,100,J01-040_slice4,Yes
-427,656,Annual,slice5,J01-040,Willow,Adult,StreamPower,100,J01-040_slice5,Yes
-428,657,Annual,slice1,J01-041,Willow,Adult,StreamPower,100,J01-041_slice1,Yes
-429,658,Annual,slice2,J01-041,Willow,Adult,StreamPower,100,J01-041_slice2,Yes
-430,659,Annual,slice3,J01-041,Willow,Adult,StreamPower,100,J01-041_slice3,Yes
-431,660,Annual,slice1,J01-060,Willow,Adult,StreamPower,100,J01-060_slice1,Yes
-432,661,Annual,slice2,J01-060,Willow,Adult,StreamPower,100,J01-060_slice2,Yes
-433,662,Annual,slice3,J01-060,Willow,Adult,StreamPower,100,J01-060_slice3,Yes
-434,663,Annual,slice1,J01-061,Willow,Adult,StreamPower,100,J01-061_slice1,Yes
-435,664,Annual,slice2,J01-061,Willow,Adult,StreamPower,100,J01-061_slice2,Yes
-436,665,Annual,slice3,J01-061,Willow,Adult,StreamPower,100,J01-061_slice3,Yes
-437,666,Annual,slice1,J01-062,Willow,Adult,StreamPower,100,J01-062_slice1,Yes
-438,667,Annual,slice1,J01-070,Willow,Adult,StreamPower,100,J01-070_slice1,Yes
-439,668,Annual,slice1,J01-080,Willow,Adult,StreamPower,100,J01-080_slice1,Yes
-440,669,Annual,slice2,J01-080,Willow,Adult,StreamPower,100,J01-080_slice2,Yes
-441,670,Annual,slice3,J01-080,Willow,Adult,StreamPower,100,J01-080_slice3,Yes
-442,671,Annual,slice1,J01-090,Willow,Adult,StreamPower,100,J01-090_slice1,Yes
-443,672,Annual,slice2,J01-090,Willow,Adult,StreamPower,100,J01-090_slice2,Yes
-444,673,Annual,slice1,J01-091,Willow,Adult,StreamPower,100,J01-091_slice1,Yes
-445,674,Annual,slice2,J01-091,Willow,Adult,StreamPower,100,J01-091_slice2,Yes
-446,675,Annual,slice3,J01-091,Willow,Adult,StreamPower,100,J01-091_slice3,Yes
-447,676,Annual,slice1,J01-100,Willow,Adult,StreamPower,100,J01-100_slice1,Yes
-448,677,Annual,slice2,J01-100,Willow,Adult,StreamPower,100,J01-100_slice2,Yes
-449,678,Annual,slice3,J01-100,Willow,Adult,StreamPower,100,J01-100_slice3,Yes
-450,679,Annual,slice1,J03-010,Willow,Adult,StreamPower,100,J03-010_slice1,Yes
-451,680,Annual,slice2,J03-010,Willow,Adult,StreamPower,100,J03-010_slice2,Yes
-452,681,Annual,slice3,J03-010,Willow,Adult,StreamPower,100,J03-010_slice3,Yes
-453,682,Annual,slice1,J04-010,Willow,Adult,StreamPower,100,J04-010_slice1,Yes
-454,683,Annual,slice2,J04-010,Willow,Adult,StreamPower,100,J04-010_slice2,Yes
-455,684,Annual,slice3,J04-010,Willow,Adult,StreamPower,100,J04-010_slice3,Yes
-456,685,Annual,slice4,J04-010,Willow,Adult,StreamPower,100,J04-010_slice4,Yes
-457,686,Annual,slice1,J05-010,Willow,Adult,StreamPower,100,J05-010_slice1,Yes
-458,687,Annual,slice2,J05-010,Willow,Adult,StreamPower,100,J05-010_slice2,Yes
-459,688,Annual,slice3,J05-010,Willow,Adult,StreamPower,100,J05-010_slice3,Yes
-460,689,Annual,slice4,J05-010,Willow,Adult,StreamPower,100,J05-010_slice4,Yes
-461,690,Annual,slice1,J07-010,Willow,Adult,StreamPower,100,J07-010_slice1,Yes
-462,691,Annual,slice2,J07-010,Willow,Adult,StreamPower,100,J07-010_slice2,Yes
-463,692,Annual,slice3,J07-010,Willow,Adult,StreamPower,100,J07-010_slice3,Yes
-464,693,Annual,slice1,L01-060,Willow,Adult,StreamPower,100,L01-060_slice1,Yes
-465,694,Annual,slice2,L01-060,Willow,Adult,StreamPower,100,L01-060_slice2,Yes
-466,695,Annual,slice3,L01-060,Willow,Adult,StreamPower,100,L01-060_slice3,Yes
-467,696,Annual,slice1,L01-080,Willow,Adult,StreamPower,100,L01-080_slice1,Yes
-468,697,Annual,slice2,L01-080,Willow,Adult,StreamPower,100,L01-080_slice2,Yes
-469,698,Annual,slice3,L01-080,Willow,Adult,StreamPower,100,L01-080_slice3,Yes
-470,699,Annual,slice1,L01-100,Willow,Adult,StreamPower,100,L01-100_slice1,Yes
-471,700,Annual,slice2,L01-100,Willow,Adult,StreamPower,100,L01-100_slice2,Yes
-472,701,Annual,slice3,L01-100,Willow,Adult,StreamPower,100,L01-100_slice3,Yes
-473,702,Annual,slice4,L01-100,Willow,Adult,StreamPower,100,L01-100_slice4,Yes
-474,703,Annual,slice1,L02-010,Willow,Adult,StreamPower,100,L02-010_slice1,Yes
-475,704,Annual,slice2,L02-010,Willow,Adult,StreamPower,100,L02-010_slice2,Yes
-476,705,Annual,slice3,L02-010,Willow,Adult,StreamPower,100,L02-010_slice3,Yes
-477,706,Annual,slice1,L02-020,Willow,Adult,StreamPower,100,L02-020_slice1,Yes
-478,707,Annual,slice2,L02-020,Willow,Adult,StreamPower,100,L02-020_slice2,Yes
-479,708,Annual,slice3,L02-020,Willow,Adult,StreamPower,100,L02-020_slice3,Yes
-480,709,Annual,slice1,L02-021,Willow,Adult,StreamPower,100,L02-021_slice1,Yes
-481,710,Annual,slice2,L02-021,Willow,Adult,StreamPower,100,L02-021_slice2,Yes
-482,711,Annual,slice3,L02-021,Willow,Adult,StreamPower,100,L02-021_slice3,Yes
-483,712,Annual,slice4,L02-021,Willow,Adult,StreamPower,100,L02-021_slice4,Yes
-484,713,Annual,slice1,L02-022,Willow,Adult,StreamPower,100,L02-022_slice1,Yes
-485,714,Annual,slice2,L02-022,Willow,Adult,StreamPower,100,L02-022_slice2,Yes
-486,715,Annual,slice3,L02-022,Willow,Adult,StreamPower,100,L02-022_slice3,Yes
-487,716,Annual,slice4,L02-022,Willow,Adult,StreamPower,100,L02-022_slice4,Yes
-488,717,Annual,slice5,L02-022,Willow,Adult,StreamPower,100,L02-022_slice5,Yes
-489,718,Annual,slice6,L02-022,Willow,Adult,StreamPower,100,L02-022_slice6,Yes
-490,719,Annual,slice1,L02-023,Willow,Adult,StreamPower,100,L02-023_slice1,Yes
-491,720,Annual,slice2,L02-023,Willow,Adult,StreamPower,100,L02-023_slice2,Yes
-492,721,Annual,slice3,L02-023,Willow,Adult,StreamPower,100,L02-023_slice3,Yes
-493,722,Annual,slice4,L02-023,Willow,Adult,StreamPower,100,L02-023_slice4,Yes
-494,723,Annual,slice1,L02-030,Willow,Adult,StreamPower,100,L02-030_slice1,Yes
-495,724,Annual,slice2,L02-030,Willow,Adult,StreamPower,100,L02-030_slice2,Yes
-496,725,Annual,slice3,L02-030,Willow,Adult,StreamPower,100,L02-030_slice3,Yes
-497,726,Annual,slice1,L02-031,Willow,Adult,StreamPower,100,L02-031_slice1,Yes
-498,727,Annual,slice2,L02-031,Willow,Adult,StreamPower,100,L02-031_slice2,Yes
-499,728,Annual,slice3,L02-031,Willow,Adult,StreamPower,100,L02-031_slice3,Yes
-500,729,Annual,slice4,L02-031,Willow,Adult,StreamPower,100,L02-031_slice4,Yes
-501,730,Annual,slice1,L02-040,Willow,Adult,StreamPower,100,L02-040_slice1,Yes
-502,731,Annual,slice2,L02-040,Willow,Adult,StreamPower,100,L02-040_slice2,Yes
-503,732,Annual,slice3,L02-040,Willow,Adult,StreamPower,100,L02-040_slice3,Yes
-504,733,Annual,slice4,L02-040,Willow,Adult,StreamPower,100,L02-040_slice4,Yes
-505,734,Annual,slice1,L02-041,Willow,Adult,StreamPower,100,L02-041_slice1,Yes
-506,735,Annual,slice2,L02-041,Willow,Adult,StreamPower,100,L02-041_slice2,Yes
-507,736,Annual,slice3,L02-041,Willow,Adult,StreamPower,100,L02-041_slice3,Yes
-508,737,Annual,slice1,L02-050,Willow,Adult,StreamPower,100,L02-050_slice1,Yes
-509,738,Annual,slice2,L02-050,Willow,Adult,StreamPower,100,L02-050_slice2,Yes
-510,739,Annual,slice3,L02-050,Willow,Adult,StreamPower,100,L02-050_slice3,Yes
-511,740,Annual,slice1,L02-051,Willow,Adult,StreamPower,100,L02-051_slice1,Yes
-512,741,Annual,slice2,L02-051,Willow,Adult,StreamPower,100,L02-051_slice2,Yes
-513,742,Annual,slice3,L02-051,Willow,Adult,StreamPower,100,L02-051_slice3,Yes
-514,744,critical,slice2,J01-010,Willow,Germination,Depth,100,J01-010_slice2,Yes
-515,748,critical,slice3,J01-020,Willow,Germination,Depth,100,J01-020_slice3,Yes
-516,752,critical,slice3,J01-030,Willow,Germination,Depth,2.322404372,J01-030_slice3,Yes
-517,756,critical,slice2,J01-031,Willow,Germination,Depth,0.683060109,J01-031_slice2,Yes
-518,761,critical,slice4,J01-040,Willow,Germination,Depth,100,J01-040_slice4,Yes
-519,764,critical,slice2,J01-041,Willow,Germination,Depth,59.79052823,J01-041_slice2,Yes
-520,767,critical,slice2,J01-060,Willow,Germination,Depth,100,J01-060_slice2,Yes
-521,770,critical,slice2,J01-061,Willow,Germination,Depth,1.798724954,J01-061_slice2,Yes
-522,772,critical,slice1,J01-062,Willow,Germination,Depth,0.113843352,J01-062_slice1,Yes
-523,773,critical,slice1,J01-070,Willow,Germination,Depth,3.506375228,J01-070_slice1,Yes
-524,775,critical,slice2,J01-080,Willow,Germination,Depth,3.324225865,J01-080_slice2,Yes
-525,778,critical,slice2,J01-090,Willow,Germination,Depth,4.735883424,J01-090_slice2,Yes
-526,780,critical,slice2,J01-091,Willow,Germination,Depth,1.684881603,J01-091_slice2,Yes
-527,783,critical,slice2,J01-100,Willow,Germination,Depth,0.865209472,J01-100_slice2,Yes
-528,786,critical,slice2,J03-010,Willow,Germination,Depth,100,J03-010_slice2,Yes
-529,790,critical,slice3,J04-010,Willow,Germination,Depth,100,J04-010_slice3,Yes
-530,792,critical,slice1,J05-010,Willow,Germination,Depth,2.049180328,J05-010_slice1,Yes
-531,796,critical,slice1,J07-010,Willow,Germination,Depth,0.546448087,J07-010_slice1,Yes
-532,800,critical,slice2,L01-060,Willow,Germination,Depth,4.371584699,L01-060_slice2,Yes
-533,804,critical,slice3,L01-080,Willow,Germination,Depth,3.278688525,L01-080_slice3,Yes
-534,807,critical,slice3,L01-100,Willow,Germination,Depth,1.092896175,L01-100_slice3,Yes
-535,810,critical,slice2,L02-010,Willow,Germination,Depth,18.57923497,L02-010_slice2,Yes
-536,812,critical,slice1,L02-020,Willow,Germination,Depth,74.31693989,L02-020_slice1,Yes
-537,817,critical,slice3,L02-021,Willow,Germination,Depth,61.20218579,L02-021_slice3,Yes
-538,824,critical,slice6,L02-022,Willow,Germination,Depth,14.20765027,L02-022_slice6,Yes
-539,828,critical,slice4,L02-023,Willow,Germination,Depth,51.91256831,L02-023_slice4,Yes
-540,830,critical,slice2,L02-030,Willow,Germination,Depth,18.03278689,L02-030_slice2,Yes
-541,833,critical,slice2,L02-031,Willow,Germination,Depth,71.58469945,L02-031_slice2,Yes
-542,839,critical,slice4,L02-040,Willow,Germination,Depth,27.32240437,L02-040_slice4,Yes
-543,841,critical,slice2,L02-041,Willow,Germination,Depth,1.639344262,L02-041_slice2,Yes
-544,845,critical,slice3,L02-050,Willow,Germination,Depth,34.9726776,L02-050_slice3,Yes
-545,847,critical,slice2,L02-051,Willow,Germination,Depth,2.18579235,L02-051_slice2,Yes
-546,849,critical,slice1,J01-010,Willow,Seedling,Depth,100,J01-010_slice1,Yes
-547,850,critical,slice2,J01-010,Willow,Seedling,Depth,100,J01-010_slice2,Yes
-548,851,critical,slice3,J01-010,Willow,Seedling,Depth,100,J01-010_slice3,Yes
-549,852,critical,slice1,J01-020,Willow,Seedling,Depth,100,J01-020_slice1,Yes
-550,853,critical,slice2,J01-020,Willow,Seedling,Depth,100,J01-020_slice2,Yes
-551,854,critical,slice3,J01-020,Willow,Seedling,Depth,100,J01-020_slice3,Yes
-552,855,critical,slice4,J01-020,Willow,Seedling,Depth,100,J01-020_slice4,Yes
-553,856,critical,slice1,J01-030,Willow,Seedling,Depth,100,J01-030_slice1,Yes
-554,857,critical,slice2,J01-030,Willow,Seedling,Depth,100,J01-030_slice2,Yes
-555,858,critical,slice3,J01-030,Willow,Seedling,Depth,100,J01-030_slice3,Yes
-556,859,critical,slice4,J01-030,Willow,Seedling,Depth,100,J01-030_slice4,Yes
-557,860,critical,slice5,J01-030,Willow,Seedling,Depth,100,J01-030_slice5,Yes
-558,861,critical,slice1,J01-031,Willow,Seedling,Depth,100,J01-031_slice1,Yes
-559,862,critical,slice2,J01-031,Willow,Seedling,Depth,100,J01-031_slice2,Yes
-560,863,critical,slice3,J01-031,Willow,Seedling,Depth,100,J01-031_slice3,Yes
-561,864,critical,slice1,J01-040,Willow,Seedling,Depth,100,J01-040_slice1,Yes
-562,865,critical,slice2,J01-040,Willow,Seedling,Depth,100,J01-040_slice2,Yes
-563,866,critical,slice3,J01-040,Willow,Seedling,Depth,100,J01-040_slice3,Yes
-564,867,critical,slice4,J01-040,Willow,Seedling,Depth,100,J01-040_slice4,Yes
-565,868,critical,slice5,J01-040,Willow,Seedling,Depth,100,J01-040_slice5,Yes
-566,869,critical,slice1,J01-041,Willow,Seedling,Depth,100,J01-041_slice1,Yes
-567,870,critical,slice2,J01-041,Willow,Seedling,Depth,100,J01-041_slice2,Yes
-568,871,critical,slice3,J01-041,Willow,Seedling,Depth,100,J01-041_slice3,Yes
-569,872,critical,slice1,J01-060,Willow,Seedling,Depth,100,J01-060_slice1,Yes
-570,873,critical,slice2,J01-060,Willow,Seedling,Depth,100,J01-060_slice2,Yes
-571,874,critical,slice3,J01-060,Willow,Seedling,Depth,100,J01-060_slice3,Yes
-572,875,critical,slice1,J01-061,Willow,Seedling,Depth,100,J01-061_slice1,Yes
-573,876,critical,slice2,J01-061,Willow,Seedling,Depth,100,J01-061_slice2,Yes
-574,877,critical,slice3,J01-061,Willow,Seedling,Depth,100,J01-061_slice3,Yes
-575,878,critical,slice1,J01-062,Willow,Seedling,Depth,100,J01-062_slice1,Yes
-576,879,critical,slice1,J01-070,Willow,Seedling,Depth,100,J01-070_slice1,Yes
-577,880,critical,slice1,J01-080,Willow,Seedling,Depth,100,J01-080_slice1,Yes
-578,881,critical,slice2,J01-080,Willow,Seedling,Depth,100,J01-080_slice2,Yes
-579,882,critical,slice3,J01-080,Willow,Seedling,Depth,100,J01-080_slice3,Yes
-580,883,critical,slice1,J01-090,Willow,Seedling,Depth,100,J01-090_slice1,Yes
-581,884,critical,slice2,J01-090,Willow,Seedling,Depth,100,J01-090_slice2,Yes
-582,885,critical,slice1,J01-091,Willow,Seedling,Depth,100,J01-091_slice1,Yes
-583,886,critical,slice2,J01-091,Willow,Seedling,Depth,100,J01-091_slice2,Yes
-584,887,critical,slice3,J01-091,Willow,Seedling,Depth,100,J01-091_slice3,Yes
-585,888,critical,slice1,J01-100,Willow,Seedling,Depth,100,J01-100_slice1,Yes
-586,889,critical,slice2,J01-100,Willow,Seedling,Depth,100,J01-100_slice2,Yes
-587,890,critical,slice3,J01-100,Willow,Seedling,Depth,100,J01-100_slice3,Yes
-588,891,critical,slice1,J03-010,Willow,Seedling,Depth,100,J03-010_slice1,Yes
-589,892,critical,slice2,J03-010,Willow,Seedling,Depth,100,J03-010_slice2,Yes
-590,893,critical,slice3,J03-010,Willow,Seedling,Depth,100,J03-010_slice3,Yes
-591,894,critical,slice1,J04-010,Willow,Seedling,Depth,100,J04-010_slice1,Yes
-592,895,critical,slice2,J04-010,Willow,Seedling,Depth,100,J04-010_slice2,Yes
-593,896,critical,slice3,J04-010,Willow,Seedling,Depth,100,J04-010_slice3,Yes
-594,897,critical,slice4,J04-010,Willow,Seedling,Depth,100,J04-010_slice4,Yes
-595,898,critical,slice1,J05-010,Willow,Seedling,Depth,100,J05-010_slice1,Yes
-596,899,critical,slice2,J05-010,Willow,Seedling,Depth,100,J05-010_slice2,Yes
-597,900,critical,slice3,J05-010,Willow,Seedling,Depth,100,J05-010_slice3,Yes
-598,901,critical,slice4,J05-010,Willow,Seedling,Depth,100,J05-010_slice4,Yes
-599,902,critical,slice1,J07-010,Willow,Seedling,Depth,100,J07-010_slice1,Yes
-600,903,critical,slice2,J07-010,Willow,Seedling,Depth,100,J07-010_slice2,Yes
-601,904,critical,slice3,J07-010,Willow,Seedling,Depth,100,J07-010_slice3,Yes
-602,905,critical,slice1,L01-060,Willow,Seedling,Depth,100,L01-060_slice1,Yes
-603,906,critical,slice2,L01-060,Willow,Seedling,Depth,100,L01-060_slice2,Yes
-604,907,critical,slice3,L01-060,Willow,Seedling,Depth,100,L01-060_slice3,Yes
-605,908,critical,slice1,L01-080,Willow,Seedling,Depth,100,L01-080_slice1,Yes
-606,909,critical,slice2,L01-080,Willow,Seedling,Depth,100,L01-080_slice2,Yes
-607,910,critical,slice3,L01-080,Willow,Seedling,Depth,100,L01-080_slice3,Yes
-608,911,critical,slice1,L01-100,Willow,Seedling,Depth,100,L01-100_slice1,Yes
-609,912,critical,slice2,L01-100,Willow,Seedling,Depth,100,L01-100_slice2,Yes
-610,913,critical,slice3,L01-100,Willow,Seedling,Depth,100,L01-100_slice3,Yes
-611,914,critical,slice4,L01-100,Willow,Seedling,Depth,100,L01-100_slice4,Yes
-612,915,critical,slice1,L02-010,Willow,Seedling,Depth,100,L02-010_slice1,Yes
-613,916,critical,slice2,L02-010,Willow,Seedling,Depth,100,L02-010_slice2,Yes
-614,917,critical,slice3,L02-010,Willow,Seedling,Depth,100,L02-010_slice3,Yes
-615,918,critical,slice1,L02-020,Willow,Seedling,Depth,100,L02-020_slice1,Yes
-616,919,critical,slice2,L02-020,Willow,Seedling,Depth,100,L02-020_slice2,Yes
-617,920,critical,slice3,L02-020,Willow,Seedling,Depth,100,L02-020_slice3,Yes
-618,921,critical,slice1,L02-021,Willow,Seedling,Depth,100,L02-021_slice1,Yes
-619,922,critical,slice2,L02-021,Willow,Seedling,Depth,100,L02-021_slice2,Yes
-620,923,critical,slice3,L02-021,Willow,Seedling,Depth,100,L02-021_slice3,Yes
-621,924,critical,slice4,L02-021,Willow,Seedling,Depth,100,L02-021_slice4,Yes
-622,925,critical,slice1,L02-022,Willow,Seedling,Depth,100,L02-022_slice1,Yes
-623,926,critical,slice2,L02-022,Willow,Seedling,Depth,100,L02-022_slice2,Yes
-624,927,critical,slice3,L02-022,Willow,Seedling,Depth,100,L02-022_slice3,Yes
-625,928,critical,slice4,L02-022,Willow,Seedling,Depth,100,L02-022_slice4,Yes
-626,929,critical,slice5,L02-022,Willow,Seedling,Depth,100,L02-022_slice5,Yes
-627,930,critical,slice6,L02-022,Willow,Seedling,Depth,100,L02-022_slice6,Yes
-628,931,critical,slice1,L02-023,Willow,Seedling,Depth,100,L02-023_slice1,Yes
-629,932,critical,slice2,L02-023,Willow,Seedling,Depth,100,L02-023_slice2,Yes
-630,933,critical,slice3,L02-023,Willow,Seedling,Depth,100,L02-023_slice3,Yes
-631,934,critical,slice4,L02-023,Willow,Seedling,Depth,100,L02-023_slice4,Yes
-632,935,critical,slice1,L02-030,Willow,Seedling,Depth,100,L02-030_slice1,Yes
-633,936,critical,slice2,L02-030,Willow,Seedling,Depth,100,L02-030_slice2,Yes
-634,937,critical,slice3,L02-030,Willow,Seedling,Depth,100,L02-030_slice3,Yes
-635,938,critical,slice1,L02-031,Willow,Seedling,Depth,100,L02-031_slice1,Yes
-636,939,critical,slice2,L02-031,Willow,Seedling,Depth,100,L02-031_slice2,Yes
-637,940,critical,slice3,L02-031,Willow,Seedling,Depth,100,L02-031_slice3,Yes
-638,941,critical,slice4,L02-031,Willow,Seedling,Depth,100,L02-031_slice4,Yes
-639,942,critical,slice1,L02-040,Willow,Seedling,Depth,100,L02-040_slice1,Yes
-640,943,critical,slice2,L02-040,Willow,Seedling,Depth,100,L02-040_slice2,Yes
-641,944,critical,slice3,L02-040,Willow,Seedling,Depth,100,L02-040_slice3,Yes
-642,945,critical,slice4,L02-040,Willow,Seedling,Depth,100,L02-040_slice4,Yes
-643,946,critical,slice1,L02-041,Willow,Seedling,Depth,100,L02-041_slice1,Yes
-644,947,critical,slice2,L02-041,Willow,Seedling,Depth,100,L02-041_slice2,Yes
-645,948,critical,slice3,L02-041,Willow,Seedling,Depth,100,L02-041_slice3,Yes
-646,949,critical,slice1,L02-050,Willow,Seedling,Depth,100,L02-050_slice1,Yes
-647,950,critical,slice2,L02-050,Willow,Seedling,Depth,100,L02-050_slice2,Yes
-648,951,critical,slice3,L02-050,Willow,Seedling,Depth,100,L02-050_slice3,Yes
-649,952,critical,slice1,L02-051,Willow,Seedling,Depth,100,L02-051_slice1,Yes
-650,953,critical,slice2,L02-051,Willow,Seedling,Depth,100,L02-051_slice2,Yes
-651,954,critical,slice3,L02-051,Willow,Seedling,Depth,100,L02-051_slice3,Yes
-652,955,critical,slice1,J01-010,Willow,Seedling,Shear Stress,100,J01-010_slice1,Yes
-653,956,critical,slice2,J01-010,Willow,Seedling,Shear Stress,100,J01-010_slice2,Yes
-654,957,critical,slice3,J01-010,Willow,Seedling,Shear Stress,100,J01-010_slice3,Yes
-655,958,critical,slice1,J01-020,Willow,Seedling,Shear Stress,100,J01-020_slice1,Yes
-656,959,critical,slice2,J01-020,Willow,Seedling,Shear Stress,100,J01-020_slice2,Yes
-657,960,critical,slice3,J01-020,Willow,Seedling,Shear Stress,100,J01-020_slice3,Yes
-658,961,critical,slice4,J01-020,Willow,Seedling,Shear Stress,100,J01-020_slice4,Yes
-659,962,critical,slice1,J01-030,Willow,Seedling,Shear Stress,100,J01-030_slice1,Yes
-660,963,critical,slice2,J01-030,Willow,Seedling,Shear Stress,100,J01-030_slice2,Yes
-661,964,critical,slice3,J01-030,Willow,Seedling,Shear Stress,100,J01-030_slice3,Yes
-662,965,critical,slice4,J01-030,Willow,Seedling,Shear Stress,100,J01-030_slice4,Yes
-663,966,critical,slice5,J01-030,Willow,Seedling,Shear Stress,100,J01-030_slice5,Yes
-664,967,critical,slice1,J01-031,Willow,Seedling,Shear Stress,100,J01-031_slice1,Yes
-665,968,critical,slice2,J01-031,Willow,Seedling,Shear Stress,100,J01-031_slice2,Yes
-666,969,critical,slice3,J01-031,Willow,Seedling,Shear Stress,100,J01-031_slice3,Yes
-667,970,critical,slice1,J01-040,Willow,Seedling,Shear Stress,100,J01-040_slice1,Yes
-668,971,critical,slice2,J01-040,Willow,Seedling,Shear Stress,100,J01-040_slice2,Yes
-669,972,critical,slice3,J01-040,Willow,Seedling,Shear Stress,100,J01-040_slice3,Yes
-670,973,critical,slice4,J01-040,Willow,Seedling,Shear Stress,100,J01-040_slice4,Yes
-671,974,critical,slice5,J01-040,Willow,Seedling,Shear Stress,100,J01-040_slice5,Yes
-672,975,critical,slice1,J01-041,Willow,Seedling,Shear Stress,100,J01-041_slice1,Yes
-673,976,critical,slice2,J01-041,Willow,Seedling,Shear Stress,100,J01-041_slice2,Yes
-674,977,critical,slice3,J01-041,Willow,Seedling,Shear Stress,100,J01-041_slice3,Yes
-675,978,critical,slice1,J01-060,Willow,Seedling,Shear Stress,100,J01-060_slice1,Yes
-676,979,critical,slice2,J01-060,Willow,Seedling,Shear Stress,100,J01-060_slice2,Yes
-677,980,critical,slice3,J01-060,Willow,Seedling,Shear Stress,100,J01-060_slice3,Yes
-678,981,critical,slice1,J01-061,Willow,Seedling,Shear Stress,100,J01-061_slice1,Yes
-679,982,critical,slice2,J01-061,Willow,Seedling,Shear Stress,100,J01-061_slice2,Yes
-680,983,critical,slice3,J01-061,Willow,Seedling,Shear Stress,100,J01-061_slice3,Yes
-681,984,critical,slice1,J01-062,Willow,Seedling,Shear Stress,100,J01-062_slice1,Yes
-682,985,critical,slice1,J01-070,Willow,Seedling,Shear Stress,100,J01-070_slice1,Yes
-683,986,critical,slice1,J01-080,Willow,Seedling,Shear Stress,100,J01-080_slice1,Yes
-684,987,critical,slice2,J01-080,Willow,Seedling,Shear Stress,100,J01-080_slice2,Yes
-685,988,critical,slice3,J01-080,Willow,Seedling,Shear Stress,100,J01-080_slice3,Yes
-686,989,critical,slice1,J01-090,Willow,Seedling,Shear Stress,100,J01-090_slice1,Yes
-687,990,critical,slice2,J01-090,Willow,Seedling,Shear Stress,100,J01-090_slice2,Yes
-688,991,critical,slice1,J01-091,Willow,Seedling,Shear Stress,100,J01-091_slice1,Yes
-689,992,critical,slice2,J01-091,Willow,Seedling,Shear Stress,100,J01-091_slice2,Yes
-690,993,critical,slice3,J01-091,Willow,Seedling,Shear Stress,100,J01-091_slice3,Yes
-691,994,critical,slice1,J01-100,Willow,Seedling,Shear Stress,100,J01-100_slice1,Yes
-692,995,critical,slice2,J01-100,Willow,Seedling,Shear Stress,100,J01-100_slice2,Yes
-693,996,critical,slice3,J01-100,Willow,Seedling,Shear Stress,100,J01-100_slice3,Yes
-694,997,critical,slice1,J03-010,Willow,Seedling,Shear Stress,100,J03-010_slice1,Yes
-695,998,critical,slice2,J03-010,Willow,Seedling,Shear Stress,100,J03-010_slice2,Yes
-696,999,critical,slice3,J03-010,Willow,Seedling,Shear Stress,100,J03-010_slice3,Yes
-697,1000,critical,slice1,J04-010,Willow,Seedling,Shear Stress,100,J04-010_slice1,Yes
-698,1001,critical,slice2,J04-010,Willow,Seedling,Shear Stress,100,J04-010_slice2,Yes
-699,1002,critical,slice3,J04-010,Willow,Seedling,Shear Stress,100,J04-010_slice3,Yes
-700,1003,critical,slice4,J04-010,Willow,Seedling,Shear Stress,100,J04-010_slice4,Yes
-701,1004,critical,slice1,J05-010,Willow,Seedling,Shear Stress,100,J05-010_slice1,Yes
-702,1005,critical,slice2,J05-010,Willow,Seedling,Shear Stress,100,J05-010_slice2,Yes
-703,1006,critical,slice3,J05-010,Willow,Seedling,Shear Stress,100,J05-010_slice3,Yes
-704,1007,critical,slice4,J05-010,Willow,Seedling,Shear Stress,100,J05-010_slice4,Yes
-705,1008,critical,slice1,J07-010,Willow,Seedling,Shear Stress,100,J07-010_slice1,Yes
-706,1009,critical,slice2,J07-010,Willow,Seedling,Shear Stress,100,J07-010_slice2,Yes
-707,1010,critical,slice3,J07-010,Willow,Seedling,Shear Stress,100,J07-010_slice3,Yes
-708,1011,critical,slice1,L01-060,Willow,Seedling,Shear Stress,100,L01-060_slice1,Yes
-709,1012,critical,slice2,L01-060,Willow,Seedling,Shear Stress,100,L01-060_slice2,Yes
-710,1013,critical,slice3,L01-060,Willow,Seedling,Shear Stress,100,L01-060_slice3,Yes
-711,1014,critical,slice1,L01-080,Willow,Seedling,Shear Stress,100,L01-080_slice1,Yes
-712,1015,critical,slice2,L01-080,Willow,Seedling,Shear Stress,100,L01-080_slice2,Yes
-713,1016,critical,slice3,L01-080,Willow,Seedling,Shear Stress,100,L01-080_slice3,Yes
-714,1017,critical,slice1,L01-100,Willow,Seedling,Shear Stress,100,L01-100_slice1,Yes
-715,1018,critical,slice2,L01-100,Willow,Seedling,Shear Stress,100,L01-100_slice2,Yes
-716,1019,critical,slice3,L01-100,Willow,Seedling,Shear Stress,100,L01-100_slice3,Yes
-717,1020,critical,slice4,L01-100,Willow,Seedling,Shear Stress,100,L01-100_slice4,Yes
-718,1021,critical,slice1,L02-010,Willow,Seedling,Shear Stress,100,L02-010_slice1,Yes
-719,1022,critical,slice2,L02-010,Willow,Seedling,Shear Stress,100,L02-010_slice2,Yes
-720,1023,critical,slice3,L02-010,Willow,Seedling,Shear Stress,100,L02-010_slice3,Yes
-721,1024,critical,slice1,L02-020,Willow,Seedling,Shear Stress,100,L02-020_slice1,Yes
-722,1025,critical,slice2,L02-020,Willow,Seedling,Shear Stress,100,L02-020_slice2,Yes
-723,1026,critical,slice3,L02-020,Willow,Seedling,Shear Stress,100,L02-020_slice3,Yes
-724,1027,critical,slice1,L02-021,Willow,Seedling,Shear Stress,100,L02-021_slice1,Yes
-725,1028,critical,slice2,L02-021,Willow,Seedling,Shear Stress,100,L02-021_slice2,Yes
-726,1029,critical,slice3,L02-021,Willow,Seedling,Shear Stress,100,L02-021_slice3,Yes
-727,1030,critical,slice4,L02-021,Willow,Seedling,Shear Stress,100,L02-021_slice4,Yes
-728,1031,critical,slice1,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice1,Yes
-729,1032,critical,slice2,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice2,Yes
-730,1033,critical,slice3,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice3,Yes
-731,1034,critical,slice4,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice4,Yes
-732,1035,critical,slice5,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice5,Yes
-733,1036,critical,slice6,L02-022,Willow,Seedling,Shear Stress,100,L02-022_slice6,Yes
-734,1037,critical,slice1,L02-023,Willow,Seedling,Shear Stress,100,L02-023_slice1,Yes
-735,1038,critical,slice2,L02-023,Willow,Seedling,Shear Stress,100,L02-023_slice2,Yes
-736,1039,critical,slice3,L02-023,Willow,Seedling,Shear Stress,100,L02-023_slice3,Yes
-737,1040,critical,slice4,L02-023,Willow,Seedling,Shear Stress,100,L02-023_slice4,Yes
-738,1041,critical,slice1,L02-030,Willow,Seedling,Shear Stress,100,L02-030_slice1,Yes
-739,1042,critical,slice2,L02-030,Willow,Seedling,Shear Stress,100,L02-030_slice2,Yes
-740,1043,critical,slice3,L02-030,Willow,Seedling,Shear Stress,100,L02-030_slice3,Yes
-741,1044,critical,slice1,L02-031,Willow,Seedling,Shear Stress,100,L02-031_slice1,Yes
-742,1045,critical,slice2,L02-031,Willow,Seedling,Shear Stress,100,L02-031_slice2,Yes
-743,1046,critical,slice3,L02-031,Willow,Seedling,Shear Stress,100,L02-031_slice3,Yes
-744,1047,critical,slice4,L02-031,Willow,Seedling,Shear Stress,100,L02-031_slice4,Yes
-745,1048,critical,slice1,L02-040,Willow,Seedling,Shear Stress,100,L02-040_slice1,Yes
-746,1049,critical,slice2,L02-040,Willow,Seedling,Shear Stress,100,L02-040_slice2,Yes
-747,1050,critical,slice3,L02-040,Willow,Seedling,Shear Stress,100,L02-040_slice3,Yes
-748,1051,critical,slice4,L02-040,Willow,Seedling,Shear Stress,100,L02-040_slice4,Yes
-749,1052,critical,slice1,L02-041,Willow,Seedling,Shear Stress,100,L02-041_slice1,Yes
-750,1053,critical,slice2,L02-041,Willow,Seedling,Shear Stress,100,L02-041_slice2,Yes
-751,1054,critical,slice3,L02-041,Willow,Seedling,Shear Stress,100,L02-041_slice3,Yes
-752,1055,critical,slice1,L02-050,Willow,Seedling,Shear Stress,100,L02-050_slice1,Yes
-753,1056,critical,slice2,L02-050,Willow,Seedling,Shear Stress,100,L02-050_slice2,Yes
-754,1057,critical,slice3,L02-050,Willow,Seedling,Shear Stress,100,L02-050_slice3,Yes
-755,1058,critical,slice1,L02-051,Willow,Seedling,Shear Stress,100,L02-051_slice1,Yes
-756,1059,critical,slice2,L02-051,Willow,Seedling,Shear Stress,100,L02-051_slice2,Yes
-757,1060,critical,slice3,L02-051,Willow,Seedling,Shear Stress,100,L02-051_slice3,Yes
+"","X","TimePeriod","position","Node","Species","Life_Stage","Hydraulic","MaxPercentage","pos_code","BestSlice"
+"1",2,"Annual","slice2","J01-010","Chub","Adult","Depth",4.31034482758621,"J01-010_slice2","Yes"
+"2",6,"Annual","slice3","J01-020","Chub","Adult","Depth",4.82876712328767,"J01-020_slice3","Yes"
+"3",10,"Annual","slice3","J01-030","Chub","Adult","Depth",0.93607305936073,"J01-030_slice3","Yes"
+"4",14,"Annual","slice2","J01-031","Chub","Adult","Depth",0.171232876712329,"J01-031_slice2","Yes"
+"5",19,"Annual","slice4","J01-040","Chub","Adult","Depth",4.40014367816092,"J01-040_slice4","Yes"
+"6",22,"Annual","slice2","J01-041","Chub","Adult","Depth",2.81968390804598,"J01-041_slice2","Yes"
+"7",25,"Annual","slice2","J01-060","Chub","Adult","Depth",3.12785388127854,"J01-060_slice2","Yes"
+"8",28,"Annual","slice2","J01-061","Chub","Adult","Depth",1.87214611872146,"J01-061_slice2","Yes"
+"9",30,"Annual","slice1","J01-062","Chub","Adult","Depth",0.269396551724138,"J01-062_slice1","Yes"
+"10",31,"Annual","slice1","J01-070","Chub","Adult","Depth",1.46118721461187,"J01-070_slice1","Yes"
+"11",33,"Annual","slice2","J01-080","Chub","Adult","Depth",1.16438356164384,"J01-080_slice2","Yes"
+"12",36,"Annual","slice2","J01-090","Chub","Adult","Depth",2.03196347031963,"J01-090_slice2","Yes"
+"13",38,"Annual","slice2","J01-091","Chub","Adult","Depth",0.448994252873563,"J01-091_slice2","Yes"
+"14",41,"Annual","slice2","J01-100","Chub","Adult","Depth",0.194063926940639,"J01-100_slice2","Yes"
+"15",44,"Annual","slice2","J03-010","Chub","Adult","Depth",1.81506849315068,"J03-010_slice2","Yes"
+"16",48,"Annual","slice3","J04-010","Chub","Adult","Depth",3.29908675799087,"J04-010_slice3","Yes"
+"17",50,"Annual","slice1","J05-010","Chub","Adult","Depth",1.11872146118721,"J05-010_slice1","Yes"
+"18",54,"Annual","slice1","J07-010","Chub","Adult","Depth",0.228310502283105,"J07-010_slice1","Yes"
+"19",58,"Annual","slice2","L01-060","Chub","Adult","Depth",3.28767123287671,"L01-060_slice2","Yes"
+"20",62,"Annual","slice3","L01-080","Chub","Adult","Depth",2.19178082191781,"L01-080_slice3","Yes"
+"21",63,"Annual","slice1","L01-100","Chub","Adult","Depth",0,"L01-100_slice1","Yes"
+"22",64,"Annual","slice2","L01-100","Chub","Adult","Depth",0,"L01-100_slice2","Yes"
+"23",65,"Annual","slice3","L01-100","Chub","Adult","Depth",0,"L01-100_slice3","Yes"
+"24",66,"Annual","slice4","L01-100","Chub","Adult","Depth",0,"L01-100_slice4","Yes"
+"25",68,"Annual","slice2","L02-010","Chub","Adult","Depth",7.12328767123288,"L02-010_slice2","Yes"
+"26",70,"Annual","slice1","L02-020","Chub","Adult","Depth",12.3287671232877,"L02-020_slice1","Yes"
+"27",75,"Annual","slice3","L02-021","Chub","Adult","Depth",14.5205479452055,"L02-021_slice3","Yes"
+"28",82,"Annual","slice6","L02-022","Chub","Adult","Depth",0.273972602739726,"L02-022_slice6","Yes"
+"29",86,"Annual","slice4","L02-023","Chub","Adult","Depth",14.2465753424658,"L02-023_slice4","Yes"
+"30",88,"Annual","slice2","L02-030","Chub","Adult","Depth",0.273972602739726,"L02-030_slice2","Yes"
+"31",93,"Annual","slice4","L02-031","Chub","Adult","Depth",1.91780821917808,"L02-031_slice4","Yes"
+"32",97,"Annual","slice4","L02-040","Chub","Adult","Depth",6.02739726027397,"L02-040_slice4","Yes"
+"33",98,"Annual","slice1","L02-041","Chub","Adult","Depth",0,"L02-041_slice1","Yes"
+"34",99,"Annual","slice2","L02-041","Chub","Adult","Depth",0,"L02-041_slice2","Yes"
+"35",100,"Annual","slice3","L02-041","Chub","Adult","Depth",0,"L02-041_slice3","Yes"
+"36",102,"Annual","slice2","L02-050","Chub","Adult","Depth",1.36986301369863,"L02-050_slice2","Yes"
+"37",104,"Annual","slice1","L02-051","Chub","Adult","Depth",0,"L02-051_slice1","Yes"
+"38",105,"Annual","slice2","L02-051","Chub","Adult","Depth",0,"L02-051_slice2","Yes"
+"39",106,"Annual","slice3","L02-051","Chub","Adult","Depth",0,"L02-051_slice3","Yes"
+"40",108,"Annual","slice2","J01-010","Chub","Adult","Velocity",36.62100456621,"J01-010_slice2","Yes"
+"41",112,"Annual","slice3","J01-020","Chub","Adult","Velocity",99.3607305936073,"J01-020_slice3","Yes"
+"42",116,"Annual","slice3","J01-030","Chub","Adult","Velocity",99.5547945205479,"J01-030_slice3","Yes"
+"43",120,"Annual","slice2","J01-031","Chub","Adult","Velocity",35.4908675799087,"J01-031_slice2","Yes"
+"44",125,"Annual","slice4","J01-040","Chub","Adult","Velocity",99.9429223744292,"J01-040_slice4","Yes"
+"45",128,"Annual","slice2","J01-041","Chub","Adult","Velocity",99.7602739726027,"J01-041_slice2","Yes"
+"46",130,"Annual","slice1","J01-060","Chub","Adult","Velocity",5.92465753424658,"J01-060_slice1","Yes"
+"47",134,"Annual","slice2","J01-061","Chub","Adult","Velocity",8.75570776255708,"J01-061_slice2","Yes"
+"48",136,"Annual","slice1","J01-062","Chub","Adult","Velocity",0.684931506849315,"J01-062_slice1","Yes"
+"49",137,"Annual","slice1","J01-070","Chub","Adult","Velocity",99.6803652968037,"J01-070_slice1","Yes"
+"50",139,"Annual","slice2","J01-080","Chub","Adult","Velocity",95.9927140255009,"J01-080_slice2","Yes"
+"51",142,"Annual","slice2","J01-090","Chub","Adult","Velocity",99.851598173516,"J01-090_slice2","Yes"
+"52",144,"Annual","slice2","J01-091","Chub","Adult","Velocity",99.8173515981735,"J01-091_slice2","Yes"
+"53",147,"Annual","slice2","J01-100","Chub","Adult","Velocity",99.9885844748858,"J01-100_slice2","Yes"
+"54",150,"Annual","slice2","J03-010","Chub","Adult","Velocity",99.8744292237443,"J03-010_slice2","Yes"
+"55",154,"Annual","slice3","J04-010","Chub","Adult","Velocity",99.3264840182648,"J04-010_slice3","Yes"
+"56",156,"Annual","slice1","J05-010","Chub","Adult","Velocity",99.7374429223744,"J05-010_slice1","Yes"
+"57",160,"Annual","slice1","J07-010","Chub","Adult","Velocity",57.0205479452055,"J07-010_slice1","Yes"
+"58",164,"Annual","slice2","L01-060","Chub","Adult","Velocity",39.4520547945205,"L01-060_slice2","Yes"
+"59",168,"Annual","slice3","L01-080","Chub","Adult","Velocity",98.9130434782609,"L01-080_slice3","Yes"
+"60",171,"Annual","slice3","L01-100","Chub","Adult","Velocity",6.3013698630137,"L01-100_slice3","Yes"
+"61",174,"Annual","slice2","L02-010","Chub","Adult","Velocity",100,"L02-010_slice2","Yes"
+"62",176,"Annual","slice1","L02-020","Chub","Adult","Velocity",64.9315068493151,"L02-020_slice1","Yes"
+"63",181,"Annual","slice3","L02-021","Chub","Adult","Velocity",67.1232876712329,"L02-021_slice3","Yes"
+"64",188,"Annual","slice6","L02-022","Chub","Adult","Velocity",80.8219178082192,"L02-022_slice6","Yes"
+"65",192,"Annual","slice4","L02-023","Chub","Adult","Velocity",71.7808219178082,"L02-023_slice4","Yes"
+"66",194,"Annual","slice2","L02-030","Chub","Adult","Velocity",72.0547945205479,"L02-030_slice2","Yes"
+"67",197,"Annual","slice2","L02-031","Chub","Adult","Velocity",80.8219178082192,"L02-031_slice2","Yes"
+"68",203,"Annual","slice4","L02-040","Chub","Adult","Velocity",74.7945205479452,"L02-040_slice4","Yes"
+"69",205,"Annual","slice2","L02-041","Chub","Adult","Velocity",21.9178082191781,"L02-041_slice2","Yes"
+"70",209,"Annual","slice3","L02-050","Chub","Adult","Velocity",53.4246575342466,"L02-050_slice3","Yes"
+"71",211,"Annual","slice2","L02-051","Chub","Adult","Velocity",35.3424657534247,"L02-051_slice2","Yes"
+"72",213,"Seasonal","slice1","J01-010","Toad","Breeding/Eggs","Depth",100,"J01-010_slice1","Yes"
+"73",214,"Seasonal","slice2","J01-010","Toad","Breeding/Eggs","Depth",100,"J01-010_slice2","Yes"
+"74",215,"Seasonal","slice3","J01-010","Toad","Breeding/Eggs","Depth",100,"J01-010_slice3","Yes"
+"75",216,"Seasonal","slice1","J01-020","Toad","Breeding/Eggs","Depth",100,"J01-020_slice1","Yes"
+"76",217,"Seasonal","slice2","J01-020","Toad","Breeding/Eggs","Depth",100,"J01-020_slice2","Yes"
+"77",218,"Seasonal","slice3","J01-020","Toad","Breeding/Eggs","Depth",100,"J01-020_slice3","Yes"
+"78",219,"Seasonal","slice4","J01-020","Toad","Breeding/Eggs","Depth",100,"J01-020_slice4","Yes"
+"79",220,"Seasonal","slice1","J01-030","Toad","Breeding/Eggs","Depth",100,"J01-030_slice1","Yes"
+"80",221,"Seasonal","slice2","J01-030","Toad","Breeding/Eggs","Depth",100,"J01-030_slice2","Yes"
+"81",222,"Seasonal","slice3","J01-030","Toad","Breeding/Eggs","Depth",100,"J01-030_slice3","Yes"
+"82",223,"Seasonal","slice4","J01-030","Toad","Breeding/Eggs","Depth",100,"J01-030_slice4","Yes"
+"83",224,"Seasonal","slice5","J01-030","Toad","Breeding/Eggs","Depth",100,"J01-030_slice5","Yes"
+"84",225,"Seasonal","slice1","J01-031","Toad","Breeding/Eggs","Depth",100,"J01-031_slice1","Yes"
+"85",226,"Seasonal","slice2","J01-031","Toad","Breeding/Eggs","Depth",100,"J01-031_slice2","Yes"
+"86",227,"Seasonal","slice3","J01-031","Toad","Breeding/Eggs","Depth",100,"J01-031_slice3","Yes"
+"87",228,"Seasonal","slice1","J01-040","Toad","Breeding/Eggs","Depth",100,"J01-040_slice1","Yes"
+"88",229,"Seasonal","slice2","J01-040","Toad","Breeding/Eggs","Depth",100,"J01-040_slice2","Yes"
+"89",230,"Seasonal","slice3","J01-040","Toad","Breeding/Eggs","Depth",100,"J01-040_slice3","Yes"
+"90",231,"Seasonal","slice4","J01-040","Toad","Breeding/Eggs","Depth",100,"J01-040_slice4","Yes"
+"91",232,"Seasonal","slice5","J01-040","Toad","Breeding/Eggs","Depth",100,"J01-040_slice5","Yes"
+"92",233,"Seasonal","slice1","J01-041","Toad","Breeding/Eggs","Depth",100,"J01-041_slice1","Yes"
+"93",234,"Seasonal","slice2","J01-041","Toad","Breeding/Eggs","Depth",100,"J01-041_slice2","Yes"
+"94",235,"Seasonal","slice3","J01-041","Toad","Breeding/Eggs","Depth",100,"J01-041_slice3","Yes"
+"95",236,"Seasonal","slice1","J01-060","Toad","Breeding/Eggs","Depth",100,"J01-060_slice1","Yes"
+"96",237,"Seasonal","slice2","J01-060","Toad","Breeding/Eggs","Depth",100,"J01-060_slice2","Yes"
+"97",238,"Seasonal","slice3","J01-060","Toad","Breeding/Eggs","Depth",100,"J01-060_slice3","Yes"
+"98",239,"Seasonal","slice1","J01-061","Toad","Breeding/Eggs","Depth",100,"J01-061_slice1","Yes"
+"99",240,"Seasonal","slice2","J01-061","Toad","Breeding/Eggs","Depth",100,"J01-061_slice2","Yes"
+"100",241,"Seasonal","slice3","J01-061","Toad","Breeding/Eggs","Depth",100,"J01-061_slice3","Yes"
+"101",242,"Seasonal","slice1","J01-062","Toad","Breeding/Eggs","Depth",100,"J01-062_slice1","Yes"
+"102",243,"Seasonal","slice1","J01-070","Toad","Breeding/Eggs","Depth",100,"J01-070_slice1","Yes"
+"103",244,"Seasonal","slice1","J01-080","Toad","Breeding/Eggs","Depth",100,"J01-080_slice1","Yes"
+"104",245,"Seasonal","slice2","J01-080","Toad","Breeding/Eggs","Depth",100,"J01-080_slice2","Yes"
+"105",246,"Seasonal","slice3","J01-080","Toad","Breeding/Eggs","Depth",100,"J01-080_slice3","Yes"
+"106",247,"Seasonal","slice1","J01-090","Toad","Breeding/Eggs","Depth",100,"J01-090_slice1","Yes"
+"107",248,"Seasonal","slice2","J01-090","Toad","Breeding/Eggs","Depth",100,"J01-090_slice2","Yes"
+"108",249,"Seasonal","slice1","J01-091","Toad","Breeding/Eggs","Depth",100,"J01-091_slice1","Yes"
+"109",250,"Seasonal","slice2","J01-091","Toad","Breeding/Eggs","Depth",100,"J01-091_slice2","Yes"
+"110",251,"Seasonal","slice3","J01-091","Toad","Breeding/Eggs","Depth",100,"J01-091_slice3","Yes"
+"111",252,"Seasonal","slice1","J01-100","Toad","Breeding/Eggs","Depth",100,"J01-100_slice1","Yes"
+"112",253,"Seasonal","slice2","J01-100","Toad","Breeding/Eggs","Depth",100,"J01-100_slice2","Yes"
+"113",254,"Seasonal","slice3","J01-100","Toad","Breeding/Eggs","Depth",100,"J01-100_slice3","Yes"
+"114",255,"Seasonal","slice1","J03-010","Toad","Breeding/Eggs","Depth",100,"J03-010_slice1","Yes"
+"115",256,"Seasonal","slice2","J03-010","Toad","Breeding/Eggs","Depth",100,"J03-010_slice2","Yes"
+"116",257,"Seasonal","slice3","J03-010","Toad","Breeding/Eggs","Depth",100,"J03-010_slice3","Yes"
+"117",258,"Seasonal","slice1","J04-010","Toad","Breeding/Eggs","Depth",100,"J04-010_slice1","Yes"
+"118",259,"Seasonal","slice2","J04-010","Toad","Breeding/Eggs","Depth",100,"J04-010_slice2","Yes"
+"119",260,"Seasonal","slice3","J04-010","Toad","Breeding/Eggs","Depth",100,"J04-010_slice3","Yes"
+"120",261,"Seasonal","slice4","J04-010","Toad","Breeding/Eggs","Depth",100,"J04-010_slice4","Yes"
+"121",262,"Seasonal","slice1","J05-010","Toad","Breeding/Eggs","Depth",100,"J05-010_slice1","Yes"
+"122",263,"Seasonal","slice2","J05-010","Toad","Breeding/Eggs","Depth",100,"J05-010_slice2","Yes"
+"123",264,"Seasonal","slice3","J05-010","Toad","Breeding/Eggs","Depth",100,"J05-010_slice3","Yes"
+"124",265,"Seasonal","slice4","J05-010","Toad","Breeding/Eggs","Depth",100,"J05-010_slice4","Yes"
+"125",266,"Seasonal","slice1","J07-010","Toad","Breeding/Eggs","Depth",100,"J07-010_slice1","Yes"
+"126",267,"Seasonal","slice2","J07-010","Toad","Breeding/Eggs","Depth",100,"J07-010_slice2","Yes"
+"127",268,"Seasonal","slice3","J07-010","Toad","Breeding/Eggs","Depth",100,"J07-010_slice3","Yes"
+"128",269,"Seasonal","slice1","L01-060","Toad","Breeding/Eggs","Depth",68.2242990654206,"L01-060_slice1","Yes"
+"129",271,"Seasonal","slice3","L01-060","Toad","Breeding/Eggs","Depth",68.2242990654206,"L01-060_slice3","Yes"
+"130",272,"Seasonal","slice1","L01-080","Toad","Breeding/Eggs","Depth",100,"L01-080_slice1","Yes"
+"131",273,"Seasonal","slice2","L01-080","Toad","Breeding/Eggs","Depth",100,"L01-080_slice2","Yes"
+"132",274,"Seasonal","slice3","L01-080","Toad","Breeding/Eggs","Depth",100,"L01-080_slice3","Yes"
+"133",275,"Seasonal","slice1","L01-100","Toad","Breeding/Eggs","Depth",50.9345794392523,"L01-100_slice1","Yes"
+"134",276,"Seasonal","slice2","L01-100","Toad","Breeding/Eggs","Depth",50.9345794392523,"L01-100_slice2","Yes"
+"135",277,"Seasonal","slice3","L01-100","Toad","Breeding/Eggs","Depth",50.9345794392523,"L01-100_slice3","Yes"
+"136",278,"Seasonal","slice4","L01-100","Toad","Breeding/Eggs","Depth",50.9345794392523,"L01-100_slice4","Yes"
+"137",279,"Seasonal","slice1","L02-010","Toad","Breeding/Eggs","Depth",100,"L02-010_slice1","Yes"
+"138",280,"Seasonal","slice2","L02-010","Toad","Breeding/Eggs","Depth",100,"L02-010_slice2","Yes"
+"139",281,"Seasonal","slice3","L02-010","Toad","Breeding/Eggs","Depth",100,"L02-010_slice3","Yes"
+"140",283,"Seasonal","slice2","L02-020","Toad","Breeding/Eggs","Depth",95.7943925233645,"L02-020_slice2","Yes"
+"141",284,"Seasonal","slice3","L02-020","Toad","Breeding/Eggs","Depth",95.7943925233645,"L02-020_slice3","Yes"
+"142",285,"Seasonal","slice1","L02-021","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-021_slice1","Yes"
+"143",286,"Seasonal","slice2","L02-021","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-021_slice2","Yes"
+"144",288,"Seasonal","slice4","L02-021","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-021_slice4","Yes"
+"145",289,"Seasonal","slice1","L02-022","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-022_slice1","Yes"
+"146",290,"Seasonal","slice2","L02-022","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-022_slice2","Yes"
+"147",291,"Seasonal","slice3","L02-022","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-022_slice3","Yes"
+"148",292,"Seasonal","slice4","L02-022","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-022_slice4","Yes"
+"149",293,"Seasonal","slice5","L02-022","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-022_slice5","Yes"
+"150",295,"Seasonal","slice1","L02-023","Toad","Breeding/Eggs","Depth",100,"L02-023_slice1","Yes"
+"151",296,"Seasonal","slice2","L02-023","Toad","Breeding/Eggs","Depth",100,"L02-023_slice2","Yes"
+"152",297,"Seasonal","slice3","L02-023","Toad","Breeding/Eggs","Depth",100,"L02-023_slice3","Yes"
+"153",299,"Seasonal","slice1","L02-030","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-030_slice1","Yes"
+"154",301,"Seasonal","slice3","L02-030","Toad","Breeding/Eggs","Depth",95.3271028037383,"L02-030_slice3","Yes"
+"155",302,"Seasonal","slice1","L02-031","Toad","Breeding/Eggs","Depth",100,"L02-031_slice1","Yes"
+"156",303,"Seasonal","slice2","L02-031","Toad","Breeding/Eggs","Depth",100,"L02-031_slice2","Yes"
+"157",304,"Seasonal","slice3","L02-031","Toad","Breeding/Eggs","Depth",100,"L02-031_slice3","Yes"
+"158",305,"Seasonal","slice4","L02-031","Toad","Breeding/Eggs","Depth",100,"L02-031_slice4","Yes"
+"159",306,"Seasonal","slice1","L02-040","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-040_slice1","Yes"
+"160",307,"Seasonal","slice2","L02-040","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-040_slice2","Yes"
+"161",308,"Seasonal","slice3","L02-040","Toad","Breeding/Eggs","Depth",98.1308411214953,"L02-040_slice3","Yes"
+"162",310,"Seasonal","slice1","L02-041","Toad","Breeding/Eggs","Depth",16.8224299065421,"L02-041_slice1","Yes"
+"163",312,"Seasonal","slice3","L02-041","Toad","Breeding/Eggs","Depth",16.8224299065421,"L02-041_slice3","Yes"
+"164",313,"Seasonal","slice1","L02-050","Toad","Breeding/Eggs","Depth",84.5794392523365,"L02-050_slice1","Yes"
+"165",316,"Seasonal","slice1","L02-051","Toad","Breeding/Eggs","Depth",69.6261682242991,"L02-051_slice1","Yes"
+"166",317,"Seasonal","slice2","L02-051","Toad","Breeding/Eggs","Depth",69.6261682242991,"L02-051_slice2","Yes"
+"167",318,"Seasonal","slice3","L02-051","Toad","Breeding/Eggs","Depth",69.6261682242991,"L02-051_slice3","Yes"
+"168",321,"Seasonal","slice3","J01-010","Toad","Breeding/Eggs","Velocity",74.1627725856698,"J01-010_slice3","Yes"
+"169",322,"Seasonal","slice1","J01-020","Toad","Breeding/Eggs","Velocity",100,"J01-020_slice1","Yes"
+"170",323,"Seasonal","slice2","J01-020","Toad","Breeding/Eggs","Velocity",100,"J01-020_slice2","Yes"
+"171",326,"Seasonal","slice1","J01-030","Toad","Breeding/Eggs","Velocity",100,"J01-030_slice1","Yes"
+"172",327,"Seasonal","slice2","J01-030","Toad","Breeding/Eggs","Velocity",100,"J01-030_slice2","Yes"
+"173",329,"Seasonal","slice4","J01-030","Toad","Breeding/Eggs","Velocity",100,"J01-030_slice4","Yes"
+"174",330,"Seasonal","slice5","J01-030","Toad","Breeding/Eggs","Velocity",100,"J01-030_slice5","Yes"
+"175",331,"Seasonal","slice1","J01-031","Toad","Breeding/Eggs","Velocity",100,"J01-031_slice1","Yes"
+"176",333,"Seasonal","slice3","J01-031","Toad","Breeding/Eggs","Velocity",100,"J01-031_slice3","Yes"
+"177",334,"Seasonal","slice1","J01-040","Toad","Breeding/Eggs","Velocity",100,"J01-040_slice1","Yes"
+"178",338,"Seasonal","slice5","J01-040","Toad","Breeding/Eggs","Velocity",100,"J01-040_slice5","Yes"
+"179",339,"Seasonal","slice1","J01-041","Toad","Breeding/Eggs","Velocity",100,"J01-041_slice1","Yes"
+"180",341,"Seasonal","slice3","J01-041","Toad","Breeding/Eggs","Velocity",100,"J01-041_slice3","Yes"
+"181",342,"Seasonal","slice1","J01-060","Toad","Breeding/Eggs","Velocity",100,"J01-060_slice1","Yes"
+"182",344,"Seasonal","slice3","J01-060","Toad","Breeding/Eggs","Velocity",100,"J01-060_slice3","Yes"
+"183",345,"Seasonal","slice1","J01-061","Toad","Breeding/Eggs","Velocity",100,"J01-061_slice1","Yes"
+"184",347,"Seasonal","slice3","J01-061","Toad","Breeding/Eggs","Velocity",100,"J01-061_slice3","Yes"
+"185",348,"Seasonal","slice1","J01-062","Toad","Breeding/Eggs","Velocity",100,"J01-062_slice1","Yes"
+"186",349,"Seasonal","slice1","J01-070","Toad","Breeding/Eggs","Velocity",0,"J01-070_slice1","Yes"
+"187",350,"Seasonal","slice1","J01-080","Toad","Breeding/Eggs","Velocity",100,"J01-080_slice1","Yes"
+"188",352,"Seasonal","slice3","J01-080","Toad","Breeding/Eggs","Velocity",100,"J01-080_slice3","Yes"
+"189",353,"Seasonal","slice1","J01-090","Toad","Breeding/Eggs","Velocity",100,"J01-090_slice1","Yes"
+"190",355,"Seasonal","slice1","J01-091","Toad","Breeding/Eggs","Velocity",100,"J01-091_slice1","Yes"
+"191",357,"Seasonal","slice3","J01-091","Toad","Breeding/Eggs","Velocity",100,"J01-091_slice3","Yes"
+"192",358,"Seasonal","slice1","J01-100","Toad","Breeding/Eggs","Velocity",100,"J01-100_slice1","Yes"
+"193",360,"Seasonal","slice3","J01-100","Toad","Breeding/Eggs","Velocity",100,"J01-100_slice3","Yes"
+"194",361,"Seasonal","slice1","J03-010","Toad","Breeding/Eggs","Velocity",100,"J03-010_slice1","Yes"
+"195",363,"Seasonal","slice3","J03-010","Toad","Breeding/Eggs","Velocity",100,"J03-010_slice3","Yes"
+"196",365,"Seasonal","slice2","J04-010","Toad","Breeding/Eggs","Velocity",100,"J04-010_slice2","Yes"
+"197",367,"Seasonal","slice4","J04-010","Toad","Breeding/Eggs","Velocity",100,"J04-010_slice4","Yes"
+"198",369,"Seasonal","slice2","J05-010","Toad","Breeding/Eggs","Velocity",100,"J05-010_slice2","Yes"
+"199",370,"Seasonal","slice3","J05-010","Toad","Breeding/Eggs","Velocity",100,"J05-010_slice3","Yes"
+"200",371,"Seasonal","slice4","J05-010","Toad","Breeding/Eggs","Velocity",100,"J05-010_slice4","Yes"
+"201",373,"Seasonal","slice2","J07-010","Toad","Breeding/Eggs","Velocity",100,"J07-010_slice2","Yes"
+"202",374,"Seasonal","slice3","J07-010","Toad","Breeding/Eggs","Velocity",100,"J07-010_slice3","Yes"
+"203",375,"Seasonal","slice1","L01-060","Toad","Breeding/Eggs","Velocity",68.2242990654206,"L01-060_slice1","Yes"
+"204",377,"Seasonal","slice3","L01-060","Toad","Breeding/Eggs","Velocity",68.2242990654206,"L01-060_slice3","Yes"
+"205",378,"Seasonal","slice1","L01-080","Toad","Breeding/Eggs","Velocity",100,"L01-080_slice1","Yes"
+"206",379,"Seasonal","slice2","L01-080","Toad","Breeding/Eggs","Velocity",100,"L01-080_slice2","Yes"
+"207",381,"Seasonal","slice1","L01-100","Toad","Breeding/Eggs","Velocity",50.9345794392523,"L01-100_slice1","Yes"
+"208",382,"Seasonal","slice2","L01-100","Toad","Breeding/Eggs","Velocity",50.9345794392523,"L01-100_slice2","Yes"
+"209",385,"Seasonal","slice1","L02-010","Toad","Breeding/Eggs","Velocity",100,"L02-010_slice1","Yes"
+"210",390,"Seasonal","slice3","L02-020","Toad","Breeding/Eggs","Velocity",95.3271028037383,"L02-020_slice3","Yes"
+"211",391,"Seasonal","slice1","L02-021","Toad","Breeding/Eggs","Velocity",98.1308411214953,"L02-021_slice1","Yes"
+"212",392,"Seasonal","slice2","L02-021","Toad","Breeding/Eggs","Velocity",98.1308411214953,"L02-021_slice2","Yes"
+"213",394,"Seasonal","slice4","L02-021","Toad","Breeding/Eggs","Velocity",98.1308411214953,"L02-021_slice4","Yes"
+"214",395,"Seasonal","slice1","L02-022","Toad","Breeding/Eggs","Velocity",95.3271028037383,"L02-022_slice1","Yes"
+"215",397,"Seasonal","slice3","L02-022","Toad","Breeding/Eggs","Velocity",95.3271028037383,"L02-022_slice3","Yes"
+"216",401,"Seasonal","slice1","L02-023","Toad","Breeding/Eggs","Velocity",100,"L02-023_slice1","Yes"
+"217",402,"Seasonal","slice2","L02-023","Toad","Breeding/Eggs","Velocity",100,"L02-023_slice2","Yes"
+"218",403,"Seasonal","slice3","L02-023","Toad","Breeding/Eggs","Velocity",100,"L02-023_slice3","Yes"
+"219",405,"Seasonal","slice1","L02-030","Toad","Breeding/Eggs","Velocity",95.3271028037383,"L02-030_slice1","Yes"
+"220",407,"Seasonal","slice3","L02-030","Toad","Breeding/Eggs","Velocity",95.3271028037383,"L02-030_slice3","Yes"
+"221",410,"Seasonal","slice3","L02-031","Toad","Breeding/Eggs","Velocity",100,"L02-031_slice3","Yes"
+"222",412,"Seasonal","slice1","L02-040","Toad","Breeding/Eggs","Velocity",98.1308411214953,"L02-040_slice1","Yes"
+"223",414,"Seasonal","slice3","L02-040","Toad","Breeding/Eggs","Velocity",98.1308411214953,"L02-040_slice3","Yes"
+"224",416,"Seasonal","slice1","L02-041","Toad","Breeding/Eggs","Velocity",16.8224299065421,"L02-041_slice1","Yes"
+"225",418,"Seasonal","slice3","L02-041","Toad","Breeding/Eggs","Velocity",16.8224299065421,"L02-041_slice3","Yes"
+"226",419,"Seasonal","slice1","L02-050","Toad","Breeding/Eggs","Velocity",84.1121495327103,"L02-050_slice1","Yes"
+"227",422,"Seasonal","slice1","L02-051","Toad","Breeding/Eggs","Velocity",69.6261682242991,"L02-051_slice1","Yes"
+"228",424,"Seasonal","slice3","L02-051","Toad","Breeding/Eggs","Velocity",69.6261682242991,"L02-051_slice3","Yes"
+"229",425,"Seasonal","slice1","J01-010","Toad","Tadpole","Depth",100,"J01-010_slice1","Yes"
+"230",426,"Seasonal","slice2","J01-010","Toad","Tadpole","Depth",100,"J01-010_slice2","Yes"
+"231",427,"Seasonal","slice3","J01-010","Toad","Tadpole","Depth",100,"J01-010_slice3","Yes"
+"232",428,"Seasonal","slice1","J01-020","Toad","Tadpole","Depth",100,"J01-020_slice1","Yes"
+"233",429,"Seasonal","slice2","J01-020","Toad","Tadpole","Depth",100,"J01-020_slice2","Yes"
+"234",430,"Seasonal","slice3","J01-020","Toad","Tadpole","Depth",100,"J01-020_slice3","Yes"
+"235",431,"Seasonal","slice4","J01-020","Toad","Tadpole","Depth",100,"J01-020_slice4","Yes"
+"236",432,"Seasonal","slice1","J01-030","Toad","Tadpole","Depth",100,"J01-030_slice1","Yes"
+"237",433,"Seasonal","slice2","J01-030","Toad","Tadpole","Depth",100,"J01-030_slice2","Yes"
+"238",434,"Seasonal","slice3","J01-030","Toad","Tadpole","Depth",100,"J01-030_slice3","Yes"
+"239",435,"Seasonal","slice4","J01-030","Toad","Tadpole","Depth",100,"J01-030_slice4","Yes"
+"240",436,"Seasonal","slice5","J01-030","Toad","Tadpole","Depth",100,"J01-030_slice5","Yes"
+"241",437,"Seasonal","slice1","J01-031","Toad","Tadpole","Depth",100,"J01-031_slice1","Yes"
+"242",438,"Seasonal","slice2","J01-031","Toad","Tadpole","Depth",100,"J01-031_slice2","Yes"
+"243",439,"Seasonal","slice3","J01-031","Toad","Tadpole","Depth",100,"J01-031_slice3","Yes"
+"244",440,"Seasonal","slice1","J01-040","Toad","Tadpole","Depth",100,"J01-040_slice1","Yes"
+"245",441,"Seasonal","slice2","J01-040","Toad","Tadpole","Depth",100,"J01-040_slice2","Yes"
+"246",442,"Seasonal","slice3","J01-040","Toad","Tadpole","Depth",100,"J01-040_slice3","Yes"
+"247",443,"Seasonal","slice4","J01-040","Toad","Tadpole","Depth",100,"J01-040_slice4","Yes"
+"248",444,"Seasonal","slice5","J01-040","Toad","Tadpole","Depth",100,"J01-040_slice5","Yes"
+"249",445,"Seasonal","slice1","J01-041","Toad","Tadpole","Depth",100,"J01-041_slice1","Yes"
+"250",446,"Seasonal","slice2","J01-041","Toad","Tadpole","Depth",100,"J01-041_slice2","Yes"
+"251",447,"Seasonal","slice3","J01-041","Toad","Tadpole","Depth",100,"J01-041_slice3","Yes"
+"252",448,"Seasonal","slice1","J01-060","Toad","Tadpole","Depth",100,"J01-060_slice1","Yes"
+"253",449,"Seasonal","slice2","J01-060","Toad","Tadpole","Depth",100,"J01-060_slice2","Yes"
+"254",450,"Seasonal","slice3","J01-060","Toad","Tadpole","Depth",100,"J01-060_slice3","Yes"
+"255",451,"Seasonal","slice1","J01-061","Toad","Tadpole","Depth",100,"J01-061_slice1","Yes"
+"256",452,"Seasonal","slice2","J01-061","Toad","Tadpole","Depth",100,"J01-061_slice2","Yes"
+"257",453,"Seasonal","slice3","J01-061","Toad","Tadpole","Depth",100,"J01-061_slice3","Yes"
+"258",454,"Seasonal","slice1","J01-062","Toad","Tadpole","Depth",100,"J01-062_slice1","Yes"
+"259",455,"Seasonal","slice1","J01-070","Toad","Tadpole","Depth",100,"J01-070_slice1","Yes"
+"260",456,"Seasonal","slice1","J01-080","Toad","Tadpole","Depth",100,"J01-080_slice1","Yes"
+"261",457,"Seasonal","slice2","J01-080","Toad","Tadpole","Depth",100,"J01-080_slice2","Yes"
+"262",458,"Seasonal","slice3","J01-080","Toad","Tadpole","Depth",100,"J01-080_slice3","Yes"
+"263",459,"Seasonal","slice1","J01-090","Toad","Tadpole","Depth",100,"J01-090_slice1","Yes"
+"264",460,"Seasonal","slice2","J01-090","Toad","Tadpole","Depth",100,"J01-090_slice2","Yes"
+"265",461,"Seasonal","slice1","J01-091","Toad","Tadpole","Depth",100,"J01-091_slice1","Yes"
+"266",462,"Seasonal","slice2","J01-091","Toad","Tadpole","Depth",100,"J01-091_slice2","Yes"
+"267",463,"Seasonal","slice3","J01-091","Toad","Tadpole","Depth",100,"J01-091_slice3","Yes"
+"268",464,"Seasonal","slice1","J01-100","Toad","Tadpole","Depth",100,"J01-100_slice1","Yes"
+"269",465,"Seasonal","slice2","J01-100","Toad","Tadpole","Depth",100,"J01-100_slice2","Yes"
+"270",466,"Seasonal","slice3","J01-100","Toad","Tadpole","Depth",100,"J01-100_slice3","Yes"
+"271",467,"Seasonal","slice1","J03-010","Toad","Tadpole","Depth",100,"J03-010_slice1","Yes"
+"272",468,"Seasonal","slice2","J03-010","Toad","Tadpole","Depth",100,"J03-010_slice2","Yes"
+"273",469,"Seasonal","slice3","J03-010","Toad","Tadpole","Depth",100,"J03-010_slice3","Yes"
+"274",470,"Seasonal","slice1","J04-010","Toad","Tadpole","Depth",100,"J04-010_slice1","Yes"
+"275",471,"Seasonal","slice2","J04-010","Toad","Tadpole","Depth",100,"J04-010_slice2","Yes"
+"276",472,"Seasonal","slice3","J04-010","Toad","Tadpole","Depth",100,"J04-010_slice3","Yes"
+"277",473,"Seasonal","slice4","J04-010","Toad","Tadpole","Depth",100,"J04-010_slice4","Yes"
+"278",474,"Seasonal","slice1","J05-010","Toad","Tadpole","Depth",100,"J05-010_slice1","Yes"
+"279",475,"Seasonal","slice2","J05-010","Toad","Tadpole","Depth",100,"J05-010_slice2","Yes"
+"280",476,"Seasonal","slice3","J05-010","Toad","Tadpole","Depth",100,"J05-010_slice3","Yes"
+"281",477,"Seasonal","slice4","J05-010","Toad","Tadpole","Depth",100,"J05-010_slice4","Yes"
+"282",478,"Seasonal","slice1","J07-010","Toad","Tadpole","Depth",100,"J07-010_slice1","Yes"
+"283",479,"Seasonal","slice2","J07-010","Toad","Tadpole","Depth",100,"J07-010_slice2","Yes"
+"284",480,"Seasonal","slice3","J07-010","Toad","Tadpole","Depth",100,"J07-010_slice3","Yes"
+"285",481,"Seasonal","slice1","L01-060","Toad","Tadpole","Depth",68.2242990654206,"L01-060_slice1","Yes"
+"286",482,"Seasonal","slice2","L01-060","Toad","Tadpole","Depth",68.2242990654206,"L01-060_slice2","Yes"
+"287",483,"Seasonal","slice3","L01-060","Toad","Tadpole","Depth",68.2242990654206,"L01-060_slice3","Yes"
+"288",484,"Seasonal","slice1","L01-080","Toad","Tadpole","Depth",100,"L01-080_slice1","Yes"
+"289",485,"Seasonal","slice2","L01-080","Toad","Tadpole","Depth",100,"L01-080_slice2","Yes"
+"290",486,"Seasonal","slice3","L01-080","Toad","Tadpole","Depth",100,"L01-080_slice3","Yes"
+"291",487,"Seasonal","slice1","L01-100","Toad","Tadpole","Depth",50.9345794392523,"L01-100_slice1","Yes"
+"292",488,"Seasonal","slice2","L01-100","Toad","Tadpole","Depth",50.9345794392523,"L01-100_slice2","Yes"
+"293",489,"Seasonal","slice3","L01-100","Toad","Tadpole","Depth",50.9345794392523,"L01-100_slice3","Yes"
+"294",490,"Seasonal","slice4","L01-100","Toad","Tadpole","Depth",50.9345794392523,"L01-100_slice4","Yes"
+"295",491,"Seasonal","slice1","L02-010","Toad","Tadpole","Depth",100,"L02-010_slice1","Yes"
+"296",492,"Seasonal","slice2","L02-010","Toad","Tadpole","Depth",100,"L02-010_slice2","Yes"
+"297",493,"Seasonal","slice3","L02-010","Toad","Tadpole","Depth",100,"L02-010_slice3","Yes"
+"298",495,"Seasonal","slice2","L02-020","Toad","Tadpole","Depth",95.7943925233645,"L02-020_slice2","Yes"
+"299",496,"Seasonal","slice3","L02-020","Toad","Tadpole","Depth",95.7943925233645,"L02-020_slice3","Yes"
+"300",497,"Seasonal","slice1","L02-021","Toad","Tadpole","Depth",98.1308411214953,"L02-021_slice1","Yes"
+"301",498,"Seasonal","slice2","L02-021","Toad","Tadpole","Depth",98.1308411214953,"L02-021_slice2","Yes"
+"302",499,"Seasonal","slice3","L02-021","Toad","Tadpole","Depth",98.1308411214953,"L02-021_slice3","Yes"
+"303",500,"Seasonal","slice4","L02-021","Toad","Tadpole","Depth",98.1308411214953,"L02-021_slice4","Yes"
+"304",501,"Seasonal","slice1","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice1","Yes"
+"305",502,"Seasonal","slice2","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice2","Yes"
+"306",503,"Seasonal","slice3","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice3","Yes"
+"307",504,"Seasonal","slice4","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice4","Yes"
+"308",505,"Seasonal","slice5","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice5","Yes"
+"309",506,"Seasonal","slice6","L02-022","Toad","Tadpole","Depth",95.3271028037383,"L02-022_slice6","Yes"
+"310",507,"Seasonal","slice1","L02-023","Toad","Tadpole","Depth",100,"L02-023_slice1","Yes"
+"311",508,"Seasonal","slice2","L02-023","Toad","Tadpole","Depth",100,"L02-023_slice2","Yes"
+"312",509,"Seasonal","slice3","L02-023","Toad","Tadpole","Depth",100,"L02-023_slice3","Yes"
+"313",511,"Seasonal","slice1","L02-030","Toad","Tadpole","Depth",95.3271028037383,"L02-030_slice1","Yes"
+"314",512,"Seasonal","slice2","L02-030","Toad","Tadpole","Depth",95.3271028037383,"L02-030_slice2","Yes"
+"315",513,"Seasonal","slice3","L02-030","Toad","Tadpole","Depth",95.3271028037383,"L02-030_slice3","Yes"
+"316",514,"Seasonal","slice1","L02-031","Toad","Tadpole","Depth",100,"L02-031_slice1","Yes"
+"317",515,"Seasonal","slice2","L02-031","Toad","Tadpole","Depth",100,"L02-031_slice2","Yes"
+"318",516,"Seasonal","slice3","L02-031","Toad","Tadpole","Depth",100,"L02-031_slice3","Yes"
+"319",517,"Seasonal","slice4","L02-031","Toad","Tadpole","Depth",100,"L02-031_slice4","Yes"
+"320",518,"Seasonal","slice1","L02-040","Toad","Tadpole","Depth",98.1308411214953,"L02-040_slice1","Yes"
+"321",519,"Seasonal","slice2","L02-040","Toad","Tadpole","Depth",98.1308411214953,"L02-040_slice2","Yes"
+"322",520,"Seasonal","slice3","L02-040","Toad","Tadpole","Depth",98.1308411214953,"L02-040_slice3","Yes"
+"323",521,"Seasonal","slice4","L02-040","Toad","Tadpole","Depth",98.1308411214953,"L02-040_slice4","Yes"
+"324",522,"Seasonal","slice1","L02-041","Toad","Tadpole","Depth",16.8224299065421,"L02-041_slice1","Yes"
+"325",523,"Seasonal","slice2","L02-041","Toad","Tadpole","Depth",16.8224299065421,"L02-041_slice2","Yes"
+"326",524,"Seasonal","slice3","L02-041","Toad","Tadpole","Depth",16.8224299065421,"L02-041_slice3","Yes"
+"327",525,"Seasonal","slice1","L02-050","Toad","Tadpole","Depth",84.5794392523365,"L02-050_slice1","Yes"
+"328",526,"Seasonal","slice2","L02-050","Toad","Tadpole","Depth",84.5794392523365,"L02-050_slice2","Yes"
+"329",527,"Seasonal","slice3","L02-050","Toad","Tadpole","Depth",84.5794392523365,"L02-050_slice3","Yes"
+"330",528,"Seasonal","slice1","L02-051","Toad","Tadpole","Depth",69.6261682242991,"L02-051_slice1","Yes"
+"331",529,"Seasonal","slice2","L02-051","Toad","Tadpole","Depth",69.6261682242991,"L02-051_slice2","Yes"
+"332",530,"Seasonal","slice3","L02-051","Toad","Tadpole","Depth",69.6261682242991,"L02-051_slice3","Yes"
+"333",531,"Seasonal","slice1","J01-010","Toad","Tadpole","Velocity",100,"J01-010_slice1","Yes"
+"334",532,"Seasonal","slice2","J01-010","Toad","Tadpole","Velocity",100,"J01-010_slice2","Yes"
+"335",533,"Seasonal","slice3","J01-010","Toad","Tadpole","Velocity",100,"J01-010_slice3","Yes"
+"336",534,"Seasonal","slice1","J01-020","Toad","Tadpole","Velocity",100,"J01-020_slice1","Yes"
+"337",535,"Seasonal","slice2","J01-020","Toad","Tadpole","Velocity",100,"J01-020_slice2","Yes"
+"338",537,"Seasonal","slice4","J01-020","Toad","Tadpole","Velocity",100,"J01-020_slice4","Yes"
+"339",538,"Seasonal","slice1","J01-030","Toad","Tadpole","Velocity",100,"J01-030_slice1","Yes"
+"340",539,"Seasonal","slice2","J01-030","Toad","Tadpole","Velocity",100,"J01-030_slice2","Yes"
+"341",541,"Seasonal","slice4","J01-030","Toad","Tadpole","Velocity",100,"J01-030_slice4","Yes"
+"342",542,"Seasonal","slice5","J01-030","Toad","Tadpole","Velocity",100,"J01-030_slice5","Yes"
+"343",543,"Seasonal","slice1","J01-031","Toad","Tadpole","Velocity",100,"J01-031_slice1","Yes"
+"344",544,"Seasonal","slice2","J01-031","Toad","Tadpole","Velocity",100,"J01-031_slice2","Yes"
+"345",545,"Seasonal","slice3","J01-031","Toad","Tadpole","Velocity",100,"J01-031_slice3","Yes"
+"346",546,"Seasonal","slice1","J01-040","Toad","Tadpole","Velocity",100,"J01-040_slice1","Yes"
+"347",547,"Seasonal","slice2","J01-040","Toad","Tadpole","Velocity",100,"J01-040_slice2","Yes"
+"348",548,"Seasonal","slice3","J01-040","Toad","Tadpole","Velocity",100,"J01-040_slice3","Yes"
+"349",549,"Seasonal","slice4","J01-040","Toad","Tadpole","Velocity",100,"J01-040_slice4","Yes"
+"350",550,"Seasonal","slice5","J01-040","Toad","Tadpole","Velocity",100,"J01-040_slice5","Yes"
+"351",551,"Seasonal","slice1","J01-041","Toad","Tadpole","Velocity",100,"J01-041_slice1","Yes"
+"352",552,"Seasonal","slice2","J01-041","Toad","Tadpole","Velocity",100,"J01-041_slice2","Yes"
+"353",553,"Seasonal","slice3","J01-041","Toad","Tadpole","Velocity",100,"J01-041_slice3","Yes"
+"354",554,"Seasonal","slice1","J01-060","Toad","Tadpole","Velocity",100,"J01-060_slice1","Yes"
+"355",556,"Seasonal","slice3","J01-060","Toad","Tadpole","Velocity",100,"J01-060_slice3","Yes"
+"356",557,"Seasonal","slice1","J01-061","Toad","Tadpole","Velocity",100,"J01-061_slice1","Yes"
+"357",558,"Seasonal","slice2","J01-061","Toad","Tadpole","Velocity",100,"J01-061_slice2","Yes"
+"358",559,"Seasonal","slice3","J01-061","Toad","Tadpole","Velocity",100,"J01-061_slice3","Yes"
+"359",560,"Seasonal","slice1","J01-062","Toad","Tadpole","Velocity",100,"J01-062_slice1","Yes"
+"360",561,"Seasonal","slice1","J01-070","Toad","Tadpole","Velocity",80.9384735202492,"J01-070_slice1","Yes"
+"361",562,"Seasonal","slice1","J01-080","Toad","Tadpole","Velocity",100,"J01-080_slice1","Yes"
+"362",564,"Seasonal","slice3","J01-080","Toad","Tadpole","Velocity",100,"J01-080_slice3","Yes"
+"363",565,"Seasonal","slice1","J01-090","Toad","Tadpole","Velocity",100,"J01-090_slice1","Yes"
+"364",567,"Seasonal","slice1","J01-091","Toad","Tadpole","Velocity",100,"J01-091_slice1","Yes"
+"365",569,"Seasonal","slice3","J01-091","Toad","Tadpole","Velocity",100,"J01-091_slice3","Yes"
+"366",570,"Seasonal","slice1","J01-100","Toad","Tadpole","Velocity",100,"J01-100_slice1","Yes"
+"367",571,"Seasonal","slice2","J01-100","Toad","Tadpole","Velocity",100,"J01-100_slice2","Yes"
+"368",572,"Seasonal","slice3","J01-100","Toad","Tadpole","Velocity",100,"J01-100_slice3","Yes"
+"369",573,"Seasonal","slice1","J03-010","Toad","Tadpole","Velocity",100,"J03-010_slice1","Yes"
+"370",574,"Seasonal","slice2","J03-010","Toad","Tadpole","Velocity",100,"J03-010_slice2","Yes"
+"371",575,"Seasonal","slice3","J03-010","Toad","Tadpole","Velocity",100,"J03-010_slice3","Yes"
+"372",576,"Seasonal","slice1","J04-010","Toad","Tadpole","Velocity",100,"J04-010_slice1","Yes"
+"373",577,"Seasonal","slice2","J04-010","Toad","Tadpole","Velocity",100,"J04-010_slice2","Yes"
+"374",578,"Seasonal","slice3","J04-010","Toad","Tadpole","Velocity",100,"J04-010_slice3","Yes"
+"375",579,"Seasonal","slice4","J04-010","Toad","Tadpole","Velocity",100,"J04-010_slice4","Yes"
+"376",580,"Seasonal","slice1","J05-010","Toad","Tadpole","Velocity",100,"J05-010_slice1","Yes"
+"377",581,"Seasonal","slice2","J05-010","Toad","Tadpole","Velocity",100,"J05-010_slice2","Yes"
+"378",582,"Seasonal","slice3","J05-010","Toad","Tadpole","Velocity",100,"J05-010_slice3","Yes"
+"379",583,"Seasonal","slice4","J05-010","Toad","Tadpole","Velocity",100,"J05-010_slice4","Yes"
+"380",584,"Seasonal","slice1","J07-010","Toad","Tadpole","Velocity",100,"J07-010_slice1","Yes"
+"381",585,"Seasonal","slice2","J07-010","Toad","Tadpole","Velocity",100,"J07-010_slice2","Yes"
+"382",586,"Seasonal","slice3","J07-010","Toad","Tadpole","Velocity",100,"J07-010_slice3","Yes"
+"383",587,"Seasonal","slice1","L01-060","Toad","Tadpole","Velocity",68.2242990654206,"L01-060_slice1","Yes"
+"384",589,"Seasonal","slice3","L01-060","Toad","Tadpole","Velocity",68.2242990654206,"L01-060_slice3","Yes"
+"385",590,"Seasonal","slice1","L01-080","Toad","Tadpole","Velocity",100,"L01-080_slice1","Yes"
+"386",591,"Seasonal","slice2","L01-080","Toad","Tadpole","Velocity",100,"L01-080_slice2","Yes"
+"387",593,"Seasonal","slice1","L01-100","Toad","Tadpole","Velocity",50.9345794392523,"L01-100_slice1","Yes"
+"388",594,"Seasonal","slice2","L01-100","Toad","Tadpole","Velocity",50.9345794392523,"L01-100_slice2","Yes"
+"389",596,"Seasonal","slice4","L01-100","Toad","Tadpole","Velocity",50.9345794392523,"L01-100_slice4","Yes"
+"390",597,"Seasonal","slice1","L02-010","Toad","Tadpole","Velocity",100,"L02-010_slice1","Yes"
+"391",602,"Seasonal","slice3","L02-020","Toad","Tadpole","Velocity",95.7943925233645,"L02-020_slice3","Yes"
+"392",603,"Seasonal","slice1","L02-021","Toad","Tadpole","Velocity",98.1308411214953,"L02-021_slice1","Yes"
+"393",604,"Seasonal","slice2","L02-021","Toad","Tadpole","Velocity",98.1308411214953,"L02-021_slice2","Yes"
+"394",606,"Seasonal","slice4","L02-021","Toad","Tadpole","Velocity",98.1308411214953,"L02-021_slice4","Yes"
+"395",607,"Seasonal","slice1","L02-022","Toad","Tadpole","Velocity",95.3271028037383,"L02-022_slice1","Yes"
+"396",609,"Seasonal","slice3","L02-022","Toad","Tadpole","Velocity",95.3271028037383,"L02-022_slice3","Yes"
+"397",611,"Seasonal","slice5","L02-022","Toad","Tadpole","Velocity",95.3271028037383,"L02-022_slice5","Yes"
+"398",613,"Seasonal","slice1","L02-023","Toad","Tadpole","Velocity",100,"L02-023_slice1","Yes"
+"399",614,"Seasonal","slice2","L02-023","Toad","Tadpole","Velocity",100,"L02-023_slice2","Yes"
+"400",615,"Seasonal","slice3","L02-023","Toad","Tadpole","Velocity",100,"L02-023_slice3","Yes"
+"401",617,"Seasonal","slice1","L02-030","Toad","Tadpole","Velocity",95.3271028037383,"L02-030_slice1","Yes"
+"402",619,"Seasonal","slice3","L02-030","Toad","Tadpole","Velocity",95.3271028037383,"L02-030_slice3","Yes"
+"403",620,"Seasonal","slice1","L02-031","Toad","Tadpole","Velocity",100,"L02-031_slice1","Yes"
+"404",622,"Seasonal","slice3","L02-031","Toad","Tadpole","Velocity",100,"L02-031_slice3","Yes"
+"405",624,"Seasonal","slice1","L02-040","Toad","Tadpole","Velocity",98.1308411214953,"L02-040_slice1","Yes"
+"406",626,"Seasonal","slice3","L02-040","Toad","Tadpole","Velocity",98.1308411214953,"L02-040_slice3","Yes"
+"407",628,"Seasonal","slice1","L02-041","Toad","Tadpole","Velocity",16.8224299065421,"L02-041_slice1","Yes"
+"408",630,"Seasonal","slice3","L02-041","Toad","Tadpole","Velocity",16.8224299065421,"L02-041_slice3","Yes"
+"409",631,"Seasonal","slice1","L02-050","Toad","Tadpole","Velocity",84.5794392523365,"L02-050_slice1","Yes"
+"410",634,"Seasonal","slice1","L02-051","Toad","Tadpole","Velocity",69.6261682242991,"L02-051_slice1","Yes"
+"411",636,"Seasonal","slice3","L02-051","Toad","Tadpole","Velocity",69.6261682242991,"L02-051_slice3","Yes"
+"412",637,"Annual","slice1","J01-010","Willow","Adult","StreamPower",100,"J01-010_slice1","Yes"
+"413",638,"Annual","slice2","J01-010","Willow","Adult","StreamPower",100,"J01-010_slice2","Yes"
+"414",639,"Annual","slice3","J01-010","Willow","Adult","StreamPower",100,"J01-010_slice3","Yes"
+"415",640,"Annual","slice1","J01-020","Willow","Adult","StreamPower",100,"J01-020_slice1","Yes"
+"416",641,"Annual","slice2","J01-020","Willow","Adult","StreamPower",100,"J01-020_slice2","Yes"
+"417",642,"Annual","slice3","J01-020","Willow","Adult","StreamPower",100,"J01-020_slice3","Yes"
+"418",643,"Annual","slice4","J01-020","Willow","Adult","StreamPower",100,"J01-020_slice4","Yes"
+"419",644,"Annual","slice1","J01-030","Willow","Adult","StreamPower",100,"J01-030_slice1","Yes"
+"420",645,"Annual","slice2","J01-030","Willow","Adult","StreamPower",100,"J01-030_slice2","Yes"
+"421",646,"Annual","slice3","J01-030","Willow","Adult","StreamPower",100,"J01-030_slice3","Yes"
+"422",647,"Annual","slice4","J01-030","Willow","Adult","StreamPower",100,"J01-030_slice4","Yes"
+"423",648,"Annual","slice5","J01-030","Willow","Adult","StreamPower",100,"J01-030_slice5","Yes"
+"424",649,"Annual","slice1","J01-031","Willow","Adult","StreamPower",100,"J01-031_slice1","Yes"
+"425",650,"Annual","slice2","J01-031","Willow","Adult","StreamPower",100,"J01-031_slice2","Yes"
+"426",651,"Annual","slice3","J01-031","Willow","Adult","StreamPower",100,"J01-031_slice3","Yes"
+"427",652,"Annual","slice1","J01-040","Willow","Adult","StreamPower",100,"J01-040_slice1","Yes"
+"428",653,"Annual","slice2","J01-040","Willow","Adult","StreamPower",100,"J01-040_slice2","Yes"
+"429",654,"Annual","slice3","J01-040","Willow","Adult","StreamPower",100,"J01-040_slice3","Yes"
+"430",655,"Annual","slice4","J01-040","Willow","Adult","StreamPower",100,"J01-040_slice4","Yes"
+"431",656,"Annual","slice5","J01-040","Willow","Adult","StreamPower",100,"J01-040_slice5","Yes"
+"432",657,"Annual","slice1","J01-041","Willow","Adult","StreamPower",100,"J01-041_slice1","Yes"
+"433",658,"Annual","slice2","J01-041","Willow","Adult","StreamPower",100,"J01-041_slice2","Yes"
+"434",659,"Annual","slice3","J01-041","Willow","Adult","StreamPower",100,"J01-041_slice3","Yes"
+"435",660,"Annual","slice1","J01-060","Willow","Adult","StreamPower",100,"J01-060_slice1","Yes"
+"436",661,"Annual","slice2","J01-060","Willow","Adult","StreamPower",100,"J01-060_slice2","Yes"
+"437",662,"Annual","slice3","J01-060","Willow","Adult","StreamPower",100,"J01-060_slice3","Yes"
+"438",663,"Annual","slice1","J01-061","Willow","Adult","StreamPower",100,"J01-061_slice1","Yes"
+"439",664,"Annual","slice2","J01-061","Willow","Adult","StreamPower",100,"J01-061_slice2","Yes"
+"440",665,"Annual","slice3","J01-061","Willow","Adult","StreamPower",100,"J01-061_slice3","Yes"
+"441",666,"Annual","slice1","J01-062","Willow","Adult","StreamPower",100,"J01-062_slice1","Yes"
+"442",667,"Annual","slice1","J01-070","Willow","Adult","StreamPower",100,"J01-070_slice1","Yes"
+"443",668,"Annual","slice1","J01-080","Willow","Adult","StreamPower",100,"J01-080_slice1","Yes"
+"444",669,"Annual","slice2","J01-080","Willow","Adult","StreamPower",100,"J01-080_slice2","Yes"
+"445",670,"Annual","slice3","J01-080","Willow","Adult","StreamPower",100,"J01-080_slice3","Yes"
+"446",671,"Annual","slice1","J01-090","Willow","Adult","StreamPower",100,"J01-090_slice1","Yes"
+"447",672,"Annual","slice2","J01-090","Willow","Adult","StreamPower",100,"J01-090_slice2","Yes"
+"448",673,"Annual","slice1","J01-091","Willow","Adult","StreamPower",100,"J01-091_slice1","Yes"
+"449",674,"Annual","slice2","J01-091","Willow","Adult","StreamPower",100,"J01-091_slice2","Yes"
+"450",675,"Annual","slice3","J01-091","Willow","Adult","StreamPower",100,"J01-091_slice3","Yes"
+"451",676,"Annual","slice1","J01-100","Willow","Adult","StreamPower",100,"J01-100_slice1","Yes"
+"452",677,"Annual","slice2","J01-100","Willow","Adult","StreamPower",100,"J01-100_slice2","Yes"
+"453",678,"Annual","slice3","J01-100","Willow","Adult","StreamPower",100,"J01-100_slice3","Yes"
+"454",679,"Annual","slice1","J03-010","Willow","Adult","StreamPower",100,"J03-010_slice1","Yes"
+"455",680,"Annual","slice2","J03-010","Willow","Adult","StreamPower",100,"J03-010_slice2","Yes"
+"456",681,"Annual","slice3","J03-010","Willow","Adult","StreamPower",100,"J03-010_slice3","Yes"
+"457",682,"Annual","slice1","J04-010","Willow","Adult","StreamPower",100,"J04-010_slice1","Yes"
+"458",683,"Annual","slice2","J04-010","Willow","Adult","StreamPower",100,"J04-010_slice2","Yes"
+"459",684,"Annual","slice3","J04-010","Willow","Adult","StreamPower",100,"J04-010_slice3","Yes"
+"460",685,"Annual","slice4","J04-010","Willow","Adult","StreamPower",100,"J04-010_slice4","Yes"
+"461",686,"Annual","slice1","J05-010","Willow","Adult","StreamPower",100,"J05-010_slice1","Yes"
+"462",687,"Annual","slice2","J05-010","Willow","Adult","StreamPower",100,"J05-010_slice2","Yes"
+"463",688,"Annual","slice3","J05-010","Willow","Adult","StreamPower",100,"J05-010_slice3","Yes"
+"464",689,"Annual","slice4","J05-010","Willow","Adult","StreamPower",100,"J05-010_slice4","Yes"
+"465",690,"Annual","slice1","J07-010","Willow","Adult","StreamPower",100,"J07-010_slice1","Yes"
+"466",691,"Annual","slice2","J07-010","Willow","Adult","StreamPower",100,"J07-010_slice2","Yes"
+"467",692,"Annual","slice3","J07-010","Willow","Adult","StreamPower",100,"J07-010_slice3","Yes"
+"468",693,"Annual","slice1","L01-060","Willow","Adult","StreamPower",100,"L01-060_slice1","Yes"
+"469",694,"Annual","slice2","L01-060","Willow","Adult","StreamPower",100,"L01-060_slice2","Yes"
+"470",695,"Annual","slice3","L01-060","Willow","Adult","StreamPower",100,"L01-060_slice3","Yes"
+"471",696,"Annual","slice1","L01-080","Willow","Adult","StreamPower",100,"L01-080_slice1","Yes"
+"472",697,"Annual","slice2","L01-080","Willow","Adult","StreamPower",100,"L01-080_slice2","Yes"
+"473",698,"Annual","slice3","L01-080","Willow","Adult","StreamPower",100,"L01-080_slice3","Yes"
+"474",699,"Annual","slice1","L01-100","Willow","Adult","StreamPower",100,"L01-100_slice1","Yes"
+"475",700,"Annual","slice2","L01-100","Willow","Adult","StreamPower",100,"L01-100_slice2","Yes"
+"476",701,"Annual","slice3","L01-100","Willow","Adult","StreamPower",100,"L01-100_slice3","Yes"
+"477",702,"Annual","slice4","L01-100","Willow","Adult","StreamPower",100,"L01-100_slice4","Yes"
+"478",703,"Annual","slice1","L02-010","Willow","Adult","StreamPower",100,"L02-010_slice1","Yes"
+"479",704,"Annual","slice2","L02-010","Willow","Adult","StreamPower",100,"L02-010_slice2","Yes"
+"480",705,"Annual","slice3","L02-010","Willow","Adult","StreamPower",100,"L02-010_slice3","Yes"
+"481",706,"Annual","slice1","L02-020","Willow","Adult","StreamPower",100,"L02-020_slice1","Yes"
+"482",707,"Annual","slice2","L02-020","Willow","Adult","StreamPower",100,"L02-020_slice2","Yes"
+"483",708,"Annual","slice3","L02-020","Willow","Adult","StreamPower",100,"L02-020_slice3","Yes"
+"484",709,"Annual","slice1","L02-021","Willow","Adult","StreamPower",100,"L02-021_slice1","Yes"
+"485",710,"Annual","slice2","L02-021","Willow","Adult","StreamPower",100,"L02-021_slice2","Yes"
+"486",711,"Annual","slice3","L02-021","Willow","Adult","StreamPower",100,"L02-021_slice3","Yes"
+"487",712,"Annual","slice4","L02-021","Willow","Adult","StreamPower",100,"L02-021_slice4","Yes"
+"488",713,"Annual","slice1","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice1","Yes"
+"489",714,"Annual","slice2","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice2","Yes"
+"490",715,"Annual","slice3","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice3","Yes"
+"491",716,"Annual","slice4","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice4","Yes"
+"492",717,"Annual","slice5","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice5","Yes"
+"493",718,"Annual","slice6","L02-022","Willow","Adult","StreamPower",100,"L02-022_slice6","Yes"
+"494",719,"Annual","slice1","L02-023","Willow","Adult","StreamPower",100,"L02-023_slice1","Yes"
+"495",720,"Annual","slice2","L02-023","Willow","Adult","StreamPower",100,"L02-023_slice2","Yes"
+"496",721,"Annual","slice3","L02-023","Willow","Adult","StreamPower",100,"L02-023_slice3","Yes"
+"497",722,"Annual","slice4","L02-023","Willow","Adult","StreamPower",100,"L02-023_slice4","Yes"
+"498",723,"Annual","slice1","L02-030","Willow","Adult","StreamPower",100,"L02-030_slice1","Yes"
+"499",724,"Annual","slice2","L02-030","Willow","Adult","StreamPower",100,"L02-030_slice2","Yes"
+"500",725,"Annual","slice3","L02-030","Willow","Adult","StreamPower",100,"L02-030_slice3","Yes"
+"501",726,"Annual","slice1","L02-031","Willow","Adult","StreamPower",100,"L02-031_slice1","Yes"
+"502",727,"Annual","slice2","L02-031","Willow","Adult","StreamPower",100,"L02-031_slice2","Yes"
+"503",728,"Annual","slice3","L02-031","Willow","Adult","StreamPower",100,"L02-031_slice3","Yes"
+"504",729,"Annual","slice4","L02-031","Willow","Adult","StreamPower",100,"L02-031_slice4","Yes"
+"505",730,"Annual","slice1","L02-040","Willow","Adult","StreamPower",100,"L02-040_slice1","Yes"
+"506",731,"Annual","slice2","L02-040","Willow","Adult","StreamPower",100,"L02-040_slice2","Yes"
+"507",732,"Annual","slice3","L02-040","Willow","Adult","StreamPower",100,"L02-040_slice3","Yes"
+"508",733,"Annual","slice4","L02-040","Willow","Adult","StreamPower",100,"L02-040_slice4","Yes"
+"509",734,"Annual","slice1","L02-041","Willow","Adult","StreamPower",100,"L02-041_slice1","Yes"
+"510",735,"Annual","slice2","L02-041","Willow","Adult","StreamPower",100,"L02-041_slice2","Yes"
+"511",736,"Annual","slice3","L02-041","Willow","Adult","StreamPower",100,"L02-041_slice3","Yes"
+"512",737,"Annual","slice1","L02-050","Willow","Adult","StreamPower",100,"L02-050_slice1","Yes"
+"513",738,"Annual","slice2","L02-050","Willow","Adult","StreamPower",100,"L02-050_slice2","Yes"
+"514",739,"Annual","slice3","L02-050","Willow","Adult","StreamPower",100,"L02-050_slice3","Yes"
+"515",740,"Annual","slice1","L02-051","Willow","Adult","StreamPower",100,"L02-051_slice1","Yes"
+"516",741,"Annual","slice2","L02-051","Willow","Adult","StreamPower",100,"L02-051_slice2","Yes"
+"517",742,"Annual","slice3","L02-051","Willow","Adult","StreamPower",100,"L02-051_slice3","Yes"
+"518",744,"critical","slice2","J01-010","Willow","Germination","Depth",100,"J01-010_slice2","Yes"
+"519",748,"critical","slice3","J01-020","Willow","Germination","Depth",100,"J01-020_slice3","Yes"
+"520",752,"critical","slice3","J01-030","Willow","Germination","Depth",2.3224043715847,"J01-030_slice3","Yes"
+"521",756,"critical","slice2","J01-031","Willow","Germination","Depth",0.683060109289617,"J01-031_slice2","Yes"
+"522",761,"critical","slice4","J01-040","Willow","Germination","Depth",100,"J01-040_slice4","Yes"
+"523",764,"critical","slice2","J01-041","Willow","Germination","Depth",59.7905282331512,"J01-041_slice2","Yes"
+"524",767,"critical","slice2","J01-060","Willow","Germination","Depth",100,"J01-060_slice2","Yes"
+"525",770,"critical","slice2","J01-061","Willow","Germination","Depth",1.79872495446266,"J01-061_slice2","Yes"
+"526",772,"critical","slice1","J01-062","Willow","Germination","Depth",0.11384335154827,"J01-062_slice1","Yes"
+"527",773,"critical","slice1","J01-070","Willow","Germination","Depth",3.5063752276867,"J01-070_slice1","Yes"
+"528",775,"critical","slice2","J01-080","Willow","Germination","Depth",3.32422586520947,"J01-080_slice2","Yes"
+"529",778,"critical","slice2","J01-090","Willow","Germination","Depth",4.73588342440801,"J01-090_slice2","Yes"
+"530",780,"critical","slice2","J01-091","Willow","Germination","Depth",1.68488160291439,"J01-091_slice2","Yes"
+"531",783,"critical","slice2","J01-100","Willow","Germination","Depth",0.865209471766849,"J01-100_slice2","Yes"
+"532",786,"critical","slice2","J03-010","Willow","Germination","Depth",100,"J03-010_slice2","Yes"
+"533",790,"critical","slice3","J04-010","Willow","Germination","Depth",100,"J04-010_slice3","Yes"
+"534",792,"critical","slice1","J05-010","Willow","Germination","Depth",2.04918032786885,"J05-010_slice1","Yes"
+"535",796,"critical","slice1","J07-010","Willow","Germination","Depth",0.546448087431694,"J07-010_slice1","Yes"
+"536",800,"critical","slice2","L01-060","Willow","Germination","Depth",4.37158469945355,"L01-060_slice2","Yes"
+"537",804,"critical","slice3","L01-080","Willow","Germination","Depth",3.27868852459016,"L01-080_slice3","Yes"
+"538",807,"critical","slice3","L01-100","Willow","Germination","Depth",1.09289617486339,"L01-100_slice3","Yes"
+"539",810,"critical","slice2","L02-010","Willow","Germination","Depth",18.5792349726776,"L02-010_slice2","Yes"
+"540",812,"critical","slice1","L02-020","Willow","Germination","Depth",74.3169398907104,"L02-020_slice1","Yes"
+"541",817,"critical","slice3","L02-021","Willow","Germination","Depth",61.2021857923497,"L02-021_slice3","Yes"
+"542",824,"critical","slice6","L02-022","Willow","Germination","Depth",14.207650273224,"L02-022_slice6","Yes"
+"543",828,"critical","slice4","L02-023","Willow","Germination","Depth",51.9125683060109,"L02-023_slice4","Yes"
+"544",830,"critical","slice2","L02-030","Willow","Germination","Depth",18.0327868852459,"L02-030_slice2","Yes"
+"545",833,"critical","slice2","L02-031","Willow","Germination","Depth",71.5846994535519,"L02-031_slice2","Yes"
+"546",839,"critical","slice4","L02-040","Willow","Germination","Depth",27.3224043715847,"L02-040_slice4","Yes"
+"547",841,"critical","slice2","L02-041","Willow","Germination","Depth",1.63934426229508,"L02-041_slice2","Yes"
+"548",845,"critical","slice3","L02-050","Willow","Germination","Depth",34.9726775956284,"L02-050_slice3","Yes"
+"549",847,"critical","slice2","L02-051","Willow","Germination","Depth",2.18579234972678,"L02-051_slice2","Yes"
+"550",849,"critical","slice1","J01-010","Willow","Seedling","Depth",100,"J01-010_slice1","Yes"
+"551",850,"critical","slice2","J01-010","Willow","Seedling","Depth",100,"J01-010_slice2","Yes"
+"552",851,"critical","slice3","J01-010","Willow","Seedling","Depth",100,"J01-010_slice3","Yes"
+"553",852,"critical","slice1","J01-020","Willow","Seedling","Depth",100,"J01-020_slice1","Yes"
+"554",853,"critical","slice2","J01-020","Willow","Seedling","Depth",100,"J01-020_slice2","Yes"
+"555",854,"critical","slice3","J01-020","Willow","Seedling","Depth",100,"J01-020_slice3","Yes"
+"556",855,"critical","slice4","J01-020","Willow","Seedling","Depth",100,"J01-020_slice4","Yes"
+"557",856,"critical","slice1","J01-030","Willow","Seedling","Depth",100,"J01-030_slice1","Yes"
+"558",857,"critical","slice2","J01-030","Willow","Seedling","Depth",100,"J01-030_slice2","Yes"
+"559",858,"critical","slice3","J01-030","Willow","Seedling","Depth",100,"J01-030_slice3","Yes"
+"560",859,"critical","slice4","J01-030","Willow","Seedling","Depth",100,"J01-030_slice4","Yes"
+"561",860,"critical","slice5","J01-030","Willow","Seedling","Depth",100,"J01-030_slice5","Yes"
+"562",861,"critical","slice1","J01-031","Willow","Seedling","Depth",100,"J01-031_slice1","Yes"
+"563",862,"critical","slice2","J01-031","Willow","Seedling","Depth",100,"J01-031_slice2","Yes"
+"564",863,"critical","slice3","J01-031","Willow","Seedling","Depth",100,"J01-031_slice3","Yes"
+"565",864,"critical","slice1","J01-040","Willow","Seedling","Depth",100,"J01-040_slice1","Yes"
+"566",865,"critical","slice2","J01-040","Willow","Seedling","Depth",100,"J01-040_slice2","Yes"
+"567",866,"critical","slice3","J01-040","Willow","Seedling","Depth",100,"J01-040_slice3","Yes"
+"568",867,"critical","slice4","J01-040","Willow","Seedling","Depth",100,"J01-040_slice4","Yes"
+"569",868,"critical","slice5","J01-040","Willow","Seedling","Depth",100,"J01-040_slice5","Yes"
+"570",869,"critical","slice1","J01-041","Willow","Seedling","Depth",100,"J01-041_slice1","Yes"
+"571",870,"critical","slice2","J01-041","Willow","Seedling","Depth",100,"J01-041_slice2","Yes"
+"572",871,"critical","slice3","J01-041","Willow","Seedling","Depth",100,"J01-041_slice3","Yes"
+"573",872,"critical","slice1","J01-060","Willow","Seedling","Depth",100,"J01-060_slice1","Yes"
+"574",873,"critical","slice2","J01-060","Willow","Seedling","Depth",100,"J01-060_slice2","Yes"
+"575",874,"critical","slice3","J01-060","Willow","Seedling","Depth",100,"J01-060_slice3","Yes"
+"576",875,"critical","slice1","J01-061","Willow","Seedling","Depth",100,"J01-061_slice1","Yes"
+"577",876,"critical","slice2","J01-061","Willow","Seedling","Depth",100,"J01-061_slice2","Yes"
+"578",877,"critical","slice3","J01-061","Willow","Seedling","Depth",100,"J01-061_slice3","Yes"
+"579",878,"critical","slice1","J01-062","Willow","Seedling","Depth",100,"J01-062_slice1","Yes"
+"580",879,"critical","slice1","J01-070","Willow","Seedling","Depth",100,"J01-070_slice1","Yes"
+"581",880,"critical","slice1","J01-080","Willow","Seedling","Depth",100,"J01-080_slice1","Yes"
+"582",881,"critical","slice2","J01-080","Willow","Seedling","Depth",100,"J01-080_slice2","Yes"
+"583",882,"critical","slice3","J01-080","Willow","Seedling","Depth",100,"J01-080_slice3","Yes"
+"584",883,"critical","slice1","J01-090","Willow","Seedling","Depth",100,"J01-090_slice1","Yes"
+"585",884,"critical","slice2","J01-090","Willow","Seedling","Depth",100,"J01-090_slice2","Yes"
+"586",885,"critical","slice1","J01-091","Willow","Seedling","Depth",100,"J01-091_slice1","Yes"
+"587",886,"critical","slice2","J01-091","Willow","Seedling","Depth",100,"J01-091_slice2","Yes"
+"588",887,"critical","slice3","J01-091","Willow","Seedling","Depth",100,"J01-091_slice3","Yes"
+"589",888,"critical","slice1","J01-100","Willow","Seedling","Depth",100,"J01-100_slice1","Yes"
+"590",889,"critical","slice2","J01-100","Willow","Seedling","Depth",100,"J01-100_slice2","Yes"
+"591",890,"critical","slice3","J01-100","Willow","Seedling","Depth",100,"J01-100_slice3","Yes"
+"592",891,"critical","slice1","J03-010","Willow","Seedling","Depth",100,"J03-010_slice1","Yes"
+"593",892,"critical","slice2","J03-010","Willow","Seedling","Depth",100,"J03-010_slice2","Yes"
+"594",893,"critical","slice3","J03-010","Willow","Seedling","Depth",100,"J03-010_slice3","Yes"
+"595",894,"critical","slice1","J04-010","Willow","Seedling","Depth",100,"J04-010_slice1","Yes"
+"596",895,"critical","slice2","J04-010","Willow","Seedling","Depth",100,"J04-010_slice2","Yes"
+"597",896,"critical","slice3","J04-010","Willow","Seedling","Depth",100,"J04-010_slice3","Yes"
+"598",897,"critical","slice4","J04-010","Willow","Seedling","Depth",100,"J04-010_slice4","Yes"
+"599",898,"critical","slice1","J05-010","Willow","Seedling","Depth",100,"J05-010_slice1","Yes"
+"600",899,"critical","slice2","J05-010","Willow","Seedling","Depth",100,"J05-010_slice2","Yes"
+"601",900,"critical","slice3","J05-010","Willow","Seedling","Depth",100,"J05-010_slice3","Yes"
+"602",901,"critical","slice4","J05-010","Willow","Seedling","Depth",100,"J05-010_slice4","Yes"
+"603",902,"critical","slice1","J07-010","Willow","Seedling","Depth",100,"J07-010_slice1","Yes"
+"604",903,"critical","slice2","J07-010","Willow","Seedling","Depth",100,"J07-010_slice2","Yes"
+"605",904,"critical","slice3","J07-010","Willow","Seedling","Depth",100,"J07-010_slice3","Yes"
+"606",905,"critical","slice1","L01-060","Willow","Seedling","Depth",100,"L01-060_slice1","Yes"
+"607",906,"critical","slice2","L01-060","Willow","Seedling","Depth",100,"L01-060_slice2","Yes"
+"608",907,"critical","slice3","L01-060","Willow","Seedling","Depth",100,"L01-060_slice3","Yes"
+"609",908,"critical","slice1","L01-080","Willow","Seedling","Depth",100,"L01-080_slice1","Yes"
+"610",909,"critical","slice2","L01-080","Willow","Seedling","Depth",100,"L01-080_slice2","Yes"
+"611",910,"critical","slice3","L01-080","Willow","Seedling","Depth",100,"L01-080_slice3","Yes"
+"612",911,"critical","slice1","L01-100","Willow","Seedling","Depth",100,"L01-100_slice1","Yes"
+"613",912,"critical","slice2","L01-100","Willow","Seedling","Depth",100,"L01-100_slice2","Yes"
+"614",913,"critical","slice3","L01-100","Willow","Seedling","Depth",100,"L01-100_slice3","Yes"
+"615",914,"critical","slice4","L01-100","Willow","Seedling","Depth",100,"L01-100_slice4","Yes"
+"616",915,"critical","slice1","L02-010","Willow","Seedling","Depth",100,"L02-010_slice1","Yes"
+"617",916,"critical","slice2","L02-010","Willow","Seedling","Depth",100,"L02-010_slice2","Yes"
+"618",917,"critical","slice3","L02-010","Willow","Seedling","Depth",100,"L02-010_slice3","Yes"
+"619",918,"critical","slice1","L02-020","Willow","Seedling","Depth",100,"L02-020_slice1","Yes"
+"620",919,"critical","slice2","L02-020","Willow","Seedling","Depth",100,"L02-020_slice2","Yes"
+"621",920,"critical","slice3","L02-020","Willow","Seedling","Depth",100,"L02-020_slice3","Yes"
+"622",921,"critical","slice1","L02-021","Willow","Seedling","Depth",100,"L02-021_slice1","Yes"
+"623",922,"critical","slice2","L02-021","Willow","Seedling","Depth",100,"L02-021_slice2","Yes"
+"624",923,"critical","slice3","L02-021","Willow","Seedling","Depth",100,"L02-021_slice3","Yes"
+"625",924,"critical","slice4","L02-021","Willow","Seedling","Depth",100,"L02-021_slice4","Yes"
+"626",925,"critical","slice1","L02-022","Willow","Seedling","Depth",100,"L02-022_slice1","Yes"
+"627",926,"critical","slice2","L02-022","Willow","Seedling","Depth",100,"L02-022_slice2","Yes"
+"628",927,"critical","slice3","L02-022","Willow","Seedling","Depth",100,"L02-022_slice3","Yes"
+"629",928,"critical","slice4","L02-022","Willow","Seedling","Depth",100,"L02-022_slice4","Yes"
+"630",929,"critical","slice5","L02-022","Willow","Seedling","Depth",100,"L02-022_slice5","Yes"
+"631",930,"critical","slice6","L02-022","Willow","Seedling","Depth",100,"L02-022_slice6","Yes"
+"632",931,"critical","slice1","L02-023","Willow","Seedling","Depth",100,"L02-023_slice1","Yes"
+"633",932,"critical","slice2","L02-023","Willow","Seedling","Depth",100,"L02-023_slice2","Yes"
+"634",933,"critical","slice3","L02-023","Willow","Seedling","Depth",100,"L02-023_slice3","Yes"
+"635",934,"critical","slice4","L02-023","Willow","Seedling","Depth",100,"L02-023_slice4","Yes"
+"636",935,"critical","slice1","L02-030","Willow","Seedling","Depth",100,"L02-030_slice1","Yes"
+"637",936,"critical","slice2","L02-030","Willow","Seedling","Depth",100,"L02-030_slice2","Yes"
+"638",937,"critical","slice3","L02-030","Willow","Seedling","Depth",100,"L02-030_slice3","Yes"
+"639",938,"critical","slice1","L02-031","Willow","Seedling","Depth",100,"L02-031_slice1","Yes"
+"640",939,"critical","slice2","L02-031","Willow","Seedling","Depth",100,"L02-031_slice2","Yes"
+"641",940,"critical","slice3","L02-031","Willow","Seedling","Depth",100,"L02-031_slice3","Yes"
+"642",941,"critical","slice4","L02-031","Willow","Seedling","Depth",100,"L02-031_slice4","Yes"
+"643",942,"critical","slice1","L02-040","Willow","Seedling","Depth",100,"L02-040_slice1","Yes"
+"644",943,"critical","slice2","L02-040","Willow","Seedling","Depth",100,"L02-040_slice2","Yes"
+"645",944,"critical","slice3","L02-040","Willow","Seedling","Depth",100,"L02-040_slice3","Yes"
+"646",945,"critical","slice4","L02-040","Willow","Seedling","Depth",100,"L02-040_slice4","Yes"
+"647",946,"critical","slice1","L02-041","Willow","Seedling","Depth",100,"L02-041_slice1","Yes"
+"648",947,"critical","slice2","L02-041","Willow","Seedling","Depth",100,"L02-041_slice2","Yes"
+"649",948,"critical","slice3","L02-041","Willow","Seedling","Depth",100,"L02-041_slice3","Yes"
+"650",949,"critical","slice1","L02-050","Willow","Seedling","Depth",100,"L02-050_slice1","Yes"
+"651",950,"critical","slice2","L02-050","Willow","Seedling","Depth",100,"L02-050_slice2","Yes"
+"652",951,"critical","slice3","L02-050","Willow","Seedling","Depth",100,"L02-050_slice3","Yes"
+"653",952,"critical","slice1","L02-051","Willow","Seedling","Depth",100,"L02-051_slice1","Yes"
+"654",953,"critical","slice2","L02-051","Willow","Seedling","Depth",100,"L02-051_slice2","Yes"
+"655",954,"critical","slice3","L02-051","Willow","Seedling","Depth",100,"L02-051_slice3","Yes"
+"656",955,"critical","slice1","J01-010","Willow","Seedling","Shear Stress",100,"J01-010_slice1","Yes"
+"657",956,"critical","slice2","J01-010","Willow","Seedling","Shear Stress",100,"J01-010_slice2","Yes"
+"658",957,"critical","slice3","J01-010","Willow","Seedling","Shear Stress",100,"J01-010_slice3","Yes"
+"659",958,"critical","slice1","J01-020","Willow","Seedling","Shear Stress",100,"J01-020_slice1","Yes"
+"660",959,"critical","slice2","J01-020","Willow","Seedling","Shear Stress",100,"J01-020_slice2","Yes"
+"661",960,"critical","slice3","J01-020","Willow","Seedling","Shear Stress",100,"J01-020_slice3","Yes"
+"662",961,"critical","slice4","J01-020","Willow","Seedling","Shear Stress",100,"J01-020_slice4","Yes"
+"663",962,"critical","slice1","J01-030","Willow","Seedling","Shear Stress",100,"J01-030_slice1","Yes"
+"664",963,"critical","slice2","J01-030","Willow","Seedling","Shear Stress",100,"J01-030_slice2","Yes"
+"665",964,"critical","slice3","J01-030","Willow","Seedling","Shear Stress",100,"J01-030_slice3","Yes"
+"666",965,"critical","slice4","J01-030","Willow","Seedling","Shear Stress",100,"J01-030_slice4","Yes"
+"667",966,"critical","slice5","J01-030","Willow","Seedling","Shear Stress",100,"J01-030_slice5","Yes"
+"668",967,"critical","slice1","J01-031","Willow","Seedling","Shear Stress",100,"J01-031_slice1","Yes"
+"669",968,"critical","slice2","J01-031","Willow","Seedling","Shear Stress",100,"J01-031_slice2","Yes"
+"670",969,"critical","slice3","J01-031","Willow","Seedling","Shear Stress",100,"J01-031_slice3","Yes"
+"671",970,"critical","slice1","J01-040","Willow","Seedling","Shear Stress",100,"J01-040_slice1","Yes"
+"672",971,"critical","slice2","J01-040","Willow","Seedling","Shear Stress",100,"J01-040_slice2","Yes"
+"673",972,"critical","slice3","J01-040","Willow","Seedling","Shear Stress",100,"J01-040_slice3","Yes"
+"674",973,"critical","slice4","J01-040","Willow","Seedling","Shear Stress",100,"J01-040_slice4","Yes"
+"675",974,"critical","slice5","J01-040","Willow","Seedling","Shear Stress",100,"J01-040_slice5","Yes"
+"676",975,"critical","slice1","J01-041","Willow","Seedling","Shear Stress",100,"J01-041_slice1","Yes"
+"677",976,"critical","slice2","J01-041","Willow","Seedling","Shear Stress",100,"J01-041_slice2","Yes"
+"678",977,"critical","slice3","J01-041","Willow","Seedling","Shear Stress",100,"J01-041_slice3","Yes"
+"679",978,"critical","slice1","J01-060","Willow","Seedling","Shear Stress",100,"J01-060_slice1","Yes"
+"680",979,"critical","slice2","J01-060","Willow","Seedling","Shear Stress",100,"J01-060_slice2","Yes"
+"681",980,"critical","slice3","J01-060","Willow","Seedling","Shear Stress",100,"J01-060_slice3","Yes"
+"682",981,"critical","slice1","J01-061","Willow","Seedling","Shear Stress",100,"J01-061_slice1","Yes"
+"683",982,"critical","slice2","J01-061","Willow","Seedling","Shear Stress",100,"J01-061_slice2","Yes"
+"684",983,"critical","slice3","J01-061","Willow","Seedling","Shear Stress",100,"J01-061_slice3","Yes"
+"685",984,"critical","slice1","J01-062","Willow","Seedling","Shear Stress",100,"J01-062_slice1","Yes"
+"686",985,"critical","slice1","J01-070","Willow","Seedling","Shear Stress",100,"J01-070_slice1","Yes"
+"687",986,"critical","slice1","J01-080","Willow","Seedling","Shear Stress",100,"J01-080_slice1","Yes"
+"688",987,"critical","slice2","J01-080","Willow","Seedling","Shear Stress",100,"J01-080_slice2","Yes"
+"689",988,"critical","slice3","J01-080","Willow","Seedling","Shear Stress",100,"J01-080_slice3","Yes"
+"690",989,"critical","slice1","J01-090","Willow","Seedling","Shear Stress",100,"J01-090_slice1","Yes"
+"691",990,"critical","slice2","J01-090","Willow","Seedling","Shear Stress",100,"J01-090_slice2","Yes"
+"692",991,"critical","slice1","J01-091","Willow","Seedling","Shear Stress",100,"J01-091_slice1","Yes"
+"693",992,"critical","slice2","J01-091","Willow","Seedling","Shear Stress",100,"J01-091_slice2","Yes"
+"694",993,"critical","slice3","J01-091","Willow","Seedling","Shear Stress",100,"J01-091_slice3","Yes"
+"695",994,"critical","slice1","J01-100","Willow","Seedling","Shear Stress",100,"J01-100_slice1","Yes"
+"696",995,"critical","slice2","J01-100","Willow","Seedling","Shear Stress",100,"J01-100_slice2","Yes"
+"697",996,"critical","slice3","J01-100","Willow","Seedling","Shear Stress",100,"J01-100_slice3","Yes"
+"698",997,"critical","slice1","J03-010","Willow","Seedling","Shear Stress",100,"J03-010_slice1","Yes"
+"699",998,"critical","slice2","J03-010","Willow","Seedling","Shear Stress",100,"J03-010_slice2","Yes"
+"700",999,"critical","slice3","J03-010","Willow","Seedling","Shear Stress",100,"J03-010_slice3","Yes"
+"701",1000,"critical","slice1","J04-010","Willow","Seedling","Shear Stress",100,"J04-010_slice1","Yes"
+"702",1001,"critical","slice2","J04-010","Willow","Seedling","Shear Stress",100,"J04-010_slice2","Yes"
+"703",1002,"critical","slice3","J04-010","Willow","Seedling","Shear Stress",100,"J04-010_slice3","Yes"
+"704",1003,"critical","slice4","J04-010","Willow","Seedling","Shear Stress",100,"J04-010_slice4","Yes"
+"705",1004,"critical","slice1","J05-010","Willow","Seedling","Shear Stress",100,"J05-010_slice1","Yes"
+"706",1005,"critical","slice2","J05-010","Willow","Seedling","Shear Stress",100,"J05-010_slice2","Yes"
+"707",1006,"critical","slice3","J05-010","Willow","Seedling","Shear Stress",100,"J05-010_slice3","Yes"
+"708",1007,"critical","slice4","J05-010","Willow","Seedling","Shear Stress",100,"J05-010_slice4","Yes"
+"709",1008,"critical","slice1","J07-010","Willow","Seedling","Shear Stress",100,"J07-010_slice1","Yes"
+"710",1009,"critical","slice2","J07-010","Willow","Seedling","Shear Stress",100,"J07-010_slice2","Yes"
+"711",1010,"critical","slice3","J07-010","Willow","Seedling","Shear Stress",100,"J07-010_slice3","Yes"
+"712",1011,"critical","slice1","L01-060","Willow","Seedling","Shear Stress",100,"L01-060_slice1","Yes"
+"713",1012,"critical","slice2","L01-060","Willow","Seedling","Shear Stress",100,"L01-060_slice2","Yes"
+"714",1013,"critical","slice3","L01-060","Willow","Seedling","Shear Stress",100,"L01-060_slice3","Yes"
+"715",1014,"critical","slice1","L01-080","Willow","Seedling","Shear Stress",100,"L01-080_slice1","Yes"
+"716",1015,"critical","slice2","L01-080","Willow","Seedling","Shear Stress",100,"L01-080_slice2","Yes"
+"717",1016,"critical","slice3","L01-080","Willow","Seedling","Shear Stress",100,"L01-080_slice3","Yes"
+"718",1017,"critical","slice1","L01-100","Willow","Seedling","Shear Stress",100,"L01-100_slice1","Yes"
+"719",1018,"critical","slice2","L01-100","Willow","Seedling","Shear Stress",100,"L01-100_slice2","Yes"
+"720",1019,"critical","slice3","L01-100","Willow","Seedling","Shear Stress",100,"L01-100_slice3","Yes"
+"721",1020,"critical","slice4","L01-100","Willow","Seedling","Shear Stress",100,"L01-100_slice4","Yes"
+"722",1021,"critical","slice1","L02-010","Willow","Seedling","Shear Stress",100,"L02-010_slice1","Yes"
+"723",1022,"critical","slice2","L02-010","Willow","Seedling","Shear Stress",100,"L02-010_slice2","Yes"
+"724",1023,"critical","slice3","L02-010","Willow","Seedling","Shear Stress",100,"L02-010_slice3","Yes"
+"725",1024,"critical","slice1","L02-020","Willow","Seedling","Shear Stress",100,"L02-020_slice1","Yes"
+"726",1025,"critical","slice2","L02-020","Willow","Seedling","Shear Stress",100,"L02-020_slice2","Yes"
+"727",1026,"critical","slice3","L02-020","Willow","Seedling","Shear Stress",100,"L02-020_slice3","Yes"
+"728",1027,"critical","slice1","L02-021","Willow","Seedling","Shear Stress",100,"L02-021_slice1","Yes"
+"729",1028,"critical","slice2","L02-021","Willow","Seedling","Shear Stress",100,"L02-021_slice2","Yes"
+"730",1029,"critical","slice3","L02-021","Willow","Seedling","Shear Stress",100,"L02-021_slice3","Yes"
+"731",1030,"critical","slice4","L02-021","Willow","Seedling","Shear Stress",100,"L02-021_slice4","Yes"
+"732",1031,"critical","slice1","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice1","Yes"
+"733",1032,"critical","slice2","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice2","Yes"
+"734",1033,"critical","slice3","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice3","Yes"
+"735",1034,"critical","slice4","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice4","Yes"
+"736",1035,"critical","slice5","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice5","Yes"
+"737",1036,"critical","slice6","L02-022","Willow","Seedling","Shear Stress",100,"L02-022_slice6","Yes"
+"738",1037,"critical","slice1","L02-023","Willow","Seedling","Shear Stress",100,"L02-023_slice1","Yes"
+"739",1038,"critical","slice2","L02-023","Willow","Seedling","Shear Stress",100,"L02-023_slice2","Yes"
+"740",1039,"critical","slice3","L02-023","Willow","Seedling","Shear Stress",100,"L02-023_slice3","Yes"
+"741",1040,"critical","slice4","L02-023","Willow","Seedling","Shear Stress",100,"L02-023_slice4","Yes"
+"742",1041,"critical","slice1","L02-030","Willow","Seedling","Shear Stress",100,"L02-030_slice1","Yes"
+"743",1042,"critical","slice2","L02-030","Willow","Seedling","Shear Stress",100,"L02-030_slice2","Yes"
+"744",1043,"critical","slice3","L02-030","Willow","Seedling","Shear Stress",100,"L02-030_slice3","Yes"
+"745",1044,"critical","slice1","L02-031","Willow","Seedling","Shear Stress",100,"L02-031_slice1","Yes"
+"746",1045,"critical","slice2","L02-031","Willow","Seedling","Shear Stress",100,"L02-031_slice2","Yes"
+"747",1046,"critical","slice3","L02-031","Willow","Seedling","Shear Stress",100,"L02-031_slice3","Yes"
+"748",1047,"critical","slice4","L02-031","Willow","Seedling","Shear Stress",100,"L02-031_slice4","Yes"
+"749",1048,"critical","slice1","L02-040","Willow","Seedling","Shear Stress",100,"L02-040_slice1","Yes"
+"750",1049,"critical","slice2","L02-040","Willow","Seedling","Shear Stress",100,"L02-040_slice2","Yes"
+"751",1050,"critical","slice3","L02-040","Willow","Seedling","Shear Stress",100,"L02-040_slice3","Yes"
+"752",1051,"critical","slice4","L02-040","Willow","Seedling","Shear Stress",100,"L02-040_slice4","Yes"
+"753",1052,"critical","slice1","L02-041","Willow","Seedling","Shear Stress",100,"L02-041_slice1","Yes"
+"754",1053,"critical","slice2","L02-041","Willow","Seedling","Shear Stress",100,"L02-041_slice2","Yes"
+"755",1054,"critical","slice3","L02-041","Willow","Seedling","Shear Stress",100,"L02-041_slice3","Yes"
+"756",1055,"critical","slice1","L02-050","Willow","Seedling","Shear Stress",100,"L02-050_slice1","Yes"
+"757",1056,"critical","slice2","L02-050","Willow","Seedling","Shear Stress",100,"L02-050_slice2","Yes"
+"758",1057,"critical","slice3","L02-050","Willow","Seedling","Shear Stress",100,"L02-050_slice3","Yes"
+"759",1058,"critical","slice1","L02-051","Willow","Seedling","Shear Stress",100,"L02-051_slice1","Yes"
+"760",1059,"critical","slice2","L02-051","Willow","Seedling","Shear Stress",100,"L02-051_slice2","Yes"
+"761",1060,"critical","slice3","L02-051","Willow","Seedling","Shear Stress",100,"L02-051_slice3","Yes"

@@ -101,7 +101,8 @@ write.csv(SuitabilityPerSlice, "output_data/results/S1_suitability_per_slice_50.
 NodeNames <- unique(SuitabilityPerSlice$Node)
 NodeNames
 ## list all files
-ts <- list.files("output_data/", pattern="Q_limits")
+ts <- list.files("output_data/", pattern="Q_limits_High_Probs")
+ts
 
 for(n in 1:length(NodeNames)) {
   ## subset per node
