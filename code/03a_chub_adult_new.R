@@ -276,8 +276,20 @@ write.csv(depth, "output_data/03a_Wulff_ALL_depth_vel_abundance.csv")
 library(tidyverse)
 
 data <- read.csv("output_data/03a_Wulff_ALL_depth_vel_abundance.csv")
+head(data)
 
-depth_chub <- data %>% filter( Species == "ArroyoChub") 
+dataSum <- data %>%
+  group_by(coord_code, Date, Species, Year) %>%
+  mutate(TotalAbundance = sum(Abundance)) %>%
+  group_by(Depth_cm) %>%
+  mutate(RelAbundance = (Abundance/TotalAbundance)*100)
+
+dataSum$RelAbundance[is.na(dataSum$RelAbundance)] <- 0
+  
+  
+depth_chub <- dataSum %>% filter(Species == "ArroyoChub") 
+
+## get relative abundance - try for weighting and/or lm
 
 dim(depth_chub) ## 1286
 head(depth_chub)
@@ -285,10 +297,14 @@ str(chub)
 ## make presence absence column
 
 chub <- depth_chub %>%
-  mutate(presence_absence = ifelse(Abundance == 0,0,1))
+  ungroup() %>%
+  mutate(presence_absence = ifelse(Abundance == 0,0,1)) %>%
+  # filter(Year == 2015) %>% ## remove 2016 to check
+  mutate(Depth_m = Depth_cm/100) ## change to m
+
 names(chub)
 ## model
-
+?glm
 glmmod1 <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), data=chub)
 summary(glmmod1)
 
@@ -300,17 +316,18 @@ chub$PredictedProbability <- predict(glmmod1,list(Depth_cm = new_data),type="res
 ggplot(chub, aes(x=Depth_cm, y=PredictedProbability))+ ## x here is your probability from the model
   geom_path()+
   scale_y_continuous(limits=c(0,1))+
+  scale_x_continuous() +
   geom_point(aes(y=presence_absence, x=Depth_cm), colour = 'black', size = 1) 
 
-ggplot(chub, aes(x=Depth_cm, y=presence_absence))+ 
-  geom_smooth(method = "glm")+
-  geom_point(aes(y=presence_absence, x=Depth_cm), colour = 'black', size = 1) +
+ggplot(chub, aes(x=Depth_m, y=presence_absence))+ 
+  stat_smooth(method = "glm")+
+  geom_point(aes(y=presence_absence, x=Depth_m), colour = 'black', size = 1) +
   scale_y_continuous(limits=c(0,1)) 
 
 ### linear model with quadratic term
 
-#patch occurrence
-ggplot(data = chub, mapping = aes(x = Depth_cm, y = presence_absence))+
+
+ggplot(data = chub, mapping = aes(x = Depth_cm, y = RelAbundance))+
   geom_point(alpha = 0.2, size = 3)+
   labs(x = "Depth (cm)", y = "Occurrence")+
   geom_smooth(method = "lm", formula = y ~ x + I(x^2))+
@@ -320,9 +337,9 @@ ggplot(data = chub, mapping = aes(x = Depth_cm, y = presence_absence))+
 
 
 
-summary(depth_chub_mod <- lm(presence_absence ~ Depth_cm + I(Depth_cm^2), data = chub))
+summary(depth_chub_mod <- lm(RelAbundance ~ Depth_cm + I(Depth_cm^2), data = chub))
 
-ggplot(data = chub, mapping = aes(x = Depth_cm, y = presence_absence))+
+ggplot(data = chub, mapping = aes(x = Depth_cm, y = RelAbundance))+
   geom_point(alpha = 0.2, size = 3)+
   labs(x = "Depth (cm)", y = "Occurrence")+
   geom_smooth(method = "lm")+
@@ -331,6 +348,39 @@ ggplot(data = chub, mapping = aes(x = Depth_cm, y = presence_absence))+
         panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA, size=.5))
 
 summary(depth_chub_mod2 <- lm(Abundance ~ Depth_cm, data = chub))
+
+##### model to use
+
+glmmod1 <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), data=chub)
+summary(glmmod1)
+range(chub$Depth_cm)
+xdepth <- seq(0, 120, 0.01)
+
+ydepth <- predict(glmmod1, list(Depth_cm = xdepth),type="response")
+
+plot(chub$Depth_cm, chub$presence_absence, pch = 16, xlab = "Depth (cm)", ylab = "Prob of Occurrence")
+lines(xdepth, ydepth)
+
+## velocity
+names(chub)
+
+# chub2 <- chub %>% drop_na(Velocity_0.6_ms)
+
+glmmod2 <- glm(presence_absence~Velocity_0.6_ms, family=binomial(link="logit"), data=chub2)
+summary(glmmod2)
+range(chub2$Velocity_0.6_ms)
+xvel <- seq(0, 1.72, 0.01)
+
+yvel <- predict(glmmod2, list(Velocity_0.6_ms = xvel),type="response")
+yvel
+plot(chub2$Velocity_0.6_ms, chub2$presence_absence, pch = 16, xlab = "Velocity (ms)", ylab = "Prob of Occurrence")
+lines(xvel, yvel)
+
+summary(vel_chub_mod2 <- lm(RelAbundance ~ Velocity_0.6_ms, data = chub))
+yvel <- predict(vel_chub_mod2, list(Velocity_0.6_ms = xvel),type="response")
+yvel
+plot(chub2$Velocity_0.6_ms, chub2$RelAbundance, pch = 16, xlab = "Velocity (ms)", ylab = "Relative Abundance")
+lines(xvel, yvel)
 
 ### jenny's chub data
 
@@ -368,8 +418,16 @@ depth <- depth %>% drop_na(Depth_cm)
 
 ### model with all data
 
-glmmod1 <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), data=depth)
+glmmod1 <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), weights=Abundance, data=depth)
 summary(glmmod1)
+range(depth$Depth_cm)
+xdepth <- seq(0, 670.56, 0.01)
+
+
+ydepth <- predict(glmmod1, list(Depth_cm = xdepth),type="response")
+
+plot(depth$Depth_cm, depth$presence_absence, pch = 16, xlab = "Depth (cm)", ylab = "Prob of Occurrence")
+lines(xdepth, ydepth)
 
 new_data <- depth$Depth_cm
 
