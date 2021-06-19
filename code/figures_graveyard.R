@@ -11,7 +11,7 @@ new_data <- filter(new_data, Q < 60)
 
 png("figures/Example_node_prob_v_Q.png", width = 500, height = 650)
 
-ggplot(new_data, aes(x = Q, y=prob_fit)) +
+ggplot(new_data, aes(x = Q, y=depth_cm)) +
   geom_line(aes( group = variable, lty = variable)) +
   # scale_linetype_manual(values= c("dotted", "solid", "dashed"),
   #                       breaks=c("MAX_depth_cm_Slice1", "MAX_depth_cm_Slice2", "MAX_depth_cm_Slice3", "MAX_depth_cm_Slice4"))+
@@ -25,8 +25,8 @@ ggplot(new_data, aes(x = Q, y=prob_fit)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
   theme(text = element_text(size=20),
         axis.text.x = element_text(size = 20))+
-  labs(title = "Example: Mortality ~ Q (Depth)",
-       y = "Mortality (%)",
+  labs(title = "Example: Depth ~ Q ",
+       y = "Depth (cm)",
        x = "Q (cms)") #+ theme_bw(base_size = 15)
 
 dev.off()

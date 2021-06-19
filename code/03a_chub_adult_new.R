@@ -351,16 +351,23 @@ summary(depth_chub_mod2 <- lm(Abundance ~ Depth_cm, data = chub))
 
 ##### model to use
 
-glmmod1 <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), data=chub)
-summary(glmmod1)
+chub_depth_mod <- glm(presence_absence~Depth_cm, family=binomial(link="logit"), data=chub)
+summary(chub_depth_mod)
 range(chub$Depth_cm)
 xdepth <- seq(0, 120, 0.01)
 
-ydepth <- predict(glmmod1, list(Depth_cm = xdepth),type="response")
+ydepth <- predict(chub_depth_mod, list(Depth_cm = xdepth),type="response")
 
-plot(chub$Depth_cm, chub$presence_absence, pch = 16, xlab = "Depth (cm)", ylab = "Prob of Occurrence")
-lines(xdepth, ydepth)
+png("figures/03a_chub_Adult_depth_Prob_curve_new.png", width = 700, height = 700)
+plot(chub$Depth_cm, chub$presence_absence, pch = 16, xlab = "Depth (cm)", ylab = "Probability of Occurrence")
+par(new=TRUE)
+#plot the line with no axes or labels
+plot(xdepth, ydepth, axes=FALSE, ylab = "", type='l', col='red', main = "",
+     cex.main = 2, cex.axis=2, cex.lab=2, xlab="")
+# lines(xdepth, ydepth)
+dev.off()
 
+save(chub_depth_mod, file="models_functions/chub_depth_mod.RData")
 ## velocity
 names(chub)
 
