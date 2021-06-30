@@ -1,5 +1,0 @@
-"","V1","V2","V3","Type","Species","Life_Stage","Hydraulic","Node"
-"1",0.0351923974946754,0.000636507701698726,0.328969302206532,"Q_limit1","Toad","Breeding/Eggs","Velocity","J01-031"
-"2",0.0351923974946754,0.000636507701698726,0.328969302206532,"Q_limit2","Toad","Breeding/Eggs","Velocity","J01-031"
-"3",0.05,0.05,0.05,"Hydraulic_limit1","Toad","Breeding/Eggs","Velocity","J01-031"
-"4",0.05,0.05,0.05,"Hydraulic_limit2","Toad","Breeding/Eggs","Velocity","J01-031"
